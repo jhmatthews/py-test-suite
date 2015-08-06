@@ -1,0 +1,5 @@
+Failure on 
+
+Check Latest commit immediately
+
+List of failures:	fiducial_agn
