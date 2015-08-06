@@ -58,13 +58,15 @@ for i in range(len(names)):
 		failed.append(name)
 
 
-print success
+
 # check successes
 # if there's a failure, email me
-if success.all() == 1:
+
+
+if all(success == 1):
 	print "Every run completed"
 else:
-	em = open("%s/email.txt" % PYTEST, "r")
+	em = open("%s/email.txt" % PYTEST, "w")
 
 	em.write("Failure on \n\n")
 	em.write("Check Latest commit immediately\n\n")
