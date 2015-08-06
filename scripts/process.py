@@ -6,7 +6,8 @@ import os, sys
 #os.system("launchctl setenv PYTHONPATH $PYTHONPATH")
 #os.system("launchctl setenv PYTEST $PYTEST")
 #os.system("launchctl setenv PYTHON $PYTHON")
-
+import matplotlib
+matplotlib.use('Agg')
 
 import datetime, time
 import numpy as np

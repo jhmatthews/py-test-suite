@@ -60,7 +60,7 @@ cd $PYTEST/outputs/
 Setup_Py_Dir
 
 nice $PYTHON/bin/pytest cv_standard > cv_standard.out &
-nice $PYTHON/bin/pytest fiducial_agn > fiducial_agn.out &
+nice mpirun -n 10 $PYTHON/bin/pytest fiducial_agn > fiducial_agn.out &
 nice $PYTHON/bin/pytest 1d_sn > 1d_sn.out &
 #$PYTHON/bin/pytest sv_detailedmode > sv_detailedmode.out &
 #$PYTHON/bin/pytest cv_macro_benchmark > cv_macro_benchmark.out &
