@@ -1,0 +1,458 @@
+Thread 0 starting.
+number 5
+input
+xxx Mon Mar 23 16:20:34 2015      0.0 START                input 
+!!Python Version release 
+!!Git commit hash 549f0b41516061a2fcf4c42ad7e1a377c58f4290
+!!Python is running with 1 processors
+This is MPI task number 0 (a total of 1 tasks are running).
+xxx Mon Mar 23 16:20:34 2015      0.0 NOK                  Initializing variables for input
+Reading data from file input.pf
+Wind_type(0=SV,1=Sphere,2=Previous,3=Proga,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell)	  9
+Atomic_data   data/standard77
+Get_atomicdata: Reading from masterfile data/standard77
+Data of  14 elements, 178 ions,  3761 levels,  5458 lines, and   108 topbase records
+Macro    14 elements,   0 ions,     0 levels,     0 lines, and     0 topbase records
+Simple   14 elements, 178 ions,  3761 levels,  5458 lines, and   108 topbase records
+We have read in 149 Dielectronic recombination coefficients
+We have read in   0 Cardona partition functions coefficients
+We have read in 164 Badnell totl Radiative rate coefficients
+We have read in 135 Badnell GS   Radiative rate coefficients over the temp range 6.760000e+03 to 1.000000e+07
+We have read in  41 Scaled electron temperature frequency averaged gaunt factors
+The minimum frequency for photoionization is 3.66e+14
+get_atomic_data: Evaluation:  There are     14 elements     while     50 are currently allowed
+get_atomic_data: Evaluation:  There are    178 ions         while    500 are currently allowed
+get_atomic_data: Evaluation:  There are   3761 levels       while  12000 are currently allowed
+get_atomic_data: Evaluation:  There are   5458 lines        while 200000 are currently allowed
+get_atomic_data: Evaluation:  There are      0 macro levels while    150 are currently allowed
+get_atomic_data: Evaluation:  The maximum value bb jumps is 0 while 100 are currently allowed
+get_atomic_data: Evaluation:  The maximum value bf jumps is 0 while 100 are currently allowed
+photons_per_cycle	  1.000000e+05
+Photons per cycle per MPI task will be 100000
+Ionization_cycles	  1
+spectrum_cycles	  0
+Coord.system(0=spherical,1=cylindrical,2=spherical_polar,3=cyl_var)	  0
+Wind.dim.in.x_or_r.direction	  4
+Wind_ionization(0=on.the.spot,1=LTE,2=fixed,3=recalc_bb,6=pairwise_bb,7=pairwise_pow,8=matrix_bb,9=matrix_pow)	  7
+Line_transfer(0=pure.abs,1=pure.scat,2=sing.scat,3=escape.prob,6=macro_atoms,7=macro_atoms+aniso.scattering)	  5
+Thermal_balance_options(0=everything.on,1=no.adiabatic)	  0
+System_type(0=star,1=binary,2=agn)	  2
+disk.type(0=no.disk,1=standard.flat.disk,2=vertically.extended.disk)	  0
+Warning:  Question (Disk_radiation(y=1)) does not match word (Star_radiation(y=1)) in file. Continuing!
+Disk_radiation(y=1)	  0
+Wind_radiation(y=1)	  0
+QSO_BH_radiation(y=1)	  1
+Warning:  Question (Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table)_to_make_wind) does not match word (Rad_type_for_star(0=bb,1=models)_to_make_wind) in file. Continuing!
+Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table)_to_make_wind	  4
+Not Trying to make a start with a power law boundary layer -3
+mstar(msol)	  8.000000e-01
+rstar(cm)	  1.000000e+10
+Warning:  Question (lum_agn(ergs/s)) does not match word (tstar) in file. Continuing!
+lum_agn(ergs/s)	  1.000000e+37
+OK, the agn lum will be about 2.99e+03 the disk lum
+agn_power_law_index	  -9.000000e-01
+AGN Input parameters give a power law constant of 9.759422e+34
+low_energy_break(ev)	  1.360000e-01
+high_energy_break(ev)	  2.000000e+04
+Warning:  Question (wind.radmax(cm)) does not match word (Torus(0=no,1=yes)) in file. Continuing!
+wind.radmax(cm)	  1.000000e+11
+wind.t.init	  1.000000e+04
+Creating wind with a single shell for testing purposes
+shell_wind_mdot(msol/yr)	  4.720000e-20
+shell.wind.radmin(cm)	  1.000000e+11
+shell.wind_v_at_rmin(cm)	  1.000000e+00
+shell.wind.v_at_rmax(cm)	  1.000010e+00
+shell.wind.acceleration_exponent	  1.000000e+00
+Geo rmax = 100000000001.000000
+shell rmin=100000000000.000000 shell rmax=100000000001.000000
+dr= 1.000000e-02, root2= 1.414213562373095145474621858739e+00
+ring=0,x=7.071068e+10,r=9.999999999999000549316406250000e+10,speed=1.00000000000000000000e+00,density=9.98535331349858269095e+06
+ring=1,x=7.071068e+10,r=1.000000000000000000000000000000e+11,speed=1.00000000000000000000e+00,density=9.98535331349658407271e+06
+ring=2,x=7.071068e+10,r=1.000000000000100097656250000000e+11,speed=1.00000009992006400061e+00,density=9.98535231575754471123e+06
+ring=3,x=7.071068e+10,r=1.000000000000200042724609375000e+11,speed=1.00000020006217238411e+00,density=9.98535131580151244998e+06
+ring=4,x=7.071068e+10,r=1.000000000000299987792968750000e+11,speed=1.00000029998223638472e+00,density=9.98535031806287355721e+06
+ring=5,x=7.071068e+10,r=1.000000000000400085449218750000e+11,speed=1.00000040012434499026e+00,density=9.98534931810723990202e+06
+ring=6,x=7.071068e+10,r=1.000000000000500030517578125000e+11,speed=1.00000050004440899087e+00,density=9.98534832036899775267e+06
+ring=7,x=7.071068e+10,r=1.000000000000600128173828125000e+11,speed=1.00000060007549507191e+00,density=9.98534732152236066759e+06
+ring=8,x=7.071068e+10,r=1.000000000000700073242187500000e+11,speed=1.00000070010658137498e+00,density=9.98534632267592661083e+06
+ring=9,x=7.071068e+10,r=1.000000000000800018310546875000e+11,speed=1.00000080002664537560e+00,density=9.98534532493828237057e+06
+ring=10,x=7.071068e+10,r=1.000000000000900115966796875000e+11,speed=1.00000090016875398113e+00,density=9.98534432498364895582e+06
+ring=11,x=7.071068e+10,r=1.000000000001000061035156250000e+11,speed=1.00000100008881775970e+00,density=9.98534332724640890956e+06
+ring=12,x=7.071068e+10,r=1.000000000001100006103515625000e+11,speed=1.00000110000888176032e+00,density=9.98534232950936630368e+06
+ring=13,x=7.071068e+10,r=1.000000000001200103759765625000e+11,speed=1.00000120015099036586e+00,density=9.98534132955533079803e+06
+ring=14,x=7.071068e+10,r=1.000000000001300048828125000000e+11,speed=1.00000129984900976154e+00,density=9.98534033403587900102e+06
+ring=15,x=7.071068e+10,r=1.000000000001399993896484375000e+11,speed=1.00000139988009584258e+00,density=9.98533933519084379077e+06
+ring=16,x=7.071068e+10,r=1.000000000001500091552734375000e+11,speed=1.00000149991118214565e+00,density=9.98533833634600043297e+06
+ring=17,x=7.071068e+10,r=1.000000000001600036621093750000e+11,speed=1.00000159983124614627e+00,density=9.98533733860995620489e+06
+ring=18,x=7.071068e+10,r=1.000000000001699981689453125000e+11,speed=1.00000169986233244934e+00,density=9.98533633976551704109e+06
+ring=19,x=7.071068e+10,r=1.000000000001800079345703125000e+11,speed=1.00000179989341853037e+00,density=9.98533534092127718031e+06
+ring=20,x=7.071068e+10,r=1.000000000001900024414062500000e+11,speed=1.00000189992450483345e+00,density=9.98533434207723662257e+06
+ring=21,x=7.071068e+10,r=1.000000000002000122070312500000e+11,speed=1.00000199995559113653e+00,density=9.98533334323339536786e+06
+ring=22,x=7.071068e+10,r=1.000000000002100067138671875000e+11,speed=1.00000209987565513714e+00,density=9.98533234549834951758e+06
+ring=23,x=7.071068e+10,r=1.000000000002200012207031250000e+11,speed=1.00000220001776352063e+00,density=9.98533134554631263018e+06
+ring=24,x=7.071068e+10,r=1.000000000002300109863281250000e+11,speed=1.00000229993782752125e+00,density=9.98533034781166538596e+06
+ring=25,x=7.071068e+10,r=1.000000000002400054931640625000e+11,speed=1.00000240007993612679e+00,density=9.98532934786002896726e+06
+ring=26,x=7.071068e+10,r=1.000000000002500000000000000000e+11,speed=1.00000249999999990536e+00,density=9.98532835012578219175e+06
+ring=27,x=7.071068e+10,r=1.000000000002600097656250000000e+11,speed=1.00000260014210851089e+00,density=9.98532735017454624176e+06
+ring=28,x=7.071068e+10,r=1.000000000002700042724609375000e+11,speed=1.00000270006217251151e+00,density=9.98532635244069807231e+06
+ring=29,x=7.071068e+10,r=1.000000000002799987792968750000e+11,speed=1.00000279987121420966e+00,density=9.98532535581563971937e+06
+ring=30,x=7.071068e+10,r=1.000000000002900085449218750000e+11,speed=1.00000290012434489562e+00,density=9.98532435475641489029e+06
+ring=31,x=7.071068e+10,r=1.000000000003000030517578125000e+11,speed=1.00000300004440889623e+00,density=9.98532335702316276729e+06
+ring=32,x=7.071068e+10,r=1.000000000003100128173828125000e+11,speed=1.00000310007549519931e+00,density=9.98532235818151757121e+06
+ring=33,x=7.071068e+10,r=1.000000000003200073242187500000e+11,speed=1.00000320010658150238e+00,density=9.98532135934007540345e+06
+ring=34,x=7.071068e+10,r=1.000000000003300018310546875000e+11,speed=1.00000329991562297849e+00,density=9.98532036271601729095e+06
+ring=35,x=7.071068e+10,r=1.000000000003400115966796875000e+11,speed=1.00000339994670928156e+00,density=9.98531936387497372925e+06
+ring=36,x=7.071068e+10,r=1.000000000003500061035156250000e+11,speed=1.00000349986677328218e+00,density=9.98531836614271812141e+06
+ring=37,x=7.071068e+10,r=1.000000000003600006103515625000e+11,speed=1.00000359989785958525e+00,density=9.98531736730207316577e+06
+ring=38,x=7.071068e+10,r=1.000000000003700103759765625000e+11,speed=1.00000369992894566629e+00,density=9.98531636846163123846e+06
+ring=39,x=7.071068e+10,r=1.000000000003800048828125000000e+11,speed=1.00000379984900966690e+00,density=9.98531537072997540236e+06
+ring=40,x=7.071068e+10,r=1.000000000003899993896484375000e+11,speed=1.00000389988009596998e+00,density=9.98531437188993021846e+06
+ring=41,x=7.071068e+10,r=1.000000000004000091552734375000e+11,speed=1.00000399991118227305e+00,density=9.98531337305008247495e+06
+ring=42,x=7.071068e+10,r=1.000000000004100036621093750000e+11,speed=1.00000409983124605162e+00,density=9.98531237531902827322e+06
+ring=43,x=7.071068e+10,r=1.000000000004199981689453125000e+11,speed=1.00000419997335465716e+00,density=9.98531137537099234760e+06
+ring=44,x=7.071068e+10,r=1.000000000004300079345703125000e+11,speed=1.00000430011546326270e+00,density=9.98531037542315945029e+06
+ring=45,x=7.071068e+10,r=1.000000000004400024414062500000e+11,speed=1.00000440003552726331e+00,density=9.98530937769269943237e+06
+ring=46,x=7.071068e+10,r=1.000000000004500122070312500000e+11,speed=1.00000450006661334434e+00,density=9.98530837885385379195e+06
+ring=47,x=7.071068e+10,r=1.000000000004600067138671875000e+11,speed=1.00000460009769964742e+00,density=9.98530738001520931721e+06
+ring=48,x=7.071068e+10,r=1.000000000004700012207031250000e+11,speed=1.00000469990674134557e+00,density=9.98530638339393958449e+06
+ring=49,x=7.071068e+10,r=1.000000000004800109863281250000e+11,speed=1.00000480015987203153e+00,density=9.98530538233851455152e+06
+ring=50,x=7.071068e+10,r=1.000000000004900054931640625000e+11,speed=1.00000490007993603214e+00,density=9.98530438460905663669e+06
+ring=51,x=7.071068e+10,r=1.000000000005000000000000000000e+11,speed=1.00000500000000003276e+00,density=9.98530338687979429960e+06
+ring=52,x=7.071068e+10,r=1.000000000005100097656250000000e+11,speed=1.00000510014210863829e+00,density=9.98530238693356141448e+06
+ring=53,x=7.071068e+10,r=1.000000000005200042724609375000e+11,speed=1.00000520006217241686e+00,density=9.98530138920470327139e+06
+ring=54,x=7.071068e+10,r=1.000000000005299987792968750000e+11,speed=1.00000529998223641748e+00,density=9.98530039147603884339e+06
+ring=55,x=7.071068e+10,r=1.000000000005400085449218750000e+11,speed=1.00000539990230041809e+00,density=9.98529939374757744372e+06
+ring=56,x=7.071068e+10,r=1.000000000005500030517578125000e+11,speed=1.00000549982236441870e+00,density=9.98529839601931348443e+06
+ring=57,x=7.071068e+10,r=1.000000000005600128173828125000e+11,speed=1.00000559996447280220e+00,density=9.98529739607408083975e+06
+ring=58,x=7.071068e+10,r=1.000000000005700073242187500000e+11,speed=1.00000569988453680281e+00,density=9.98529639834621734917e+06
+ring=59,x=7.071068e+10,r=1.000000000005800018310546875000e+11,speed=1.00000579991562310589e+00,density=9.98529539950996823609e+06
+ring=60,x=7.071068e+10,r=1.000000000005900115966796875000e+11,speed=1.00000589994670940897e+00,density=9.98529440067391656339e+06
+ring=61,x=7.071068e+10,r=1.000000000006000061035156250000e+11,speed=1.00000599986677318753e+00,density=9.98529340294665470719e+06
+ring=62,x=7.071068e+10,r=1.000000000006100006103515625000e+11,speed=1.00000610000888179307e+00,density=9.98529240300241671503e+06
+ring=63,x=7.071068e+10,r=1.000000000006200103759765625000e+11,speed=1.00000619992894579369e+00,density=9.98529140527554973960e+06
+ring=64,x=7.071068e+10,r=1.000000000006300048828125000000e+11,speed=1.00000630007105439923e+00,density=9.98529040533171594143e+06
+ring=65,x=7.071068e+10,r=1.000000000006399993896484375000e+11,speed=1.00000639999111817779e+00,density=9.98528940760525129735e+06
+ring=66,x=7.071068e+10,r=1.000000000006500091552734375000e+11,speed=1.00000650013322678333e+00,density=9.98528840766181610525e+06
+ring=67,x=7.071068e+10,r=1.000000000006600036621093750000e+11,speed=1.00000660005329078395e+00,density=9.98528740993574820459e+06
+ring=68,x=7.071068e+10,r=1.000000000006699981689453125000e+11,speed=1.00000669997335478456e+00,density=9.98528641220987774432e+06
+ring=69,x=7.071068e+10,r=1.000000000006800079345703125000e+11,speed=1.00000680011546316805e+00,density=9.98528541226704604924e+06
+ring=70,x=7.071068e+10,r=1.000000000006900024414062500000e+11,speed=1.00000689992450486621e+00,density=9.98528441565016284585e+06
+ring=71,x=7.071068e+10,r=1.000000000007000122070312500000e+11,speed=1.00000700006661347174e+00,density=9.98528341570772230625e+06
+ring=72,x=7.071068e+10,r=1.000000000007100067138671875000e+11,speed=1.00000710009769977482e+00,density=9.98528241687406972051e+06
+ring=73,x=7.071068e+10,r=1.000000000007200012207031250000e+11,speed=1.00000720001776355339e+00,density=9.98528141914920136333e+06
+ring=74,x=7.071068e+10,r=1.000000000007300109863281250000e+11,speed=1.00000730015987215893e+00,density=9.98528041920736804605e+06
+ring=75,x=7.071068e+10,r=1.000000000007400054931640625000e+11,speed=1.00000740007993615954e+00,density=9.98527942148289643228e+06
+ring=76,x=7.071068e+10,r=1.000000000007500000000000000000e+11,speed=1.00000749988897785769e+00,density=9.98527842486720718443e+06
+ring=77,x=7.071068e+10,r=1.000000000007600097656250000000e+11,speed=1.00000759992006393873e+00,density=9.98527742603455297649e+06
+ring=78,x=7.071068e+10,r=1.000000000007700042724609375000e+11,speed=1.00000769984012793934e+00,density=9.98527642831067927182e+06
+ring=79,x=7.071068e+10,r=1.000000000007799987792968750000e+11,speed=1.00000779987121424242e+00,density=9.98527542947842739522e+06
+ring=80,x=7.071068e+10,r=1.000000000007900085449218750000e+11,speed=1.00000789990230032345e+00,density=9.98527443064637295902e+06
+ring=81,x=7.071068e+10,r=1.000000000008000030517578125000e+11,speed=1.00000799982236432406e+00,density=9.98527343292309716344e+06
+ring=82,x=7.071068e+10,r=1.000000000008100128173828125000e+11,speed=1.00000809996447292960e+00,density=9.98527243298286199570e+06
+ring=83,x=7.071068e+10,r=1.000000000008200073242187500000e+11,speed=1.00000819988453693021e+00,density=9.98527143525998853147e+06
+ring=84,x=7.071068e+10,r=1.000000000008300018310546875000e+11,speed=1.00000830002664531371e+00,density=9.98527043532015196979e+06
+ring=85,x=7.071068e+10,r=1.000000000008400115966796875000e+11,speed=1.00000839994670931432e+00,density=9.98526943759767711163e+06
+ring=86,x=7.071068e+10,r=1.000000000008500061035156250000e+11,speed=1.00000850008881791986e+00,density=9.98526843765824101865e+06
+ring=87,x=7.071068e+10,r=1.000000000008600006103515625000e+11,speed=1.00000860000888192047e+00,density=9.98526743993616290390e+06
+ring=88,x=7.071068e+10,r=1.000000000008700103759765625000e+11,speed=1.00000870015099030397e+00,density=9.98526643999713100493e+06
+ring=89,x=7.071068e+10,r=1.000000000008800048828125000000e+11,speed=1.00000880007105430458e+00,density=9.98526544227545335889e+06
+ring=90,x=7.071068e+10,r=1.000000000008899993896484375000e+11,speed=1.00000889988009600273e+00,density=9.98526444566255621612e+06
+ring=91,x=7.071068e+10,r=1.000000000009000091552734375000e+11,speed=1.00000900013322691073e+00,density=9.98526344461553916335e+06
+ring=92,x=7.071068e+10,r=1.000000000009100036621093750000e+11,speed=1.00000910005329068930e+00,density=9.98526244689446315169e+06
+ring=93,x=7.071068e+10,r=1.000000000009199981689453125000e+11,speed=1.00000919986233238745e+00,density=9.98526145028216205537e+06
+ring=94,x=7.071068e+10,r=1.000000000009300079345703125000e+11,speed=1.00000930011546329546e+00,density=9.98526044923574663699e+06
+ring=95,x=7.071068e+10,r=1.000000000009400024414062500000e+11,speed=1.00000940003552729607e+00,density=9.98525945151526480913e+06
+ring=96,x=7.071068e+10,r=1.000000000009500122070312500000e+11,speed=1.00000950006661337710e+00,density=9.98525845268640667200e+06
+ring=97,x=7.071068e+10,r=1.000000000009600067138671875000e+11,speed=1.00000959987565507525e+00,density=9.98525745607490465045e+06
+ring=98,x=7.071068e+10,r=1.000000000009700012207031250000e+11,speed=1.00000969990674137833e+00,density=9.98525645724644698203e+06
+ring=99,x=7.071068e+10,r=1.000000000009800109863281250000e+11,speed=1.00000979993782768140e+00,density=9.98525545841818489134e+06
+ring=100,x=7.071068e+10,r=1.000000000009900054931640625000e+11,speed=1.00000989985789145997e+00,density=9.98525446069870702922e+06
+ring=101,x=7.071068e+10,r=1.000000000010000000000000000000e+11,speed=1.00000999988897776305e+00,density=9.98525346187084540725e+06
+ring=102,x=7.071068e+10,r=1.000000000010100097656250000000e+11,speed=1.00001009992006406613e+00,density=9.98525246304318495095e+06
+Column density of hydrogen=9.885451e+06
+wind.filling_factor(1=smooth,<1=clumped)	  1.000000e+00
+The star in the system does not radiate
+There is no disk in the system 
+There is no boundary layer
+There is a BH  which radiates
+spec.type(flambda(1),fnu(2),basic(other)	  2
+OK, generating fnu at 100 pc
+Increasing maximum frequency to twice the Helium edge
+Warning:  Question (Photon.sampling.approach(0=T,1=(f1,f2),2=cv,3=yso,4=user_defined,5=cloudy_test,6=wide,7=AGN,8=logarithmic)) does not match word (Extra.diagnostics(0=no)) in file. Continuing!
+Warning:  Question (Photon.sampling.approach(0=T,1=(f1,f2),2=cv,3=yso,4=user_defined,5=cloudy_test,6=wide,7=AGN,8=logarithmic)) does not match word (Use.standard.care.factors(1=yes)) in file. Continuing!
+Photon.sampling.approach(0=T,1=(f1,f2),2=cv,3=yso,4=user_defined,5=cloudy_test,6=wide,7=AGN,8=logarithmic)	  5
+Warning:  Question (Lowest_energy_to_be_considered(eV)) does not match word (Num.of.frequency.bands) in file. Continuing!
+Lowest_energy_to_be_considered(eV)	  1.000000e-04
+Highest_energy_to_be_considered(eV)	  1.000000e+08
+Lowest photon energy is ev (freq) is 0.000100 (2.42e+10)
+Highest photon energy is ev (freq) is 100000000.000000 (2.42e+22)
+f1=3.288042e+10,f2=3.288042e+11,alpha=2.500000e+00,const=1.076061e-11,lum1=2.109505e+15,lum2=6.670839e+17
+f1=3.288042e+11,f2=3.288042e+12,alpha=2.500000e+00,const=1.076061e-11,lum1=6.670839e+17,lum2=2.109505e+20
+f1=3.288042e+12,f2=3.288042e+13,alpha=2.500000e+00,const=1.076061e-11,lum1=2.109505e+20,lum2=6.670839e+22
+f1=3.288042e+13,f2=2.388834e+14,alpha=-9.000000e-01,const=9.759422e+34,lum1=6.670839e+22,lum2=1.119584e+22
+f1=2.388834e+14,f2=1.735539e+15,alpha=-9.000000e-01,const=9.759422e+34,lum1=1.119584e+22,lum2=1.879028e+21
+f1=1.735539e+15,f2=1.260907e+16,alpha=-9.000000e-01,const=9.759422e+34,lum1=1.879028e+21,lum2=3.153621e+20
+f1=1.260907e+16,f2=9.160759e+16,alpha=-9.000000e-01,const=9.759422e+34,lum1=3.153621e+20,lum2=5.292804e+19
+f1=9.160759e+16,f2=6.655489e+17,alpha=-9.000000e-01,const=9.759422e+34,lum1=5.292804e+19,lum2=8.883051e+18
+f1=6.655489e+17,f2=4.835356e+18,alpha=-9.000000e-01,const=9.759422e+34,lum1=8.883051e+18,lum2=1.490866e+18
+f1=4.835356e+18,f2=8.268343e+19,alpha=-2.000000e+00,const=3.485743e+55,lum1=1.490866e+18,lum2=5.098689e+15
+f1=8.268343e+19,f2=1.413867e+21,alpha=-2.000000e+00,const=3.485743e+55,lum1=5.098689e+15,lum2=1.743727e+13
+f1=1.413867e+21,f2=2.417678e+22,alpha=-2.000000e+00,const=3.485743e+55,lum1=1.743727e+13,lum2=5.963462e+10
+bands_init: There are 12 bands
+bands_init: band 0,  f1= 3.288e+10,  f2= 3.288e+11, frac=0.07
+bands_init: band 0, eV1= 1.360e-04, eV2= 1.360e-03, frac=0.07
+bands_init: band 0, alpha1=0.000039, alpha2=0.000395, frac=0.07
+bands_init: band 1,  f1= 3.288e+11,  f2= 3.288e+12, frac=0.07
+bands_init: band 1, eV1= 1.360e-03, eV2= 1.360e-02, frac=0.07
+bands_init: band 1, alpha1=0.000395, alpha2=0.003945, frac=0.07
+bands_init: band 2,  f1= 3.288e+12,  f2= 3.288e+13, frac=0.07
+bands_init: band 2, eV1= 1.360e-02, eV2= 1.360e-01, frac=0.07
+bands_init: band 2, alpha1=0.003945, alpha2=0.039452, frac=0.07
+bands_init: band 3,  f1= 3.288e+13,  f2= 2.389e+14, frac=0.10
+bands_init: band 3, eV1= 1.360e-01, eV2= 9.881e-01, frac=0.10
+bands_init: band 3, alpha1=0.039452, alpha2=0.286626, frac=0.10
+bands_init: band 4,  f1= 2.389e+14,  f2= 1.736e+15, frac=0.10
+bands_init: band 4, eV1= 9.881e-01, eV2= 7.179e+00, frac=0.10
+bands_init: band 4, alpha1=0.286626, alpha2=2.082403, frac=0.10
+bands_init: band 5,  f1= 1.736e+15,  f2= 1.261e+16, frac=0.10
+bands_init: band 5, eV1= 7.179e+00, eV2= 5.215e+01, frac=0.10
+bands_init: band 5, alpha1=2.082403, alpha2=15.129108, frac=0.10
+bands_init: band 6,  f1= 1.261e+16,  f2= 9.161e+16, frac=0.10
+bands_init: band 6, eV1= 5.215e+01, eV2= 3.789e+02, frac=0.10
+bands_init: band 6, alpha1=15.129108, alpha2=109.916230, frac=0.10
+bands_init: band 7,  f1= 9.161e+16,  f2= 6.655e+17, frac=0.10
+bands_init: band 7, eV1= 3.789e+02, eV2= 2.753e+03, frac=0.10
+bands_init: band 7, alpha1=109.916230, alpha2=798.565124, frac=0.10
+bands_init: band 8,  f1= 6.655e+17,  f2= 4.835e+18, frac=0.10
+bands_init: band 8, eV1= 2.753e+03, eV2= 2.000e+04, frac=0.10
+bands_init: band 8, alpha1=798.565124, alpha2=5801.747901, frac=0.10
+bands_init: band 9,  f1= 4.835e+18,  f2= 8.268e+19, frac=0.07
+bands_init: band 9, eV1= 2.000e+04, eV2= 3.420e+05, frac=0.07
+bands_init: band 9, alpha1=5801.747901, alpha2=99208.493595, frac=0.07
+bands_init: band 10,  f1= 8.268e+19,  f2= 1.414e+21, frac=0.07
+bands_init: band 10, eV1= 3.420e+05, eV2= 5.848e+06, frac=0.07
+bands_init: band 10, alpha1=99208.493595, alpha2=1696441.377537, frac=0.07
+bands_init: band 11,  f1= 1.414e+21,  f2= 2.418e+22, frac=0.07
+bands_init: band 11, eV1= 5.848e+06, eV2= 1.000e+08, frac=0.07
+bands_init: band 11, alpha1=1696441.377537, alpha2=29008739.505355, frac=0.07
+freqs_init: Photons will be generated between     0.00 (3.29e+10) and 100000000.00 (2.42e+22)
+freqs_init: Of 3 starting intervals, 3 will have photons
+freqs_init: test 2.417678e+22 2.417678e+22
+freqs_init: There were 3 final intervals
+freqs_init:     0.00 (3.29e+10)        0.14 (3.29e+13)  
+freqs_init:     0.14 (3.29e+13)    20000.00 (4.84e+18)  
+freqs_init: 20000.00 (4.84e+18)    100000000.00 (2.42e+22)  
+We are making a thin shell type grid to match a thin shell wind. This is totally aphysical and should only be used for testing purposes
+Cell 0:  inner edge = 9.99999999990000000000e+10, centre = 9.99999999995000000000e+10
+Cell 1:  inner edge = 1.00000000000000000000e+11, centre = 1.00000000000500000000e+11
+Cell 2:  inner edge = 1.00000000001000000000e+11, centre = 1.00000000001500000000e+11
+Cell 3:  inner edge = 1.00000000002000000000e+11, centre = 1.00000000002500000000e+11
+wind2d:   4 cells of which 1 are in inwind, 0 partially in_wind, & 1 with pos. vol
+Allocated      17088 bytes for each of     2 elements variable length plasma arrays totaling        0.0 Mb 
+Got to wind_check
+Wind_check: Punchthrough distance DFUDGE 1.000000e-03 www[1].x[2] 7.071068e+10
+Finished wind check
+wind2d.c: Don't know how to check wind mdot for this coordtype 0
+xxx Mon Mar 23 16:20:34 2015      0.4 NOK                  Finished initialization for input
+xxx Mon Mar 23 16:20:34 2015      0.4 NOK                  Starting 0 of 1 ionization cycle 
+!!Python: Begining cycle 0 of 1 for defining wind
+Broken power law: Emittance below low frequency break is 6.264875e+28
+Broken power law: No luminosity in central range
+Broken power law: Highest frequency is below high frequency break
+Broken power law: Emittance below low frequency break is 1.981128e+32
+Broken power law: No luminosity in central range
+Broken power law: Highest frequency is below high frequency break
+Broken power law: Emittance below low frequency break is 6.264875e+35
+Broken power law: No luminosity in central range
+Broken power law: Highest frequency is below high frequency break
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 4.811006e+36
+Broken power law: Highest frequency is below high frequency break
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 5.866252e+36
+Broken power law: Highest frequency is below high frequency break
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 7.152956e+36
+Broken power law: Highest frequency is below high frequency break
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 8.721886e+36
+Broken power law: Highest frequency is below high frequency break
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 1.063495e+37
+Broken power law: Highest frequency is below high frequency break
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 1.296762e+37
+Broken power law: Emittance above high frequency break is 4.195811e+21
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: No luminosity in central range
+Broken power law: Emittance above high frequency break is 6.787289e+36
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: No luminosity in central range
+Broken power law: Emittance above high frequency break is 3.969231e+35
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: No luminosity in central range
+Broken power law: Emittance above high frequency break is 2.321220e+34
+Broken power law: Emittance below low frequency break is 6.264875e+28
+Broken power law: No luminosity in central range
+Broken power law: Highest frequency is below high frequency break
+photon_gen: band 3.29e+10 to 3.29e+11 weight 9.41e+24 nphotons 6660 ndisk      0 nwind      0 nstar      0 npow 6660 
+Broken power law: Emittance below low frequency break is 1.981128e+32
+Broken power law: No luminosity in central range
+Broken power law: Highest frequency is below high frequency break
+photon_gen: band 3.29e+11 to 3.29e+12 weight 2.97e+28 nphotons 6660 ndisk      0 nwind      0 nstar      0 npow 6660 
+Broken power law: Emittance below low frequency break is 6.264875e+35
+Broken power law: No luminosity in central range
+Broken power law: Highest frequency is below high frequency break
+photon_gen: band 3.29e+12 to 3.29e+13 weight 9.41e+31 nphotons 6660 ndisk      0 nwind      0 nstar      0 npow 6660 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 4.811006e+36
+Broken power law: Highest frequency is below high frequency break
+photon_gen: band 3.29e+13 to 2.39e+14 weight 4.81e+32 nphotons 10003 ndisk      0 nwind      0 nstar      0 npow 10003 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 5.866252e+36
+Broken power law: Highest frequency is below high frequency break
+photon_gen: band 2.39e+14 to 1.74e+15 weight 5.86e+32 nphotons 10004 ndisk      0 nwind      0 nstar      0 npow 10004 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 7.152956e+36
+Broken power law: Highest frequency is below high frequency break
+photon_gen: band 1.74e+15 to 1.26e+16 weight 7.15e+32 nphotons 10004 ndisk      0 nwind      0 nstar      0 npow 10004 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 8.721886e+36
+Broken power law: Highest frequency is below high frequency break
+photon_gen: band 1.26e+16 to 9.16e+16 weight 8.72e+32 nphotons 10006 ndisk      0 nwind      0 nstar      0 npow 10006 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 1.063495e+37
+Broken power law: Highest frequency is below high frequency break
+photon_gen: band 9.16e+16 to 6.66e+17 weight 1.06e+33 nphotons 10007 ndisk      0 nwind      0 nstar      0 npow 10007 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: Emittance in centre is 1.296762e+37
+Broken power law: Emittance above high frequency break is 4.195811e+21
+photon_gen: band 6.66e+17 to 4.84e+18 weight 1.30e+33 nphotons 10012 ndisk      0 nwind      0 nstar      0 npow 10012 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: No luminosity in central range
+Broken power law: Emittance above high frequency break is 6.787289e+36
+photon_gen: band 4.84e+18 to 8.27e+19 weight 1.02e+33 nphotons 6664 ndisk      0 nwind      0 nstar      0 npow 6664 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: No luminosity in central range
+Broken power law: Emittance above high frequency break is 3.969231e+35
+photon_gen: band 8.27e+19 to 1.41e+21 weight 5.96e+31 nphotons 6660 ndisk      0 nwind      0 nstar      0 npow 6660 
+Broken power law: Lowest frequency is above low frequency break
+Broken power law: No luminosity in central range
+Broken power law: Emittance above high frequency break is 2.321220e+34
+photon_gen: band 1.41e+21 to 2.42e+22 weight 3.49e+30 nphotons 6660 ndisk      0 nwind      0 nstar      0 npow 6660 
+NSH Geo.n_ioniz=1.766594e+47
+!!python: Total photon luminosity before transphot 5.799075747315e+37
+
+Photon       0 of  100000 or  0.000 per cent 
+Photon   50000 of  100000 or 50.000 per cent 
+
+
+!!python: Total photon luminosity after transphot 5.799075747314e+37 (diff -2.134509650257e+24). Radiated luminosity 5.799075747314e+37
+NSH Geo.n_ioniz=1.766594e+47
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+100000     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0
+Number of photons resonantly scattering n times
+100000     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0
+No of photons and their fates
+     0     0100000     0     0     0     0     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 100000     0     0     0     0     0     0     0
+     0     0 100000     0     0     0     0     0     0     0
+     0     0 100000     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Zeroth thread successfully received the normalised estimators. About to broadcast.
+Thread 0 happy after broadcast.
+Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.76659e+47 lum of ionizing photons 4.45272e+37
+Reading Windfile recomb.save created with python version release with python version release
+Reading fb information for data/standard77 
+There are  14 elem, 178 ions, 3761 levels, 122 Verner, 108 topbase, and 1 freq intervals
+Read geometry and wind structures from windsavefile recomb.save
+MPI task 0 is working on cells 0 to max 1 (total size 1).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    7.43e+23  (photo 7.43e+23 ff 6.95e+15 compton 8.19e+18 induced_compton 0.00e+00 lines 0.00e+00)
+!!wind_update: Wind heating     7.43e+23  (photo 7.43e+23 ff 6.95e+15 compton 8.19e+18 induced_compton 0.00e+00 lines 0.00e+00 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  1.18e+13 (recomb 7.73e+12 ff 4.11e+12 lines 5.40e-308) after update
+!!wind_update: Wind cooling     3.36e+15 (recomb 7.73e+12 ff 4.11e+12 compton 3.35e+15 DR 2.11e+10 DI 0.00e+00 lines 5.40e-308 adiabatic 4.47e+07) after update
+!!wind_update: Max change in t_r 71066720 at cell    0 (0,0)
+!!wind_update: Ave change in t_r 71066720 from  10000 to 71076720
+!!wind_update: Max change in t_e   1350 at cell    0 (0,0)
+!!wind_update: Ave change in t_e   1350 from   9000 to  10350
+Summary  t_e   10350     1350  #t_e and dt_e on this update
+Summary  t_r  71076720   71066720  #t_r and dt_r on this update
+!!Check_converging:    0 (0.000) converged and    1 (1.000) converging of 1 cells
+!!Check_convergence_breakdown: t_r    1 t_e(real)    0 t_e(maxed)    0 hc(real)    0
+Summary  convergence    0 0.000     1  1.000  1  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   7.07e+10 7.07e+10 7.07e+10 7.07e+10 
+7.07e+10        0  7.1e+07        0        0 
+
+ T e
+   z\x   7.07e+10 7.07e+10 7.07e+10 7.07e+10 
+7.07e+10        0    1e+04        0        0 
+Band 0 f1 3.288042e+10 f2 3.288042e+13 model 1 pl_alpha 2.534950 pl_log_w -3.563376e+01 exp_t -3.707408e+02 exp_w 7.401317e-04
+Band 1 f1 3.288042e+13 f2 4.835356e+18 model 1 pl_alpha -0.898048 pl_log_w 1.075958e+01 exp_t 3.067240e+07 exp_w 4.984036e-05
+Band 2 f1 4.835356e+18 f2 2.417678e+22 model 1 pl_alpha -1.999685 pl_log_w 3.133879e+01 exp_t 5.861288e+19 exp_w 1.892276e-10
+OUTPUT Lum_agn= 1.000000e+37 T_e= 1.035000e+04 N_h= 9.985303e+06 N_e= 1.206937e+07 alpha= -0.900000 IP(sim_2010)= 3.662110e+08 Meaured_IP(cloudy)= 4.707580e+06 distance= 1.000000e+11 volume= 1.256638e+23 mean_ds=1.002249e+00
+OUTPUT Absorbed_flux(ergs-1cm-3)    5.92e+00  (photo 5.92e+00 ff 5.53e-08 compton 6.52e-05 induced_compton 0.00e+00 lines 0.00e+00 )
+OUTPUT Wind_cooling(ergs-1cm-3)     2.68e-08 (recomb 6.15e-11 ff 3.27e-11 compton 2.67e-08 DR 1.68e-13 DI 0.00e+00 adiabatic 3.55e-16 lines 0.00e+00 ) after update
+OUTPUT Wind_line_cooling(ergs-1cm-3)  HHe 0.00e+00 Metals 0.00e+00
+OUTPUT Balance      Cooling=3.36e+15 Heating=7.43e+23 Lum=1.18e+13 T_e=1.035000e+04 after update
+OUTPUT H      2.17e-12 1.00e+00
+OUTPUT He     5.36e-22 1.55e-10 1.00e+00
+OUTPUT C      2.76e-24 2.76e-24 2.76e-24 3.25e-24 2.75e-15 1.26e-07 1.00e+00
+OUTPUT N      8.93e-24 8.93e-24 8.93e-24 8.93e-24 8.86e-23 2.07e-14 3.19e-07 1.00e+00
+OUTPUT O      1.18e-24 1.18e-24 1.18e-24 1.18e-24 1.18e-24 1.46e-21 1.17e-13 7.18e-07 1.00e+00
+OUTPUT Ne     8.14e-24 8.14e-24 8.14e-24 8.14e-24 8.14e-24 8.14e-24 8.14e-24 1.55e-19 2.02e-12 2.78e-06 1.00e+00
+OUTPUT Na     4.90e-22 4.90e-22 4.90e-22 4.90e-22 4.90e-22 4.90e-22 4.90e-22 4.90e-22 1.03e-18 6.74e-12 4.89e-06 1.00e+00
+OUTPUT Mg     2.63e-23 2.63e-23 2.63e-23 2.63e-23 2.63e-23 2.63e-23 2.63e-23 2.63e-23 2.63e-23 5.79e-18 2.01e-11 8.29e-06 1.00e+00
+OUTPUT Al     3.32e-22 3.32e-22 3.32e-22 3.32e-22 3.32e-22 3.32e-22 3.32e-22 3.32e-22 3.32e-22 3.32e-22 2.81e-17 5.55e-11 1.35e-05 1.00e+00
+OUTPUT Si     2.82e-23 2.82e-23 2.82e-23 2.82e-23 2.82e-23 2.82e-23 2.82e-23 2.82e-23 2.82e-23 2.82e-23 3.90e-23 1.19e-16 1.40e-10 2.11e-05 1.00e+00
+OUTPUT S      5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 4.00e-21 1.57e-15 7.37e-10 4.73e-05 1.00e+00
+OUTPUT Ar     2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 6.08e-20 1.51e-14 3.19e-09 9.62e-05 1.00e+00
+OUTPUT Ca     4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 1.16e-18 1.12e-13 1.17e-08 1.81e-04 1.00e+00
+OUTPUT Fe     3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 7.99e-20 1.15e-15 3.76e-11 5.70e-07 1.24e-03 9.99e-01
+Completed ionization cycle 0 :  The elapsed TIME was 1.339242
+xxx Mon Mar 23 16:20:35 2015      1.4 OK                   Finished 0 of 1 ionization cycle 
+wind_write sizes: NPLASMA 1 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+ Completed wind creation.  The elapsed TIME was 1.384253
+Wrote fb information for data/standard77 to recomb.save for 1 frequency intervals 
+There are  14 elem, 178 ions, 3761 levels, 122 Verner, 108 topbase xsections
+
+Error summary: End of program, Thread 0 only
+Recurrences --  Description
+        7 -- getatomic_data: line input incomplete: %s
+        1 -- wind2d.c: Don't know how to check wind mdot for this coordtype %d
+Run py_error.py for full error report.
+Thread 0 Finalized. All done
+xxx Mon Mar 23 16:20:35 2015      1.4 COMPLETE             input
+Completed entire program.  The elapsed TIME was 1.408821

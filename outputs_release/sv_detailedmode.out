@@ -1,0 +1,13 @@
+Thread 0 starting.
+number 15
+sv_detailedmode
+xxx Mon Mar 23 14:22:51 2015      0.0 START                sv_detailedmode 
+!!Python Version release 
+!!Git commit hash 549f0b41516061a2fcf4c42ad7e1a377c58f4290
+!!Python is running with 1 processors
+This is MPI task number 0 (a total of 1 tasks are running).
+xxx Mon Mar 23 14:22:51 2015      0.0 NOK                  Initializing variables for sv_detailedmode
+Error: opar: Could not open filename sv_detailedmode.pf
+               Proceeding in interactive mode
+Creating a new parameter file sv_detailedmode.pf
+Exiting since rdpar got EOF in interactive mode

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+TEST_DIR = $PWD
+VERSION = $1
+
+# First make sure the error and output files are empty.
+: > $TEST_DIR/run_test.out
+: > $TEST_DIR/run_test.err
+
+$PYTHON/bin/py$VERSION  cv_standard > cv_standard.out &
+$PYTHON/bin/py$VERSION  fiducial_agn > fiducial_agn.out &
+$PYTHON/bin/py$VERSION  1d_sn > 1d_sn.out &
+$PYTHON/bin/py$VERSION  sv_detailed_mode > sv_detailed_mode.out &
+$PYTHON/bin/py$VERSION  cv_macro_benchmark > cv_macro_benchmark.out &
+
+
+
+
+

@@ -1,0 +1,14 @@
+## this is the set of data files to use for supernova models
+data/atomic78/elem_ions_ver_sn.py
+data/atomic78/topbase_levels_h.py
+data/atomic78/topbase_levels_he.py
+data/atomic78/topbase_levels_cno.py
+data/atomic78/levels_kur.py
+data/atomic78/lines_linked_kur.py
+data/atomic78/recomb.data
+data/atomic78/topbase_h1_phot_extrap.py
+data/atomic78/topbase_he1_phot_extrap.py
+data/atomic78/topbase_he2_phot_extrap.py
+data/atomic78/topbase_cno_phot_extrap.py
+data/atomic78/photo_fkvy.data
+data/atomic78/coll.data

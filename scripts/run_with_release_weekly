@@ -1,0 +1,70 @@
+#!/bin/sh
+
+# set launchd path
+launchctl setenv PYTHONPATH $PYTHONPATH
+launchctl setenv PYTHON $PYTHON
+launchctl setenv PYTEST $PYTEST
+launchctl setenv PYTHON_TEST_VERSION $PYTHON_TEST_VERSION
+
+
+
+# First make sure the error and output files are empty.
+: > $PYTEST/run_test_out.txt
+: > $PYTEST/run_test_err.txt
+
+# cd into $PYTHON_TEST_VERSION/source, cp to a directory in $PYTHON and make python 
+cd $PYTHON_TEST_VERSION/source
+git checkout dev
+git pull origin dev
+cp *.c $PYTHON/source_for_tests/
+cp *.h $PYTHON/source_for_tests/
+cp Makefile $PYTHON/source_for_tests/
+cp ../examples/*.pf $PYTEST/output/
+cd $PYTHON/source_for_tests/
+make clean
+make VERSION=test python
+make clean
+make VERSION=test py_wind 
+make clean
+
+# next commented out section could be uncommented if you wanted to test against the release branch
+cd $PYTHON_TEST_VERSION/source
+git checkout release
+git pull origin release
+cp *.c *.h Makefile $PYTHON/source_for_tests/
+cp ../examples/*.pf $PYTEST/compare/
+cd $PYTHON/source_for_tests/
+make clean
+make VERSION=release python
+make clean
+make VERSION=release py_wind 
+make clean
+
+
+# cd into the outputs directory and run the models for the release version
+cd $PYTEST/outputs_release/
+Setup_Py_Dir
+
+$PYTHON/bin/pyrelease cv_standard > cv_standard.out &
+$PYTHON/bin/pyrelease fiducial_agn > fiducial_agn.out &
+$PYTHON/bin/pyrelease 1d_sn > 1d_sn.out &
+#$PYTHON/bin/pyrelease sv_detailedmode > sv_detailedmode.out &
+#$PYTHON/bin/pyrelease cv_macro_benchmark > cv_macro_benchmark.out &
+
+# run the ion loop
+python $PYTEST/scripts/ion_loop_jm.py release release standard77
+
+
+
+# cd into the outputs directory and run the models
+cd $PYTEST/outputs/
+Setup_Py_Dir
+
+$PYTHON/bin/pytest cv_standard > cv_standard.out &
+$PYTHON/bin/pytest fiducial_agn > fiducial_agn.out &
+$PYTHON/bin/pytest 1d_sn > 1d_sn.out &
+#$PYTHON/bin/pytest sv_detailedmode > sv_detailedmode.out &
+#$PYTHON/bin/pytest cv_macro_benchmark > cv_macro_benchmark.out &
+
+# run the ion loop
+python $PYTEST/scripts/ion_loop_jm.py test test standard78

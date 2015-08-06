@@ -1,0 +1,75 @@
+#!/bin/sh
+##########################################
+#
+#		University of Southampton, 5/8/15
+#
+#		James Matthews
+#
+#		run_test
+#
+# run_test is a shell script which compiles python then runs a load 
+# standard parameter files.
+#
+##########################################
+
+source /home/jm8g08/.bashrc
+
+
+echo $PYTEST 
+
+# First make sure the error and output files are empty.
+: > $PYTEST/run_test_out.txt
+: > $PYTEST/run_test_err.txt
+
+date > $PYTEST/run_test_out.txt
+date > $PYTEST/run_test_err.txt
+
+
+
+# cd into $PYTHON_TEST_VERSION/source, cp to a directory in $PYTHON and make python 
+cd $PYTHON_TEST_VERSION/source
+git checkout dev
+git pull origin dev
+cp *.c $PYTHON/source_for_tests/
+cp *.h $PYTHON/source_for_tests/
+cp Makefile $PYTHON/source_for_tests/
+cp $PYTHON/examples/*.pf $PYTEST/outputs/
+cd $PYTHON/source_for_tests/
+make clean
+make VERSION=test python
+make clean
+make VERSION=test py_wind 
+make clean
+
+# next commented out section could be uncommented if you wanted to test against the release branch
+# cd $PYTHON_TEST_VERSION/source
+# git checkout release
+# git pull origin release
+# cp *.c *.h Makefile $PYTHON/source_for_tests/
+# cp ../examples/*.pf $PYTEST/compare/
+# cd $PYTHON/source_for_tests/
+# make clean
+# make VERSION=release python
+# make clean
+# make VERSION=release py_wind 
+# make clean
+
+
+# cd into the outputs directory and run the models
+cd $PYTEST/outputs/
+Setup_Py_Dir
+
+nice $PYTHON/bin/pytest cv_standard > cv_standard.out &
+nice $PYTHON/bin/pytest fiducial_agn > fiducial_agn.out &
+nice $PYTHON/bin/pytest 1d_sn > 1d_sn.out &
+#$PYTHON/bin/pytest sv_detailedmode > sv_detailedmode.out &
+#$PYTHON/bin/pytest cv_macro_benchmark > cv_macro_benchmark.out &
+
+
+# run the ion loop
+python $PYTEST/scripts/ion_loop_jm.py test test standard78
+#scripts/ion_loop_jm.py release release
+
+
+
+

@@ -1,0 +1,395 @@
+Para: Thread 0 starting.
+!!Python Version test 
+!!Git commit hash 8d8484e92ba3db45921895a83c3ec1717a295abd
+!!Git: This version was compiled with 1 files with uncommitted changes.
+!!Python is running with 1 processors
+Para: This is MPI task number 0 (a total of 1 tasks are running).
+xxx Wed Aug  5 15:30:34 2015      0.0 NOK                  Initializing variables for fiducial_agn
+Reading data from file fiducial_agn.pf
+Get_atomicdata: Reading from masterfile data/standard78
+Data of  14 elements, 178 ions,  3761 levels,  5458 lines, and   108 topbase records
+Macro    14 elements,   0 ions,     0 levels,     0 lines, and     0 topbase records
+Simple   14 elements, 178 ions,  3761 levels,  5458 lines, and   108 topbase records
+We have read in 149 Dielectronic recombination coefficients
+We have read in   0 Cardona partition functions coefficients
+We have read in 164 Badnell totl Radiative rate coefficients
+We have read in 135 Badnell GS   Radiative rate coefficients over the temp range 6.760000e+03 to 1.000000e+07
+We have read in  41 Scaled electron temperature frequency averaged gaunt factors
+The minimum frequency for photoionization is 3.66e+14
+get_atomic_data: Evaluation:  There are     14 elements     while     50 are currently allowed
+get_atomic_data: Evaluation:  There are    178 ions         while    500 are currently allowed
+get_atomic_data: Evaluation:  There are   3761 levels       while  12000 are currently allowed
+get_atomic_data: Evaluation:  There are   5458 lines        while 200000 are currently allowed
+get_atomic_data: Evaluation:  There are      0 macro levels while    150 are currently allowed
+get_atomic_data: Evaluation:  The maximum value bb jumps is 0 while 100 are currently allowed
+get_atomic_data: Evaluation:  The maximum value bf jumps is 0 while 100 are currently allowed
+Error: get_atomicdata: not tracking levels for ion 151 z 26 istate 1, yet marked as topbase xsection!
+Error: get_atomicdata: not tracking levels for ion 152 z 26 istate 2, yet marked as topbase xsection!
+Photons per cycle per MPI task will be 200000
+Not Trying to make a start with a power law boundary layer -3
+geo.diskrad  1.000000e+17
+OK, the agn lum will be about 4.24e-04 the disk lum
+AGN Input parameters give a power law constant of 9.759422e+40
+Creating an SV wind model for a Cataclysmic Variable
+DFUDGE set to 1.000000e+09 based on geo.rmax
+The star in the system does not radiate
+There is a disk which radiates and absorbs
+There is no boundary layer
+There is a BH  which radiates
+No phase information needed as system type 2 is not a binary
+OK, extracting from specific angles
+OK, generating flambda at 100pc
+Increasing maximum frequency to twice the Helium edge
+bands_init: There are 10 bands
+bands_init: band 0,  f1= 1.000e+14,  f2= 1.000e+15, frac=0.10
+bands_init: band 0, eV1= 4.136e-01, eV2= 4.136e+00, frac=0.10
+bands_init: band 0, alpha1=0.047994, alpha2=0.479944, frac=0.10
+bands_init: band 1,  f1= 1.000e+15,  f2= 3.162e+15, frac=0.10
+bands_init: band 1, eV1= 4.136e+00, eV2= 1.308e+01, frac=0.10
+bands_init: band 1, alpha1=0.479944, alpha2=1.517582, frac=0.10
+bands_init: band 2,  f1= 3.162e+15,  f2= 1.000e+16, frac=0.10
+bands_init: band 2, eV1= 1.308e+01, eV2= 4.136e+01, frac=0.10
+bands_init: band 2, alpha1=1.517582, alpha2=4.799438, frac=0.10
+bands_init: band 3,  f1= 1.000e+16,  f2= 3.162e+16, frac=0.10
+bands_init: band 3, eV1= 4.136e+01, eV2= 1.308e+02, frac=0.10
+bands_init: band 3, alpha1=4.799438, alpha2=15.175823, frac=0.10
+bands_init: band 4,  f1= 3.162e+16,  f2= 1.000e+17, frac=0.10
+bands_init: band 4, eV1= 1.308e+02, eV2= 4.136e+02, frac=0.10
+bands_init: band 4, alpha1=15.175823, alpha2=47.994379, frac=0.10
+bands_init: band 5,  f1= 1.000e+17,  f2= 3.162e+17, frac=0.10
+bands_init: band 5, eV1= 4.136e+02, eV2= 1.308e+03, frac=0.10
+bands_init: band 5, alpha1=47.994379, alpha2=151.758227, frac=0.10
+bands_init: band 6,  f1= 3.162e+17,  f2= 1.000e+18, frac=0.10
+bands_init: band 6, eV1= 1.308e+03, eV2= 4.136e+03, frac=0.10
+bands_init: band 6, alpha1=151.758227, alpha2=479.943793, frac=0.10
+bands_init: band 7,  f1= 1.000e+18,  f2= 3.162e+18, frac=0.10
+bands_init: band 7, eV1= 4.136e+03, eV2= 1.308e+04, frac=0.10
+bands_init: band 7, alpha1=479.943793, alpha2=1517.582275, frac=0.10
+bands_init: band 8,  f1= 3.162e+18,  f2= 1.000e+19, frac=0.10
+bands_init: band 8, eV1= 1.308e+04, eV2= 4.136e+04, frac=0.10
+bands_init: band 8, alpha1=1517.582275, alpha2=4799.437934, frac=0.10
+bands_init: band 9,  f1= 1.000e+19,  f2= 1.000e+20, frac=0.10
+bands_init: band 9, eV1= 4.136e+04, eV2= 4.136e+05, frac=0.10
+bands_init: band 9, alpha1=4799.437934, alpha2=47994.379337, frac=0.10
+freqs_init: Photons will be generated between     0.41 (1.00e+14) and 413620.00 (1.00e+20)
+freqs_init: Of 10 starting intervals, 10 will have photons
+freqs_init: test 1.000000e+20 1.000000e+20
+freqs_init: There were 10 final intervals
+freqs_init:     0.41 (1.00e+14)        4.14 (1.00e+15)  
+freqs_init:     4.14 (1.00e+15)       13.08 (3.16e+15)  
+freqs_init:    13.08 (3.16e+15)       41.36 (1.00e+16)  
+freqs_init:    41.36 (1.00e+16)      130.79 (3.16e+16)  
+freqs_init:   130.79 (3.16e+16)      413.62 (1.00e+17)  
+freqs_init:   413.62 (1.00e+17)     1307.87 (3.16e+17)  
+freqs_init:  1307.87 (3.16e+17)     4136.20 (1.00e+18)  
+freqs_init:  4136.20 (1.00e+18)    13078.66 (3.16e+18)  
+freqs_init: 13078.66 (3.16e+18)    49634.40 (1.20e+19)  
+freqs_init: 49634.40 (1.20e+19)    413620.00 (1.00e+20)  
+wind2d: 10000 cells of which 1083 are in inwind, 353 partially in_wind, & 1436 with pos. vol
+Error: wind2d: Cell   0 ( 0, 0) has 1 corners in wind, but zero volume
+Allocated      17088 bytes for each of  1437 elements variable length plasma arrays totaling       24.6 Mb 
+Error: wind_div_v: div v -5.818299e-11 is negative in cell 8770. Major problem if inwind (-1) == 0
+Error: wind_div_v: div v -1.202936e-11 is negative in cell 9073. Major problem if inwind (1) == 0
+Error: wind_div_v: div v -1.405098e-10 is negative in cell 9273. Major problem if inwind (1) == 0
+Got to wind_check
+Wind_check: Punchthrough distance DFUDGE 1.000000e+09 www[1].x[2] 8.856670e+14
+Finished wind check
+m dot wind: Desired 3.15145e+26   Base 3.91977e+25 Calculated 2.6097e+26
+Wind Mdot Desired 3.151448e+26 Plane 4.302574e+25 Sphere(5.000000e+18) 3.062006e+26
+xxx Wed Aug  5 15:31:30 2015     55.9 NOK                  Finished initialization for fiducial_agn
+xxx Wed Aug  5 15:31:30 2015     55.9 NOK                  Starting 0 of 30 ionization cycle 
+!!Python: Begining cycle 0 of 30 for defining wind
+photon_gen: band 1.00e+14 to 1.00e+15 weight 2.57e+41 nphotons 20000 ndisk  19976 nwind      0 nstar      0 npow 24 
+photon_gen: band 1.00e+15 to 3.16e+15 weight 5.59e+41 nphotons 20000 ndisk  19994 nwind      0 nstar      0 npow 6 
+photon_gen: band 3.16e+15 to 1.00e+16 weight 3.28e+41 nphotons 20000 ndisk  19988 nwind      0 nstar      0 npow 12 
+photon_gen: band 1.00e+16 to 3.16e+16 weight 4.11e+39 nphotons 20000 ndisk  18847 nwind      0 nstar      0 npow 1153 
+photon_gen: band 3.16e+16 to 1.00e+17 weight 2.66e+38 nphotons 20000 ndisk      0 nwind      0 nstar      0 npow 20000 
+photon_gen: band 1.00e+17 to 3.16e+17 weight 2.98e+38 nphotons 20000 ndisk      0 nwind      0 nstar      0 npow 20000 
+photon_gen: band 3.16e+17 to 1.00e+18 weight 3.35e+38 nphotons 20000 ndisk      0 nwind      0 nstar      0 npow 20000 
+photon_gen: band 1.00e+18 to 3.16e+18 weight 3.76e+38 nphotons 20000 ndisk      0 nwind      0 nstar      0 npow 20000 
+photon_gen: band 3.16e+18 to 1.00e+19 weight 4.22e+38 nphotons 20000 ndisk      0 nwind      0 nstar      0 npow 20000 
+photon_gen: band 1.00e+19 to 1.00e+20 weight 1.00e+39 nphotons 20000 ndisk      0 nwind      0 nstar      0 npow 20000 
+NSH Geo.n_ioniz=2.038400e+56
+!!python: Total photon luminosity before transphot 2.303143239863e+46
+
+Photon       0 of  200000 or  0.000 per cent 
+Photon   50000 of  200000 or 25.000 per cent 
+Photon  100000 of  200000 or 50.000 per cent 
+Photon  150000 of  200000 or 75.000 per cent 
+
+
+!!python: Total photon luminosity after transphot 2.302591929495e+46 (diff -5.513103677579e+42). Radiated luminosity 2.204274742481e+46
+NSH Geo.n_ioniz=2.038289e+56
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+180796  8514  3282  1704  1056   725   545   434   349   307
+   242   206   177   152   134   121   131   100   116    77
+    73    61    59    35    48    53    39    45    31    28
+    30    23    30    25    13    24    20    13    10    14
+    14    11    12     9     5     8     6     5    10     7
+    71
+Number of photons resonantly scattering n times
+197381  1530   534   236   129    71    37    23    18    14
+     6     9     3     2     1     3     2     0     1     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0
+No of photons and their fates
+     0     0160254  2136    71     0  6976 30563     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 160254     0     0     0     0     0     0     0
+     0     0 160254     0     0     0     0     0     0     0
+     0     0 85719     0     0     0     0     0     0     0
+     0     0 74535     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0  2136     0     0     0 30563     0     0
+     0     0  2369     0    10     0   148    92     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 2.03829e+56 lum of ionizing photons 6.34933e+45
+init_freebound: Creating recombination coefficients
+init_freebound: Creating recombination emissivites between 0.000000e+00 and 1.000000e+50
+!!wind_update: Cell 1  with volume 1.36e+45 has only 94 photons
+Error: spectral_estimators: too few photons (1 or 0) in cell 1 band 1 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 1 band 2 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 1 band 3 to produce a model
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: Error qromb: a 1.000000e+99>=b 1.000000e-99
+Error: error_count: This error will no longer be logged: Error qromb: a %e>=b %e
+
+Error: spectral_estimators: too few photons (1 or 0) in cell 2 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 11 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 12 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 13 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 14 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 15 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 16 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 17 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 18 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 24 band 1 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 25 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 25 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 26 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 27 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 28 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 28 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 29 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 30 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 31 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 32 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 33 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 34 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 35 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 36 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 37 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 42 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 43 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 44 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 44 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 45 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 45 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 46 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 46 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 47 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 47 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 48 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 49 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 50 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 51 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 52 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 53 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 54 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 55 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 56 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 57 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 62 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 62 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 63 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 63 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 64 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 64 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 65 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 65 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 66 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 66 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 67 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 67 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 68 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 68 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 69 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 69 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 70 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 71 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 72 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 73 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 74 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 75 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 76 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 77 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 78 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 79 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 84 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 84 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 85 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 85 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 86 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 86 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 87 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 87 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 88 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 88 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 89 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 89 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 90 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 90 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 91 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 92 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 93 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 93 band 6 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 94 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 95 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 96 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 97 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 98 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 99 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 100 band 5 to produce a model
+Error: spectral_estimators: too few photons (1 or 0) in cell 101 band 5 to produce a model
+Error: error_count: This error will no longer be logged: spectral_estimators: too few photons (1 or 0) in cell %d band %d to produce a model
+
+!!wind_update: Cell 316  with volume 2.09e+45 has only 8 photons
+!!wind_update: Cell 317  with volume 8.29e+46 has only 49 photons
+!!wind_update: Cell 347  with volume 1.20e+47 has only 80 photons
+Error: spectral_estimators: Alpha cannot be bracketed (-3.909100e+03 3.909100e+03)in band 5 cell 370- setting w to zero
+!!wind_update: Cell 373  with volume 7.96e+45 has only 16 photons
+!!wind_update: Cell 397  with volume 5.69e+46 has only 52 photons
+Error: spectral_estimators: multiple photons but only one frequency seen in 419 band 1
+!!wind_update: Cell 458  with volume 5.81e+46 has only 24 photons
+Error: spectral_estimators: multiple photons but only one frequency seen in 458 band 9
+!!wind_update: Cell 495  with volume 4.66e+46 has only 22 photons
+!!wind_update: Cell 545  with volume 1.16e+48 has only 57 photons
+
+Error summary: Something is drastically wrong for any error to occur so much!
+
+Recurrences --  Description
+        7 -- getatomic_data: line input incomplete: %s
+        2 -- get_atomicdata: not tracking levels for ion %i z %i istate %i, yet marked as topbase xsection!
+        1 -- wind2d: Cell %3d (%2d,%2d) has %d corners in wind, but zero volume
+        3 -- wind_div_v: div v %e is negative in cell %d. Major problem if inwind (%d) == 0
+        8 -- disk_init: Got to ftot %e at r %e < rmax %e. OK if freqs are high
+      608 -- spectral_estimators: too few photons (1 or 0) in cell %d band %d to produce a model
+   100001 -- Error qromb: a %e>=b %e
+        2 -- error_count: This error will no longer be logged: %s
+        1 -- spectral_estimators: Alpha cannot be bracketed (%e %e)in band %i cell %i- setting w to zero
+        2 -- spectral_estimators: multiple photons but only one frequency seen in %d band %d

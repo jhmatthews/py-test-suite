@@ -1,0 +1,1988 @@
+Para: Thread 0 starting.
+!!Python Version test 
+!!Git commit hash 8d8484e92ba3db45921895a83c3ec1717a295abd
+!!Git: This version was compiled with 1 files with uncommitted changes.
+!!Python is running with 1 processors
+Para: This is MPI task number 0 (a total of 1 tasks are running).
+xxx Wed Aug  5 15:30:34 2015      0.0 NOK                  Initializing variables for 1d_sn
+Reading data from file 1d_sn.pf
+Get_atomicdata: Reading from masterfile data/standard_sn_kurucz
+Data of   7 elements,  96 ions,  1667 levels,  5698 lines, and    32 topbase records
+Macro     7 elements,   0 ions,     0 levels,     0 lines, and     0 topbase records
+Simple    7 elements,  96 ions,  1667 levels,  5698 lines, and    32 topbase records
+We have read in   0 Dielectronic recombination coefficients
+We have read in   0 Cardona partition functions coefficients
+We have read in   0 Badnell totl Radiative rate coefficients
+We have read in   0 Badnell GS   Radiative rate coefficients over the temp range 0.000000e+00 to 1.000000e+99
+We have read in   0 Scaled electron temperature frequency averaged gaunt factors
+The minimum frequency for photoionization is 3.66e+14
+get_atomic_data: Evaluation:  There are      7 elements     while     50 are currently allowed
+get_atomic_data: Evaluation:  There are     96 ions         while    500 are currently allowed
+get_atomic_data: Evaluation:  There are   1667 levels       while  12000 are currently allowed
+get_atomic_data: Evaluation:  There are   5698 lines        while 200000 are currently allowed
+get_atomic_data: Evaluation:  There are      0 macro levels while    150 are currently allowed
+get_atomic_data: Evaluation:  The maximum value bb jumps is 0 while 100 are currently allowed
+get_atomic_data: Evaluation:  The maximum value bf jumps is 0 while 100 are currently allowed
+Photons per cycle per MPI task will be 80000
+Not Trying to make a start with a power law boundary layer -3
+Creating a homolgous wind model
+DFUDGE set to 2.246400e+05 based on geo.rmax
+There is a star which radiates
+There is no disk in the system 
+There is no boundary layer
+There is no BH 
+No phase information needed as system type 0 is not a binary
+OK, extracting from specific angles
+OK, generating fnu at 100 pc
+Increasing maximum frequency to twice the Helium edge
+bands_init: There are 4 bands
+bands_init: band 0,  f1= 2.498e+14,  f2= 3.288e+15, frac=0.00
+bands_init: band 0, eV1= 1.033e+00, eV2= 1.360e+01, frac=0.00
+bands_init: band 0, alpha1=0.399677, alpha2=5.259865, frac=0.00
+bands_init: band 1,  f1= 3.288e+15,  f2= 5.945e+15, frac=0.10
+bands_init: band 1, eV1= 1.360e+01, eV2= 2.459e+01, frac=0.10
+bands_init: band 1, alpha1=5.259865, alpha2=9.510225, frac=0.10
+bands_init: band 2,  f1= 5.945e+15,  f2= 1.316e+16, frac=0.10
+bands_init: band 2, eV1= 2.459e+01, eV2= 5.442e+01, frac=0.10
+bands_init: band 2, alpha1=9.510225, alpha2=21.047968, frac=0.10
+bands_init: band 3,  f1= 1.316e+16,  f2= 2.631e+16, frac=0.10
+bands_init: band 3, eV1= 5.442e+01, eV2= 1.088e+02, frac=0.10
+bands_init: band 3, alpha1=21.047968, alpha2=42.095936, frac=0.10
+freqs_init: Photons will be generated between     1.03 (2.50e+14) and   108.84 (2.63e+16)
+freqs_init: Of 10 starting intervals, 4 will have photons
+freqs_init: test 2.631304e+16 3.162000e+16
+freqs_init: There were 4 final intervals
+freqs_init:     1.03 (2.50e+14)        4.14 (1.00e+15)  
+freqs_init:     4.14 (1.00e+15)       13.08 (3.16e+15)  
+freqs_init:    13.08 (3.16e+15)       41.36 (1.00e+16)  
+freqs_init:    41.36 (1.00e+16)      108.84 (2.63e+16)  
+OLD W.r = 1.208464e+15, w.rcen = 1.221992e+15
+New W.r = 1.208464e+15, w.rcen = 1.221992e+15
+OLD W.r = 1.235520e+15, w.rcen = 1.249351e+15
+New W.r = 1.235520e+15, w.rcen = 1.249351e+15
+OLD W.r = 1.263182e+15, w.rcen = 1.277323e+15
+New W.r = 1.263182e+15, w.rcen = 1.277323e+15
+OLD W.r = 1.291464e+15, w.rcen = 1.305921e+15
+New W.r = 1.291464e+15, w.rcen = 1.305921e+15
+OLD W.r = 1.320378e+15, w.rcen = 1.335159e+15
+New W.r = 1.320378e+15, w.rcen = 1.335159e+15
+OLD W.r = 1.349940e+15, w.rcen = 1.365052e+15
+New W.r = 1.349940e+15, w.rcen = 1.365052e+15
+OLD W.r = 1.380164e+15, w.rcen = 1.395615e+15
+New W.r = 1.380164e+15, w.rcen = 1.395615e+15
+OLD W.r = 1.411065e+15, w.rcen = 1.426861e+15
+New W.r = 1.411065e+15, w.rcen = 1.426861e+15
+OLD W.r = 1.442657e+15, w.rcen = 1.458807e+15
+New W.r = 1.442657e+15, w.rcen = 1.458807e+15
+OLD W.r = 1.474957e+15, w.rcen = 1.491468e+15
+New W.r = 1.474957e+15, w.rcen = 1.491468e+15
+OLD W.r = 1.507980e+15, w.rcen = 1.524861e+15
+New W.r = 1.507980e+15, w.rcen = 1.524861e+15
+OLD W.r = 1.541742e+15, w.rcen = 1.559001e+15
+New W.r = 1.541742e+15, w.rcen = 1.559001e+15
+OLD W.r = 1.576260e+15, w.rcen = 1.593906e+15
+New W.r = 1.576260e+15, w.rcen = 1.593906e+15
+OLD W.r = 1.611551e+15, w.rcen = 1.629592e+15
+New W.r = 1.611551e+15, w.rcen = 1.629592e+15
+OLD W.r = 1.647632e+15, w.rcen = 1.666077e+15
+New W.r = 1.647632e+15, w.rcen = 1.666077e+15
+OLD W.r = 1.684521e+15, w.rcen = 1.703379e+15
+New W.r = 1.684521e+15, w.rcen = 1.703379e+15
+OLD W.r = 1.722236e+15, w.rcen = 1.741516e+15
+New W.r = 1.722236e+15, w.rcen = 1.741516e+15
+OLD W.r = 1.760796e+15, w.rcen = 1.780507e+15
+New W.r = 1.760796e+15, w.rcen = 1.780507e+15
+OLD W.r = 1.800218e+15, w.rcen = 1.820371e+15
+New W.r = 1.800218e+15, w.rcen = 1.820371e+15
+OLD W.r = 1.840523e+15, w.rcen = 1.861127e+15
+New W.r = 1.840523e+15, w.rcen = 1.861127e+15
+OLD W.r = 1.881731e+15, w.rcen = 1.902796e+15
+New W.r = 1.881731e+15, w.rcen = 1.902796e+15
+OLD W.r = 1.923861e+15, w.rcen = 1.945398e+15
+New W.r = 1.923861e+15, w.rcen = 1.945398e+15
+OLD W.r = 1.966935e+15, w.rcen = 1.988953e+15
+New W.r = 1.966935e+15, w.rcen = 1.988953e+15
+OLD W.r = 2.010972e+15, w.rcen = 2.033484e+15
+New W.r = 2.010972e+15, w.rcen = 2.033484e+15
+OLD W.r = 2.055996e+15, w.rcen = 2.079012e+15
+New W.r = 2.055996e+15, w.rcen = 2.079012e+15
+OLD W.r = 2.102028e+15, w.rcen = 2.125559e+15
+New W.r = 2.102028e+15, w.rcen = 2.125559e+15
+OLD W.r = 2.149090e+15, w.rcen = 2.173149e+15
+New W.r = 2.149090e+15, w.rcen = 2.173149e+15
+OLD W.r = 2.197207e+15, w.rcen = 2.221803e+15
+New W.r = 2.197207e+15, w.rcen = 2.221803e+15
+OLD W.r = 2.246400e+15, w.rcen = 2.271547e+15
+New W.r = 2.246400e+15, w.rcen = 2.271547e+15
+OLD W.r = 2.296695e+15, w.rcen = 2.322405e+15
+New W.r = 2.296695e+15, w.rcen = 2.322405e+15
+wind2d:  30 cells of which 27 are in inwind, 0 partially in_wind, & 27 with pos. vol
+Allocated       9216 bytes for each of    28 elements variable length plasma arrays totaling        0.3 Mb 
+Got to wind_check
+Wind_check: Punchthrough distance DFUDGE 2.246400e+05 www[1].x[2] 8.736446e+14
+Finished wind check
+Error: wind2d.c: Don't know how to check wind mdot for this coordtype 0
+xxx Wed Aug  5 15:30:35 2015      1.3 NOK                  Finished initialization for 1d_sn
+xxx Wed Aug  5 15:30:35 2015      1.3 NOK                  Starting 0 of 20 ionization cycle 
+!!Python: Begining cycle 0 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63985 ndisk      0 nwind      0 nstar  63985 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 4.09e+35 nphotons 8015 ndisk      0 nwind      0 nstar   8015 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 2.47e+31 nphotons 8000 ndisk      0 nwind      0 nstar   8000 npow 0 
+NSH Geo.n_ioniz=1.404664e+50
+!!python: Total photon luminosity before transphot 1.344954278063e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.342339257704e+43 (diff -2.615020358764e+40). Radiated luminosity 1.080667486303e+43
+NSH Geo.n_ioniz=6.295422e+48
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 39202 19510  8582  4203  2069  1134   601   432   247   190
+   173   172   168   164   149   155   167   149   126   134
+   111    99   105   103    80    71    75    74    69    45
+    69    63    69    49    49    64    50    51    66    48
+    36    39    38    41    38    38    41    34    30    41
+   487
+Number of photons resonantly scattering n times
+ 60964  7942  4037  1460   637   415   272   246   152   178
+   166   171   181   176   162   148   145   171   124   126
+   109    93   106    76    77    75    68    71    63    59
+    60    64    60    50    49    59    54    65    46    26
+    40    37    47    44    45    66    85   121   151   107
+    54
+No of photons and their fates
+     0     0 52548 17971   487     0  8994     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 52548     0     0     0     0     0     0     0
+     0     0 52548     0     0     0     0     0     0     0
+     0     0 52548     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0 17971     0     0     0     0     0     0
+     0     0  8115  9735   487     0   699     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 6.29542e+48 lum of ionizing photons 1.43403e+38
+init_freebound: Creating recombination coefficients
+init_freebound: Creating recombination emissivites between 0.000000e+00 and 1.000000e+50
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: Compute zeta: total RR rate missing for element 8 state 2
+Error: Compute zeta: total RR rate missing for element 8 state 3
+Error: Compute zeta: total RR rate missing for element 8 state 4
+Error: Compute zeta: total RR rate missing for element 12 state 2
+Error: Compute zeta: total RR rate missing for element 12 state 3
+Error: Compute zeta: total RR rate missing for element 12 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 2
+Error: Compute zeta: total RR rate missing for element 14 state 3
+Error: Compute zeta: total RR rate missing for element 14 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 5
+Error: Compute zeta: total RR rate missing for element 16 state 2
+Error: Compute zeta: total RR rate missing for element 16 state 3
+Error: Compute zeta: total RR rate missing for element 16 state 4
+Error: Compute zeta: total RR rate missing for element 16 state 5
+Error: Compute zeta: total RR rate missing for element 18 state 2
+Error: Compute zeta: total RR rate missing for element 18 state 3
+Error: Compute zeta: total RR rate missing for element 18 state 4
+Error: Compute zeta: total RR rate missing for element 18 state 5
+Error: Compute zeta: total RR rate missing for element 20 state 2
+Error: Compute zeta: total RR rate missing for element 20 state 3
+Error: Compute zeta: total RR rate missing for element 20 state 4
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: Compute zeta: total RR rate missing for element 8 state 2
+Error: Compute zeta: total RR rate missing for element 8 state 3
+Error: Compute zeta: total RR rate missing for element 8 state 4
+Error: Compute zeta: total RR rate missing for element 12 state 2
+Error: Compute zeta: total RR rate missing for element 12 state 3
+Error: Compute zeta: total RR rate missing for element 12 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 2
+Error: Compute zeta: total RR rate missing for element 14 state 3
+Error: Compute zeta: total RR rate missing for element 14 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 5
+Error: Compute zeta: total RR rate missing for element 16 state 2
+Error: Compute zeta: total RR rate missing for element 16 state 3
+Error: Compute zeta: total RR rate missing for element 16 state 4
+Error: Compute zeta: total RR rate missing for element 16 state 5
+Error: Compute zeta: total RR rate missing for element 18 state 2
+Error: Compute zeta: total RR rate missing for element 18 state 3
+Error: Compute zeta: total RR rate missing for element 18 state 4
+Error: Compute zeta: total RR rate missing for element 18 state 5
+Error: Compute zeta: total RR rate missing for element 20 state 2
+Error: Compute zeta: total RR rate missing for element 20 state 3
+Error: Compute zeta: total RR rate missing for element 20 state 4
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: Compute zeta: total RR rate missing for element 8 state 2
+Error: Compute zeta: total RR rate missing for element 8 state 3
+Error: Compute zeta: total RR rate missing for element 8 state 4
+Error: Compute zeta: total RR rate missing for element 12 state 2
+Error: Compute zeta: total RR rate missing for element 12 state 3
+Error: Compute zeta: total RR rate missing for element 12 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 2
+Error: Compute zeta: total RR rate missing for element 14 state 3
+Error: Compute zeta: total RR rate missing for element 14 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 5
+Error: Compute zeta: total RR rate missing for element 16 state 2
+Error: Compute zeta: total RR rate missing for element 16 state 3
+Error: Compute zeta: total RR rate missing for element 16 state 4
+Error: Compute zeta: total RR rate missing for element 16 state 5
+Error: Compute zeta: total RR rate missing for element 18 state 2
+Error: Compute zeta: total RR rate missing for element 18 state 3
+Error: Compute zeta: total RR rate missing for element 18 state 4
+Error: Compute zeta: total RR rate missing for element 18 state 5
+Error: Compute zeta: total RR rate missing for element 20 state 2
+Error: Compute zeta: total RR rate missing for element 20 state 3
+Error: Compute zeta: total RR rate missing for element 20 state 4
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: Compute zeta: total RR rate missing for element 8 state 2
+Error: Compute zeta: total RR rate missing for element 8 state 3
+Error: Compute zeta: total RR rate missing for element 8 state 4
+Error: Compute zeta: total RR rate missing for element 12 state 2
+Error: Compute zeta: total RR rate missing for element 12 state 3
+Error: Compute zeta: total RR rate missing for element 12 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 2
+Error: Compute zeta: total RR rate missing for element 14 state 3
+Error: Compute zeta: total RR rate missing for element 14 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 5
+Error: Compute zeta: total RR rate missing for element 16 state 2
+Error: Compute zeta: total RR rate missing for element 16 state 3
+Error: Compute zeta: total RR rate missing for element 16 state 4
+Error: Compute zeta: total RR rate missing for element 16 state 5
+Error: Compute zeta: total RR rate missing for element 18 state 2
+Error: Compute zeta: total RR rate missing for element 18 state 3
+Error: Compute zeta: total RR rate missing for element 18 state 4
+Error: Compute zeta: total RR rate missing for element 18 state 5
+Error: Compute zeta: total RR rate missing for element 20 state 2
+Error: Compute zeta: total RR rate missing for element 20 state 3
+Error: Compute zeta: total RR rate missing for element 20 state 4
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: Compute zeta: total RR rate missing for element 8 state 2
+Error: Compute zeta: total RR rate missing for element 8 state 3
+Error: Compute zeta: total RR rate missing for element 8 state 4
+Error: Compute zeta: total RR rate missing for element 12 state 2
+Error: Compute zeta: total RR rate missing for element 12 state 3
+Error: Compute zeta: total RR rate missing for element 12 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 2
+Error: Compute zeta: total RR rate missing for element 14 state 3
+Error: Compute zeta: total RR rate missing for element 14 state 4
+Error: Compute zeta: total RR rate missing for element 14 state 5
+Error: Compute zeta: total RR rate missing for element 16 state 2
+Error: Compute zeta: total RR rate missing for element 16 state 3
+Error: Compute zeta: total RR rate missing for element 16 state 4
+Error: Compute zeta: total RR rate missing for element 16 state 5
+Error: Compute zeta: total RR rate missing for element 18 state 2
+Error: Compute zeta: total RR rate missing for element 18 state 3
+Error: error_count: This error will no longer be logged: Compute zeta: total RR rate missing for element %i state %i
+
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    1.95e+40  (photo 4.52e+38 ff 4.37e+33 compton 6.20e+37 induced_compton 6.00e+35 lines 1.90e+40)
+!!wind_update: Wind heating     1.95e+40  (photo 4.52e+38 ff 4.37e+33 compton 6.20e+37 induced_compton 6.00e+35 lines 1.90e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.16e+40 (recomb 5.04e+39 ff 2.37e+35 lines 1.66e+40) after update
+!!wind_update: Wind cooling     2.17e+40 (recomb 5.04e+39 ff 2.37e+35 compton 5.52e+37 DR 0.00e+00 DI 0.00e+00 lines 1.66e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r   1059 at cell    0 (0,0)
+!!wind_update: Ave change in t_r    955 from  10000 to  10955
+!!wind_update: Max change in t_e  -1350 at cell   19 (19,0)
+!!wind_update: Ave change in t_e   -227 from   9000 to   8773
+Summary  t_e    8773     -227  #t_e and dt_e on this update
+Summary  t_r   10955      955  #t_r and dt_r on this update
+!!Check_converging:   24 (0.889) converged and   27 (1.000) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   24 t_e(maxed)    0 hc(real)   24
+Summary  convergence   24 0.889    27  1.000  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.2e+03  9.1e+03  9.2e+03  9.1e+03    9e+03  8.7e+03  9.3e+03  9.1e+03  9.1e+03  9.2e+03  8.8e+03  9.2e+03    9e+03  8.9e+03  8.9e+03  8.9e+03  8.5e+03  8.6e+03  8.6e+03  7.6e+03  8.8e+03  8.5e+03  8.9e+03  8.7e+03  8.5e+03  7.6e+03  7.6e+03        0        0 
+Completed ionization cycle 0 :  The elapsed TIME was 7.584041
+xxx Wed Aug  5 15:30:42 2015      7.6 OK                   Finished 0 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:30:42 2015      7.6 NOK                  Starting 1 of 20 ionization cycle 
+!!Python: Begining cycle 1 of 20 for defining wind
+init_freebound: Creating recombination emissivites between 2.498271e+14 and 3.287800e+15
+init_freebound: Creating recombination emissivites between 3.287800e+15 and 5.944587e+15
+init_freebound: Creating recombination emissivites between 5.944587e+15 and 1.315652e+16
+init_freebound: Creating recombination emissivites between 1.315652e+16 and 2.631304e+16
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63963 ndisk      0 nwind     80 nstar  63883 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.38e+35 nphotons 8031 ndisk      0 nwind   4121 nstar   3910 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.68e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.651739e+50
+!!python: Total photon luminosity before transphot 1.347130078772e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343583729291e+43 (diff -3.546349480997e+40). Radiated luminosity 1.013001037481e+43
+NSH Geo.n_ioniz=9.497126e+48
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35457 18839  9853  5415  3231  1869  1101   721   425   286
+   203   161   144   104    97   121   116    88    91    84
+    81    54    74    53    62    56    53    40    45    37
+    38    27    40    30    30    23    43    24    24    22
+    21    20    24    27    29    34    26    29    19    24
+   485
+Number of photons resonantly scattering n times
+ 53081 11047  6551  3182  1589   861   458   333   222   130
+   142   145    90    93    91   113   110    85    94    68
+    66    71    78    57    51    47    43    32    53    30
+    27    37    34    28    28    39    29    18    29    19
+    19    25    31    37    44    33    70    96   132   133
+    79
+No of photons and their fates
+     0     0 48640 18955   485     0 11920     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48640     0     0     0     0     0     0     0
+     0     0 48640     0     0     0     0     0     0     0
+     0     0 48517     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   123     0     0     0     0     0     0     0
+     0     0     0 18955     0     0     0     0     0     0
+     0     0 13067 11445   485     0  1922     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 9.49713e+48 lum of ionizing photons 2.26897e+38
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.69e+40  (photo 1.03e+39 ff 3.87e+34 compton 6.55e+37 induced_compton 7.99e+35 lines 2.58e+40)
+!!wind_update: Wind heating     2.69e+40  (photo 1.03e+39 ff 3.87e+34 compton 6.55e+37 induced_compton 7.99e+35 lines 2.58e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.33e+40 (recomb 5.15e+39 ff 2.97e+35 lines 1.82e+40) after update
+!!wind_update: Wind cooling     2.34e+40 (recomb 5.15e+39 ff 2.97e+35 compton 5.93e+37 DR 0.00e+00 DI 0.00e+00 lines 1.82e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    132 at cell    9 (9,0)
+!!wind_update: Ave change in t_r     73 from  10955 to  11028
+!!wind_update: Max change in t_e  -1465 at cell   22 (22,0)
+!!wind_update: Ave change in t_e   -284 from   8773 to   8489
+Summary  t_e    8489     -284  #t_e and dt_e on this update
+Summary  t_r   11028       73  #t_r and dt_r on this update
+!!Check_converging:   21 (0.778) converged and   27 (1.000) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   21 t_e(maxed)    0 hc(real)   21
+Summary  convergence   21 0.778    27  1.000  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.5e+03  9.4e+03  9.4e+03  9.3e+03  9.1e+03  8.9e+03  9.2e+03    9e+03  9.3e+03  9.1e+03  9.1e+03  9.2e+03  9.2e+03  8.2e+03  9.1e+03  8.5e+03  8.4e+03  8.6e+03  7.2e+03  8.2e+03  7.3e+03  7.1e+03  7.4e+03  8.2e+03  7.1e+03  6.4e+03  7.8e+03        0        0 
+Completed ionization cycle 1 :  The elapsed TIME was 13.216562
+xxx Wed Aug  5 15:30:47 2015     13.3 OK                   Finished 1 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:30:47 2015     13.3 NOK                  Starting 2 of 20 ionization cycle 
+!!Python: Begining cycle 2 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63962 ndisk      0 nwind     88 nstar  63874 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.50e+35 nphotons 8032 ndisk      0 nwind   4177 nstar   3855 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.76e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.691797e+50
+!!python: Total photon luminosity before transphot 1.347297984749e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343327031842e+43 (diff -3.970952907046e+40). Radiated luminosity 1.017572422646e+43
+NSH Geo.n_ioniz=1.153926e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35610 19079  9735  5480  3189  1788  1037   624   425   286
+   217   163   147   115    96    86    90    78    73    73
+    78    55    50    49    62    42    41    53    41    36
+    45    24    28    28    33    31    29    25    25    37
+    25    32    20    30    29    31    33    22    30    17
+   528
+Number of photons resonantly scattering n times
+ 53498 10909  6628  3062  1427   802   503   301   228   170
+   140   121   103    82    93    92   106    66    75    74
+    63    55    46    55    44    51    36    52    42    39
+    23    24    25    36    37    30    23    30    34    28
+    23    22    34    30    38    46    78   108   143   152
+    73
+No of photons and their fates
+     0     0 48805 18872   528     0 11795     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48805     0     0     0     0     0     0     0
+     0     0 48805     0     0     0     0     0     0     0
+     0     0 48669     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   136     0     0     0     0     0     0     0
+     0     0     0 18872     0     0     0     0     0     0
+     0     0 12794 11309   528     0  1871     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.15393e+49 lum of ionizing photons 2.76258e+38
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.15e+40  (photo 1.02e+39 ff 4.59e+34 compton 6.51e+37 induced_compton 8.34e+35 lines 3.04e+40)
+!!wind_update: Wind heating     3.15e+40  (photo 1.02e+39 ff 4.59e+34 compton 6.51e+37 induced_compton 8.34e+35 lines 3.04e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.74e+40 (recomb 5.19e+39 ff 2.83e+35 lines 2.22e+40) after update
+!!wind_update: Wind cooling     2.74e+40 (recomb 5.19e+39 ff 2.83e+35 compton 5.97e+37 DR 0.00e+00 DI 0.00e+00 lines 2.22e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -78 at cell    5 (5,0)
+!!wind_update: Ave change in t_r    -34 from  11028 to  10994
+!!wind_update: Max change in t_e  -1345 at cell   22 (22,0)
+!!wind_update: Ave change in t_e    125 from   8489 to   8614
+Summary  t_e    8614      125  #t_e and dt_e on this update
+Summary  t_r   10994      -34  #t_r and dt_r on this update
+!!Check_converging:   22 (0.815) converged and   24 (0.889) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   22 t_e(maxed)    0 hc(real)   25
+Summary  convergence   22 0.815    24  0.889  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.7e+03  9.6e+03  9.4e+03  9.4e+03  9.4e+03  9.3e+03  9.5e+03  9.5e+03  9.3e+03  9.2e+03  8.9e+03  9.2e+03  9.1e+03  8.7e+03    9e+03  8.6e+03  8.6e+03  8.3e+03  8.1e+03  8.4e+03  8.2e+03  7.7e+03  6.1e+03  8.1e+03  5.8e+03  7.4e+03    8e+03        0        0 
+Completed ionization cycle 2 :  The elapsed TIME was 19.028472
+xxx Wed Aug  5 15:30:53 2015     19.1 OK                   Finished 2 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:30:53 2015     19.1 NOK                  Starting 3 of 20 ionization cycle 
+!!Python: Begining cycle 3 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63962 ndisk      0 nwind    106 nstar  63856 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.65e+35 nphotons 8032 ndisk      0 nwind   4240 nstar   3792 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.79e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.732194e+50
+!!python: Total photon luminosity before transphot 1.347717291961e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343733974401e+43 (diff -3.983317559448e+40). Radiated luminosity 1.016946897639e+43
+NSH Geo.n_ioniz=1.127003e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35759 18938  9848  5478  3083  1771  1057   627   426   266
+   197   173   138    99   100    97   102    87    78    59
+    69    54    57    54    53    50    52    40    39    43
+    32    30    35    24    42    29    30    27    26    31
+    25    33    26    19    23    25    25    24    22    26
+   552
+Number of photons resonantly scattering n times
+ 53666 10921  6505  3010  1493   778   483   288   208   151
+   136   122   106    79   105    96    99    86    72    60
+    62    49    72    40    60    46    28    40    43    40
+    30    27    28    35    33    37    33    23    17    38
+    21    35    27    21    33    66    76    91   144   159
+    82
+No of photons and their fates
+     0     0 48778 18839   552     0 11831     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48778     0     0     0     0     0     0     0
+     0     0 48778     0     0     0     0     0     0     0
+     0     0 48608     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   170     0     0     0     0     0     0     0
+     0     0     0 18839     0     0     0     0     0     0
+     0     0 12708 11201   552     0  1873     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.127e+49 lum of ionizing photons 2.66167e+38
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: lucy_mazzali1: elem 0 has all ions < 1.0000e-20 density
+Error: error_count: This error will no longer be logged: lucy_mazzali1: elem %i has all ions < %8.4e density
+
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.14e+40  (photo 1.03e+39 ff 4.38e+34 compton 6.50e+37 induced_compton 8.31e+35 lines 3.03e+40)
+!!wind_update: Wind heating     3.14e+40  (photo 1.03e+39 ff 4.38e+34 compton 6.50e+37 induced_compton 8.31e+35 lines 3.03e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.95e+40 (recomb 5.22e+39 ff 2.83e+35 lines 2.42e+40) after update
+!!wind_update: Wind cooling     2.95e+40 (recomb 5.22e+39 ff 2.83e+35 compton 5.95e+37 DR 0.00e+00 DI 0.00e+00 lines 2.42e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -45 at cell   11 (11,0)
+!!wind_update: Ave change in t_r     -5 from  10994 to  10988
+!!wind_update: Max change in t_e  -1670 at cell   19 (19,0)
+!!wind_update: Ave change in t_e    -81 from   8614 to   8534
+Summary  t_e    8534      -81  #t_e and dt_e on this update
+Summary  t_r   10988       -5  #t_r and dt_r on this update
+!!Check_converging:   22 (0.815) converged and   22 (0.815) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   22 t_e(maxed)    0 hc(real)   23
+Summary  convergence   22 0.815    22  0.815  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.8e+03  9.7e+03  9.5e+03  9.7e+03  9.3e+03  9.4e+03  9.2e+03  9.5e+03  9.7e+03  9.1e+03  8.9e+03  9.2e+03  8.7e+03  8.8e+03    9e+03  9.1e+03  8.4e+03  8.9e+03  8.4e+03  6.7e+03  8.6e+03  6.6e+03  7.3e+03  8.1e+03  4.6e+03  7.8e+03  6.4e+03        0        0 
+Completed ionization cycle 3 :  The elapsed TIME was 24.671666
+xxx Wed Aug  5 15:30:59 2015     24.7 OK                   Finished 3 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:30:59 2015     24.7 NOK                  Starting 4 of 20 ionization cycle 
+!!Python: Begining cycle 4 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    116 nstar  63845 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.72e+35 nphotons 8033 ndisk      0 nwind   4274 nstar   3759 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.81e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.759787e+50
+!!python: Total photon luminosity before transphot 1.347911667203e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344075137293e+43 (diff -3.836529910602e+40). Radiated luminosity 1.022883155242e+43
+NSH Geo.n_ioniz=1.184680e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35554 18962  9691  5541  3186  1741  1097   690   423   285
+   220   179   119    99   129    97    85    81    76    64
+    63    68    67    63    47    52    57    50    38    40
+    42    44    28    25    38    29    37    29    30    23
+    21    23    30    29    34    21    24    21    29    28
+   551
+Number of photons resonantly scattering n times
+ 53364 10882  6596  3082  1528   806   495   327   203   152
+   136   129    86    92   106   103    86    85    75    62
+    73    66    55    67    53    41    50    40    47    45
+    40    25    30    33    26    32    39    21    28    23
+    31    29    32    32    36    45    61   120   148   154
+    83
+No of photons and their fates
+     0     0 49063 18611   549     0 11777     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 49063     0     0     0     0     0     0     0
+     0     0 49063     0     0     0     0     0     0     0
+     0     0 48907     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   156     0     0     0     0     0     0     0
+     0     0     0 18611     0     0     0     0     0     0
+     0     0 13027 11187   549     0  1873     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.18468e+49 lum of ionizing photons 2.80367e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.01e+40  (photo 1.02e+39 ff 4.33e+34 compton 6.51e+37 induced_compton 8.32e+35 lines 2.90e+40)
+!!wind_update: Wind heating     3.01e+40  (photo 1.02e+39 ff 4.33e+34 compton 6.51e+37 induced_compton 8.32e+35 lines 2.90e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.88e+40 (recomb 5.20e+39 ff 2.66e+35 lines 2.36e+40) after update
+!!wind_update: Wind cooling     2.89e+40 (recomb 5.20e+39 ff 2.66e+35 compton 5.92e+37 DR 0.00e+00 DI 0.00e+00 lines 2.36e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r     76 at cell   19 (19,0)
+!!wind_update: Ave change in t_r     25 from  10988 to  11013
+!!wind_update: Max change in t_e  -1771 at cell   23 (23,0)
+!!wind_update: Ave change in t_e   -256 from   8534 to   8278
+Summary  t_e    8278     -256  #t_e and dt_e on this update
+Summary  t_r   11013       25  #t_r and dt_r on this update
+!!Check_converging:   18 (0.667) converged and   21 (0.778) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   18 t_e(maxed)    0 hc(real)   24
+Summary  convergence   18 0.667    21  0.778  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.8e+03  9.7e+03  9.5e+03  9.6e+03  9.6e+03  9.5e+03  9.3e+03  9.5e+03    9e+03  9.3e+03  8.7e+03    9e+03  8.7e+03  9.3e+03  8.9e+03  7.8e+03  8.9e+03  8.8e+03  7.2e+03  5.5e+03  7.1e+03  7.7e+03  8.4e+03  6.3e+03  3.6e+03  7.8e+03    5e+03        0        0 
+Completed ionization cycle 4 :  The elapsed TIME was 30.489817
+xxx Wed Aug  5 15:31:05 2015     30.6 OK                   Finished 4 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:05 2015     30.6 NOK                  Starting 5 of 20 ionization cycle 
+!!Python: Begining cycle 5 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    113 nstar  63848 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.72e+35 nphotons 8033 ndisk      0 nwind   4275 nstar   3758 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.79e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.854807e+50
+!!python: Total photon luminosity before transphot 1.347846375381e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344302078942e+43 (diff -3.544296438911e+40). Radiated luminosity 1.020986356153e+43
+NSH Geo.n_ioniz=1.116350e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35816 18865  9745  5419  3051  1806  1092   632   468   250
+   218   178   133   102   101   104   110    89    69    98
+    75    68    52    53    58    52    43    31    43    46
+    44    37    35    27    32    31    33    37    21    29
+    32    25    17    16    26    26    31    29    21    30
+   554
+Number of photons resonantly scattering n times
+ 53656 10818  6494  2950  1489   863   475   315   230   138
+   141   112    99   102    94    96   112    89    81    82
+    54    69    56    59    50    48    39    41    42    39
+    27    34    37    32    25    35    35    36    27    20
+    22    23    26    28    36    54    64   107   161   135
+   103
+No of photons and their fates
+     0     0 48975 18628   554     0 11843     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48975     0     0     0     0     0     0     0
+     0     0 48975     0     0     0     0     0     0     0
+     0     0 48817     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   158     0     0     0     0     0     0     0
+     0     0     0 18628     0     0     0     0     0     0
+     0     0 12871 11117   554     0  1802     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.11635e+49 lum of ionizing photons 2.65365e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.69e+40  (photo 1.01e+39 ff 3.98e+34 compton 6.52e+37 induced_compton 8.39e+35 lines 2.59e+40)
+!!wind_update: Wind heating     2.69e+40  (photo 1.01e+39 ff 3.98e+34 compton 6.52e+37 induced_compton 8.39e+35 lines 2.59e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.66e+40 (recomb 5.18e+39 ff 2.70e+35 lines 2.14e+40) after update
+!!wind_update: Wind cooling     2.66e+40 (recomb 5.18e+39 ff 2.70e+35 compton 5.86e+37 DR 0.00e+00 DI 0.00e+00 lines 2.14e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r     46 at cell   16 (16,0)
+!!wind_update: Ave change in t_r      6 from  11013 to  11020
+!!wind_update: Max change in t_e  -2008 at cell   22 (22,0)
+!!wind_update: Ave change in t_e     -1 from   8278 to   8277
+Summary  t_e    8277       -1  #t_e and dt_e on this update
+Summary  t_r   11020        6  #t_r and dt_r on this update
+!!Check_converging:   19 (0.704) converged and   18 (0.667) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   19 t_e(maxed)    0 hc(real)   22
+Summary  convergence   19 0.704    18  0.667  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.9e+03  9.7e+03  9.4e+03  9.3e+03  9.3e+03  9.4e+03  9.3e+03  9.3e+03  8.5e+03  9.2e+03  8.9e+03  9.1e+03  8.7e+03  8.6e+03  8.9e+03  8.5e+03  8.8e+03  8.9e+03  8.5e+03  6.4e+03  7.9e+03  6.5e+03  6.4e+03  7.7e+03  4.5e+03  7.7e+03  4.2e+03        0        0 
+Completed ionization cycle 5 :  The elapsed TIME was 36.277447
+xxx Wed Aug  5 15:31:10 2015     36.3 OK                   Finished 5 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:10 2015     36.3 NOK                  Starting 6 of 20 ionization cycle 
+!!Python: Begining cycle 6 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63962 ndisk      0 nwind    103 nstar  63859 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.64e+35 nphotons 8032 ndisk      0 nwind   4237 nstar   3795 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.78e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.727303e+50
+!!python: Total photon luminosity before transphot 1.347636585341e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343648367101e+43 (diff -3.988218239792e+40). Radiated luminosity 1.018949715034e+43
+NSH Geo.n_ioniz=1.153305e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35730 19032  9571  5474  3141  1776  1095   695   427   278
+   234   161   126   105    94   100   101   100    91    59
+    76    60    65    55    59    52    37    50    45    33
+    49    38    30    32    38    34    31    26    30    24
+    27    32    28    23    19    23    18    29    23    22
+   502
+Number of photons resonantly scattering n times
+ 53566 10867  6501  3088  1506   827   491   312   198   139
+   152   110    90    84    90   112    93   107    77    66
+    67    59    59    56    52    42    52    42    42    42
+    36    27    36    33    39    30    30    34    25    20
+    30    33    21    22    32    41    54   106   140   149
+    73
+No of photons and their fates
+     0     0 48902 18792   502     0 11804     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48902     0     0     0     0     0     0     0
+     0     0 48902     0     0     0     0     0     0     0
+     0     0 48753     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   149     0     0     0     0     0     0     0
+     0     0     0 18792     0     0     0     0     0     0
+     0     0 12880 11249   502     0  1803     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.1533e+49 lum of ionizing photons 2.73689e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.13e+40  (photo 1.03e+39 ff 4.07e+34 compton 6.52e+37 induced_compton 8.36e+35 lines 3.02e+40)
+!!wind_update: Wind heating     3.13e+40  (photo 1.03e+39 ff 4.07e+34 compton 6.52e+37 induced_compton 8.36e+35 lines 3.02e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.90e+40 (recomb 5.20e+39 ff 2.67e+35 lines 2.38e+40) after update
+!!wind_update: Wind cooling     2.91e+40 (recomb 5.20e+39 ff 2.67e+35 compton 5.94e+37 DR 0.00e+00 DI 0.00e+00 lines 2.38e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -59 at cell   12 (12,0)
+!!wind_update: Ave change in t_r    -13 from  11020 to  11007
+!!wind_update: Max change in t_e  -1838 at cell   25 (25,0)
+!!wind_update: Ave change in t_e     64 from   8277 to   8341
+Summary  t_e    8341       64  #t_e and dt_e on this update
+Summary  t_r   11007      -13  #t_r and dt_r on this update
+!!Check_converging:   21 (0.778) converged and   18 (0.667) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   21 t_e(maxed)    0 hc(real)   23
+Summary  convergence   21 0.778    18  0.667  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.8e+03  9.8e+03  9.6e+03  9.5e+03  9.2e+03  9.4e+03  9.3e+03  9.3e+03  8.9e+03  9.2e+03  9.2e+03    9e+03  9.3e+03  9.4e+03  9.1e+03  7.9e+03  8.8e+03  8.8e+03  8.6e+03  7.4e+03  8.2e+03  7.4e+03  5.2e+03    8e+03  5.6e+03  5.8e+03  3.5e+03        0        0 
+Completed ionization cycle 6 :  The elapsed TIME was 42.424961
+xxx Wed Aug  5 15:31:16 2015     42.5 OK                   Finished 6 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:16 2015     42.5 NOK                  Starting 7 of 20 ionization cycle 
+!!Python: Begining cycle 7 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    114 nstar  63847 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.71e+35 nphotons 8033 ndisk      0 nwind   4267 nstar   3766 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.79e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.757759e+50
+!!python: Total photon luminosity before transphot 1.347863975646e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344504132825e+43 (diff -3.359842820914e+40). Radiated luminosity 1.020408892696e+43
+NSH Geo.n_ioniz=1.117215e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35633 18933  9721  5487  3153  1819  1086   653   405   312
+   226   170   150   110   108    81    88    89    73    64
+    71    59    63    59    66    53    46    45    38    33
+    33    34    36    29    31    28    33    38    32    27
+    27    23    23    36    24    28    16    27    30    17
+   534
+Number of photons resonantly scattering n times
+ 53312 11020  6539  3090  1535   824   498   299   182   168
+   160   149    91   102    78    98    80    75    74    69
+    59    67    60    58    60    48    34    46    40    32
+    32    26    37    38    32    24    28    42    32    25
+    24    26    27    36    27    41    77   109   151   128
+    91
+No of photons and their fates
+     0     0 48938 18756   533     0 11773     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48938     0     0     0     0     0     0     0
+     0     0 48938     0     0     0     0     0     0     0
+     0     0 48767     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   171     0     0     0     0     0     0     0
+     0     0     0 18756     0     0     0     0     0     0
+     0     0 13018 11301   533     0  1836     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.11722e+49 lum of ionizing photons 2.66723e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.52e+40  (photo 1.05e+39 ff 3.97e+34 compton 6.54e+37 induced_compton 8.34e+35 lines 2.41e+40)
+!!wind_update: Wind heating     2.52e+40  (photo 1.05e+39 ff 3.97e+34 compton 6.54e+37 induced_compton 8.34e+35 lines 2.41e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.66e+40 (recomb 5.19e+39 ff 2.97e+35 lines 2.14e+40) after update
+!!wind_update: Wind cooling     2.67e+40 (recomb 5.19e+39 ff 2.97e+35 compton 5.81e+37 DR 0.00e+00 DI 0.00e+00 lines 2.14e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r     82 at cell    8 (8,0)
+!!wind_update: Ave change in t_r     35 from  11007 to  11042
+!!wind_update: Max change in t_e   1397 at cell   25 (25,0)
+!!wind_update: Ave change in t_e    -44 from   8341 to   8298
+Summary  t_e    8298      -44  #t_e and dt_e on this update
+Summary  t_r   11042       35  #t_r and dt_r on this update
+!!Check_converging:   22 (0.815) converged and   20 (0.741) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   22 t_e(maxed)    0 hc(real)   23
+Summary  convergence   22 0.815    20  0.741  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.8e+03  9.7e+03  9.6e+03  9.1e+03  9.1e+03  9.1e+03  9.3e+03  9.2e+03  9.1e+03    9e+03  8.9e+03  9.1e+03  9.4e+03  8.9e+03  8.8e+03  8.7e+03  8.6e+03  8.6e+03  8.8e+03  8.2e+03  8.1e+03  6.5e+03  6.1e+03    8e+03  4.2e+03  7.2e+03    3e+03        0        0 
+Completed ionization cycle 7 :  The elapsed TIME was 48.278441
+xxx Wed Aug  5 15:31:22 2015     48.3 OK                   Finished 7 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:22 2015     48.3 NOK                  Starting 8 of 20 ionization cycle 
+!!Python: Begining cycle 8 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63962 ndisk      0 nwind    103 nstar  63859 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.62e+35 nphotons 8032 ndisk      0 nwind   4230 nstar   3802 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.79e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.723255e+50
+!!python: Total photon luminosity before transphot 1.347641285747e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344117386845e+43 (diff -3.523898902344e+40). Radiated luminosity 1.013111077215e+43
+NSH Geo.n_ioniz=1.149677e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35562 18881  9856  5463  3144  1811  1142   627   433   312
+   218   177   125   120   100   105   101    96    69    97
+    71    53    45    74    49    35    47    41    44    47
+    47    45    40    38    40    31    26    22    23    30
+    23    21    28    20    19    23    19    20    18    24
+   498
+Number of photons resonantly scattering n times
+ 53194 11106  6601  3042  1546   835   470   330   218   150
+   143   134   103    95    99    95   110    95    82    69
+    64    45    67    50    39    49    48    50    35    44
+    48    36    44    35    24    28    24    24    29    36
+    20    27    21    20    28    37    78    90   137   129
+    77
+No of photons and their fates
+     0     0 48623 19006   498     0 11873     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48623     0     0     0     0     0     0     0
+     0     0 48623     0     0     0     0     0     0     0
+     0     0 48473     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   150     0     0     0     0     0     0     0
+     0     0     0 19006     0     0     0     0     0     0
+     0     0 12815 11532   498     0  1961     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.14968e+49 lum of ionizing photons 2.74255e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.73e+40  (photo 1.00e+39 ff 4.54e+34 compton 6.48e+37 induced_compton 8.37e+35 lines 2.62e+40)
+!!wind_update: Wind heating     2.73e+40  (photo 1.00e+39 ff 4.54e+34 compton 6.48e+37 induced_compton 8.37e+35 lines 2.62e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.69e+40 (recomb 5.18e+39 ff 2.57e+35 lines 2.17e+40) after update
+!!wind_update: Wind cooling     2.69e+40 (recomb 5.18e+39 ff 2.57e+35 compton 5.86e+37 DR 0.00e+00 DI 0.00e+00 lines 2.17e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r   -130 at cell   21 (21,0)
+!!wind_update: Ave change in t_r    -77 from  11042 to  10965
+!!wind_update: Max change in t_e  -1925 at cell   23 (23,0)
+!!wind_update: Ave change in t_e    -15 from   8298 to   8283
+Summary  t_e    8283      -15  #t_e and dt_e on this update
+Summary  t_r   10965      -77  #t_r and dt_r on this update
+!!Check_converging:   24 (0.889) converged and   20 (0.741) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   24 t_e(maxed)    0 hc(real)   24
+Summary  convergence   24 0.889    20  0.741  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.9e+03  9.6e+03  9.6e+03  9.4e+03  9.2e+03  9.3e+03  9.2e+03  9.1e+03  9.2e+03  8.9e+03  8.9e+03  9.1e+03  8.8e+03  8.9e+03  8.8e+03  8.7e+03  8.4e+03  8.6e+03  8.8e+03  8.1e+03  8.6e+03  7.2e+03  7.2e+03  6.1e+03  3.2e+03  7.8e+03    3e+03        0        0 
+Completed ionization cycle 8 :  The elapsed TIME was 54.495496
+xxx Wed Aug  5 15:31:29 2015     54.6 OK                   Finished 8 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:29 2015     54.6 NOK                  Starting 9 of 20 ionization cycle 
+!!Python: Begining cycle 9 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63962 ndisk      0 nwind    104 nstar  63858 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.64e+35 nphotons 8032 ndisk      0 nwind   4237 nstar   3795 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.78e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.731313e+50
+!!python: Total photon luminosity before transphot 1.347662583484e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344176070424e+43 (diff -3.486513059892e+40). Radiated luminosity 1.017783534104e+43
+NSH Geo.n_ioniz=1.065240e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35640 18957  9739  5483  3100  1816  1074   690   397   292
+   233   184   122   100    84   107    97    91    72    80
+    93    64    60    46    59    59    50    47    42    41
+    30    34    30    30    23    25    29    34    32    30
+    23    28    23    25    21    28    27    28    27    23
+   531
+Number of photons resonantly scattering n times
+ 53234 10951  6669  3027  1545   845   523   306   197   174
+   154   131    85    89    83    97    94    85    85    78
+    77    59    49    57    55    53    52    47    36    30
+    32    38    25    31    21    28    30    31    32    29
+    22    25    17    23    37    52    69   124   146   143
+    78
+No of photons and their fates
+     0     0 48838 18809   531     0 11822     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48838     0     0     0     0     0     0     0
+     0     0 48838     0     0     0     0     0     0     0
+     0     0 48692     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   146     0     0     0     0     0     0     0
+     0     0     0 18809     0     0     0     0     0     0
+     0     0 13113 11230   531     0  1892     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.06524e+49 lum of ionizing photons 2.53472e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.67e+40  (photo 1.03e+39 ff 3.92e+34 compton 6.50e+37 induced_compton 8.24e+35 lines 2.56e+40)
+!!wind_update: Wind heating     2.67e+40  (photo 1.03e+39 ff 3.92e+34 compton 6.50e+37 induced_compton 8.24e+35 lines 2.56e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.62e+40 (recomb 5.20e+39 ff 3.03e+35 lines 2.10e+40) after update
+!!wind_update: Wind cooling     2.63e+40 (recomb 5.20e+39 ff 3.03e+35 compton 5.85e+37 DR 0.00e+00 DI 0.00e+00 lines 2.10e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    108 at cell   12 (12,0)
+!!wind_update: Ave change in t_r     57 from  10965 to  11021
+!!wind_update: Max change in t_e  -1873 at cell   25 (25,0)
+!!wind_update: Ave change in t_e   -157 from   8283 to   8126
+Summary  t_e    8126     -157  #t_e and dt_e on this update
+Summary  t_r   11021       57  #t_r and dt_r on this update
+!!Check_converging:   18 (0.667) converged and   24 (0.889) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   19 t_e(maxed)    0 hc(real)   23
+Summary  convergence   18 0.667    24  0.889  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.9e+03  9.6e+03  9.5e+03  9.6e+03  9.2e+03  9.3e+03  9.2e+03  9.2e+03  8.9e+03  8.9e+03  8.9e+03  9.2e+03  8.5e+03    8e+03    8e+03  8.5e+03  8.4e+03  8.6e+03  8.7e+03  8.6e+03  6.7e+03    8e+03    8e+03  4.6e+03  3.8e+03  5.9e+03  3.7e+03        0        0 
+Completed ionization cycle 9 :  The elapsed TIME was 60.425410
+xxx Wed Aug  5 15:31:34 2015     60.5 OK                   Finished 9 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:34 2015     60.5 NOK                  Starting 10 of 20 ionization cycle 
+!!Python: Begining cycle 10 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63962 ndisk      0 nwind    101 nstar  63861 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.64e+35 nphotons 8032 ndisk      0 nwind   4237 nstar   3795 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.80e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.733468e+50
+!!python: Total photon luminosity before transphot 1.347598509495e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343629808233e+43 (diff -3.968701262369e+40). Radiated luminosity 1.017642470627e+43
+NSH Geo.n_ioniz=1.149264e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35768 18815  9848  5551  3142  1811  1008   663   436   287
+   228   147   120    92    98    86   100    89    95    65
+    63    54    56    60    55    49    43    42    41    37
+    43    30    21    21    30    29    30    26    24    18
+    23    36    21    27    23    23    23    16    25    16
+   546
+Number of photons resonantly scattering n times
+ 53650 10809  6558  3041  1551   802   480   327   221   156
+   138   126    79    91    86    95    89    86    81    53
+    57    66    60    48    55    43    42    40    39    27
+    38    18    26    31    34    31    23    21    24    28
+    28    32    20    22    32    43    58   101   144   172
+    78
+No of photons and their fates
+     0     0 48780 18867   545     0 11808     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48780     0     0     0     0     0     0     0
+     0     0 48780     0     0     0     0     0     0     0
+     0     0 48644     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   136     0     0     0     0     0     0     0
+     0     0     0 18867     0     0     0     0     0     0
+     0     0 12743 11252   545     0  1810     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.14926e+49 lum of ionizing photons 2.72342e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.16e+40  (photo 9.99e+38 ff 4.69e+34 compton 6.51e+37 induced_compton 8.27e+35 lines 3.06e+40)
+!!wind_update: Wind heating     3.16e+40  (photo 9.99e+38 ff 4.69e+34 compton 6.51e+37 induced_compton 8.27e+35 lines 3.06e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.81e+40 (recomb 5.21e+39 ff 2.80e+35 lines 2.29e+40) after update
+!!wind_update: Wind cooling     2.81e+40 (recomb 5.21e+39 ff 2.80e+35 compton 5.95e+37 DR 0.00e+00 DI 0.00e+00 lines 2.29e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -74 at cell    3 (3,0)
+!!wind_update: Ave change in t_r     -9 from  11021 to  11012
+!!wind_update: Max change in t_e  -1780 at cell   22 (22,0)
+!!wind_update: Ave change in t_e     15 from   8126 to   8141
+Summary  t_e    8141       15  #t_e and dt_e on this update
+Summary  t_r   11012       -9  #t_r and dt_r on this update
+!!Check_converging:   21 (0.778) converged and   18 (0.667) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   21 t_e(maxed)    0 hc(real)   21
+Summary  convergence   21 0.778    18  0.667  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  9.9e+03  9.7e+03  9.6e+03  9.5e+03  9.4e+03  9.6e+03  9.2e+03  9.3e+03  8.8e+03  8.9e+03    9e+03  9.1e+03  8.7e+03  8.7e+03  8.3e+03  8.6e+03  8.5e+03  8.8e+03  8.4e+03  8.9e+03  7.8e+03  6.8e+03  6.2e+03  4.9e+03  3.1e+03  7.4e+03  2.8e+03        0        0 
+Completed ionization cycle 10 :  The elapsed TIME was 66.320510
+xxx Wed Aug  5 15:31:40 2015     66.4 OK                   Finished 10 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:40 2015     66.4 NOK                  Starting 11 of 20 ionization cycle 
+!!Python: Begining cycle 11 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    109 nstar  63852 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.70e+35 nphotons 8033 ndisk      0 nwind   4265 nstar   3768 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.80e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.749134e+50
+!!python: Total photon luminosity before transphot 1.347772387166e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343928290631e+43 (diff -3.844096535435e+40). Radiated luminosity 1.015773577319e+43
+NSH Geo.n_ioniz=1.107795e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35540 19213  9790  5469  3137  1765  1061   667   426   251
+   230   133   101    94    91    80   109    87    85    84
+    66    65    47    54    50    44    42    37    37    36
+    51    35    34    33    37    23    34    35    38    27
+    25    27    29    20    27    21    27    28    27    28
+   503
+Number of photons resonantly scattering n times
+ 53501 10981  6603  3091  1504   817   431   276   227   148
+   118   107    80    79    88   105    86    95    73    81
+    63    54    49    62    48    35    37    42    39    34
+    44    41    30    26    34    35    33    37    26    20
+    27    29    22    26    37    48    74   108   118   152
+    79
+No of photons and their fates
+     0     0 48727 18951   502     0 11820     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48727     0     0     0     0     0     0     0
+     0     0 48727     0     0     0     0     0     0     0
+     0     0 48583     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   144     0     0     0     0     0     0     0
+     0     0     0 18951     0     0     0     0     0     0
+     0     0 12877 11278   502     0  1842     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.1078e+49 lum of ionizing photons 2.62727e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.01e+40  (photo 1.01e+39 ff 4.23e+34 compton 6.48e+37 induced_compton 8.30e+35 lines 2.91e+40)
+!!wind_update: Wind heating     3.01e+40  (photo 1.01e+39 ff 4.23e+34 compton 6.48e+37 induced_compton 8.30e+35 lines 2.91e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.82e+40 (recomb 5.20e+39 ff 2.63e+35 lines 2.30e+40) after update
+!!wind_update: Wind cooling     2.83e+40 (recomb 5.20e+39 ff 2.63e+35 compton 5.87e+37 DR 0.00e+00 DI 0.00e+00 lines 2.30e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -75 at cell   21 (21,0)
+!!wind_update: Ave change in t_r    -16 from  11012 to  10996
+!!wind_update: Max change in t_e   1483 at cell   22 (22,0)
+!!wind_update: Ave change in t_e     89 from   8141 to   8230
+Summary  t_e    8230       89  #t_e and dt_e on this update
+Summary  t_r   10996      -16  #t_r and dt_r on this update
+!!Check_converging:   21 (0.778) converged and   17 (0.630) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   21 t_e(maxed)    0 hc(real)   23
+Summary  convergence   21 0.778    17  0.630  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.7e+03  9.7e+03  9.5e+03  9.3e+03  9.4e+03  8.9e+03  9.2e+03  8.9e+03  9.1e+03    9e+03    9e+03    9e+03  8.5e+03  8.6e+03  8.2e+03  8.6e+03  8.7e+03  8.4e+03    9e+03    7e+03  7.9e+03  7.7e+03    4e+03  3.7e+03  7.9e+03  3.3e+03        0        0 
+Completed ionization cycle 11 :  The elapsed TIME was 72.384071
+xxx Wed Aug  5 15:31:46 2015     72.5 OK                   Finished 11 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:46 2015     72.5 NOK                  Starting 12 of 20 ionization cycle 
+!!Python: Begining cycle 12 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    110 nstar  63851 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.71e+35 nphotons 8033 ndisk      0 nwind   4269 nstar   3764 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.79e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.752517e+50
+!!python: Total photon luminosity before transphot 1.347784622197e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343913748604e+43 (diff -3.870873592231e+40). Radiated luminosity 1.022026816021e+43
+NSH Geo.n_ioniz=1.140918e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35620 19030  9598  5463  3072  1805  1165   698   452   263
+   216   184   124   117    95   122   100    74    74    90
+    64    69    47    68    52    56    56    46    42    38
+    43    43    33    33    41    29    21    22    32    29
+    27    39    24    26    23    25    27    25    17    20
+   521
+Number of photons resonantly scattering n times
+ 53369 10959  6568  2989  1553   815   490   343   202   166
+   143   129    97    84    98   110    84    81    85    75
+    70    60    65    64    45    48    51    52    30    43
+    36    38    26    38    29    24    26    29    36    28
+    32    29    25    23    33    47    73    90   141   153
+    76
+No of photons and their fates
+     0     0 49053 18550   521     0 11876     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 49053     0     0     0     0     0     0     0
+     0     0 49053     0     0     0     0     0     0     0
+     0     0 48911     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   142     0     0     0     0     0     0     0
+     0     0     0 18550     0     0     0     0     0     0
+     0     0 13085 11134   521     0  1891     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.14092e+49 lum of ionizing photons 2.70593e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.05e+40  (photo 1.00e+39 ff 3.89e+34 compton 6.50e+37 induced_compton 8.32e+35 lines 2.94e+40)
+!!wind_update: Wind heating     3.05e+40  (photo 1.00e+39 ff 3.89e+34 compton 6.50e+37 induced_compton 8.32e+35 lines 2.94e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.81e+40 (recomb 5.19e+39 ff 2.70e+35 lines 2.29e+40) after update
+!!wind_update: Wind cooling     2.81e+40 (recomb 5.19e+39 ff 2.70e+35 compton 5.90e+37 DR 0.00e+00 DI 0.00e+00 lines 2.29e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r     83 at cell    2 (2,0)
+!!wind_update: Ave change in t_r     -4 from  10996 to  10992
+!!wind_update: Max change in t_e  -1456 at cell   25 (25,0)
+!!wind_update: Ave change in t_e     15 from   8230 to   8245
+Summary  t_e    8245       15  #t_e and dt_e on this update
+Summary  t_r   10992       -4  #t_r and dt_r on this update
+!!Check_converging:   22 (0.815) converged and   23 (0.852) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   22 t_e(maxed)    0 hc(real)   22
+Summary  convergence   22 0.815    23  0.852  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.6e+03  9.5e+03  9.3e+03  9.2e+03  9.2e+03    9e+03  9.2e+03  9.1e+03  9.3e+03  9.1e+03  9.1e+03  9.2e+03  8.8e+03  8.6e+03  8.6e+03  8.7e+03  8.7e+03  8.7e+03  8.7e+03  7.5e+03    7e+03  8.1e+03  4.8e+03  4.2e+03  6.4e+03  2.9e+03        0        0 
+Completed ionization cycle 12 :  The elapsed TIME was 78.915252
+xxx Wed Aug  5 15:31:53 2015     79.0 OK                   Finished 12 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:31:53 2015     79.0 NOK                  Starting 13 of 20 ionization cycle 
+!!Python: Begining cycle 13 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    109 nstar  63852 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.68e+35 nphotons 8033 ndisk      0 nwind   4256 nstar   3777 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.79e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.744047e+50
+!!python: Total photon luminosity before transphot 1.347766513870e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344038272121e+43 (diff -3.728241749519e+40). Radiated luminosity 1.018604120275e+43
+NSH Geo.n_ioniz=1.211217e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35527 19057  9653  5622  3102  1843  1129   622   455   266
+   233   135   121   134    98   114    99    75    80    77
+    59    70    48    52    51    53    54    51    43    28
+    30    30    29    22    34    35    28    18    22    29
+    23    26    31    29    24    30    12    22    24    25
+   526
+Number of photons resonantly scattering n times
+ 53524 10897  6445  3163  1523   854   500   283   195   146
+   143   118    89   115    97   106    91    80    91    63
+    65    50    54    56    59    53    37    41    31    25
+    22    37    37    25    22    30    28    24    28    30
+    20    29    33    30    31    33    65   117   142   129
+    94
+No of photons and their fates
+     0     0 48859 18856   525     0 11760     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48859     0     0     0     0     0     0     0
+     0     0 48859     0     0     0     0     0     0     0
+     0     0 48719     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   140     0     0     0     0     0     0     0
+     0     0     0 18856     0     0     0     0     0     0
+     0     0 12883 11219   525     0  1849     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.21122e+49 lum of ionizing photons 2.87294e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.86e+40  (photo 1.04e+39 ff 4.16e+34 compton 6.54e+37 induced_compton 8.40e+35 lines 2.75e+40)
+!!wind_update: Wind heating     2.86e+40  (photo 1.04e+39 ff 4.16e+34 compton 6.54e+37 induced_compton 8.40e+35 lines 2.75e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.76e+40 (recomb 5.19e+39 ff 2.62e+35 lines 2.24e+40) after update
+!!wind_update: Wind cooling     2.76e+40 (recomb 5.19e+39 ff 2.62e+35 compton 5.91e+37 DR 0.00e+00 DI 0.00e+00 lines 2.24e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -41 at cell   19 (19,0)
+!!wind_update: Ave change in t_r    -16 from  10992 to  10976
+!!wind_update: Max change in t_e  -1777 at cell   19 (19,0)
+!!wind_update: Ave change in t_e     51 from   8245 to   8296
+Summary  t_e    8296       51  #t_e and dt_e on this update
+Summary  t_r   10976      -16  #t_r and dt_r on this update
+!!Check_converging:   22 (0.815) converged and   20 (0.741) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   22 t_e(maxed)    0 hc(real)   23
+Summary  convergence   22 0.815    20  0.741  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.7e+03  9.6e+03  9.4e+03    9e+03  9.1e+03  8.9e+03  9.1e+03  9.3e+03  9.2e+03  9.1e+03  9.1e+03  8.7e+03  8.8e+03  8.7e+03  8.7e+03  8.9e+03  8.7e+03  8.6e+03    7e+03  7.9e+03  7.5e+03  8.5e+03  5.5e+03  4.9e+03  7.7e+03  2.5e+03        0        0 
+Completed ionization cycle 13 :  The elapsed TIME was 85.509943
+xxx Wed Aug  5 15:32:00 2015     85.6 OK                   Finished 13 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:32:00 2015     85.6 NOK                  Starting 14 of 20 ionization cycle 
+!!Python: Begining cycle 14 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    107 nstar  63854 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.67e+35 nphotons 8033 ndisk      0 nwind   4253 nstar   3780 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.78e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.837343e+50
+!!python: Total photon luminosity before transphot 1.347715722258e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344028642870e+43 (diff -3.687079388163e+40). Radiated luminosity 1.016047478107e+43
+NSH Geo.n_ioniz=1.167035e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35554 18784  9855  5590  3106  1894  1145   651   431   299
+   196   164   118    88   101   100    98    96    69    69
+    81    63    62    55    44    53    40    47    38    46
+    40    30    26    34    35    30    20    25    14    27
+    17    27    28    17    27    28    26    32    31    22
+   527
+Number of photons resonantly scattering n times
+ 53498 10796  6536  3182  1485   873   514   329   201   140
+   126   130    82    73   101   107   102    83    68    80
+    65    59    63    47    46    52    49    24    34    48
+    34    30    24    32    32    24    21    19    23    27
+    22    22    20    30    32    37    89   112   145   139
+    93
+No of photons and their fates
+     0     0 48730 18981   527     0 11762     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48730     0     0     0     0     0     0     0
+     0     0 48730     0     0     0     0     0     0     0
+     0     0 48581     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   149     0     0     0     0     0     0     0
+     0     0     0 18981     0     0     0     0     0     0
+     0     0 12852 11326   527     0  1797     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.16704e+49 lum of ionizing photons 2.77099e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.83e+40  (photo 1.06e+39 ff 4.03e+34 compton 6.52e+37 induced_compton 8.47e+35 lines 2.72e+40)
+!!wind_update: Wind heating     2.83e+40  (photo 1.06e+39 ff 4.03e+34 compton 6.52e+37 induced_compton 8.47e+35 lines 2.72e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.75e+40 (recomb 5.19e+39 ff 2.62e+35 lines 2.23e+40) after update
+!!wind_update: Wind cooling     2.76e+40 (recomb 5.19e+39 ff 2.62e+35 compton 5.93e+37 DR 0.00e+00 DI 0.00e+00 lines 2.23e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -70 at cell    5 (5,0)
+!!wind_update: Ave change in t_r      4 from  10976 to  10981
+!!wind_update: Max change in t_e  -1969 at cell   18 (18,0)
+!!wind_update: Ave change in t_e   -110 from   8296 to   8186
+Summary  t_e    8186     -110  #t_e and dt_e on this update
+Summary  t_r   10981        4  #t_r and dt_r on this update
+!!Check_converging:   20 (0.741) converged and   25 (0.926) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   20 t_e(maxed)    0 hc(real)   21
+Summary  convergence   20 0.741    25  0.926  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.8e+03  9.6e+03  9.3e+03  9.3e+03  9.2e+03    9e+03  9.1e+03    9e+03  9.1e+03    9e+03  9.2e+03  9.2e+03  8.8e+03  8.7e+03  8.8e+03  8.7e+03  7.4e+03  6.6e+03  7.9e+03  8.4e+03  7.8e+03  6.8e+03  6.4e+03    4e+03    8e+03  2.2e+03        0        0 
+Completed ionization cycle 14 :  The elapsed TIME was 91.736634
+xxx Wed Aug  5 15:32:06 2015     91.8 OK                   Finished 14 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:32:06 2015     91.8 NOK                  Starting 15 of 20 ionization cycle 
+!!Python: Begining cycle 15 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    107 nstar  63854 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.68e+35 nphotons 8033 ndisk      0 nwind   4257 nstar   3776 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.78e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.737419e+50
+!!python: Total photon luminosity before transphot 1.347709984918e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343689229125e+43 (diff -4.020755792615e+40). Radiated luminosity 1.013966426459e+43
+NSH Geo.n_ioniz=1.232095e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35628 18906  9831  5521  3065  1863  1107   678   425   267
+   210   157   132   118   102   116    90   104    78    68
+    61    62    63    55    60    44    45    36    43    34
+    39    38    34    30    24    27    33    31    20    21
+    25    20    19    24    29    20    24    28    31    26
+   488
+Number of photons resonantly scattering n times
+ 53400 10969  6585  3095  1522   837   486   303   208   134
+   159   125    85    94   117    97    87    91    81    67
+    70    62    44    58    47    52    41    36    41    38
+    40    33    23    26    27    34    20    31    19    35
+    18    21    23    19    33    47    65   108   137   122
+    88
+No of photons and their fates
+     0     0 48604 19005   488     0 11903     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48604     0     0     0     0     0     0     0
+     0     0 48604     0     0     0     0     0     0     0
+     0     0 48471     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   133     0     0     0     0     0     0     0
+     0     0     0 19005     0     0     0     0     0     0
+     0     0 12913 11338   488     0  1861     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.23209e+49 lum of ionizing photons 2.91932e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.17e+40  (photo 1.01e+39 ff 3.98e+34 compton 6.48e+37 induced_compton 8.41e+35 lines 3.07e+40)
+!!wind_update: Wind heating     3.17e+40  (photo 1.01e+39 ff 3.98e+34 compton 6.48e+37 induced_compton 8.41e+35 lines 3.07e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  3.01e+40 (recomb 5.21e+39 ff 2.42e+35 lines 2.49e+40) after update
+!!wind_update: Wind cooling     3.01e+40 (recomb 5.21e+39 ff 2.42e+35 compton 5.96e+37 DR 0.00e+00 DI 0.00e+00 lines 2.49e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -74 at cell    3 (3,0)
+!!wind_update: Ave change in t_r     -5 from  10981 to  10976
+!!wind_update: Max change in t_e   1589 at cell   18 (18,0)
+!!wind_update: Ave change in t_e    128 from   8186 to   8314
+Summary  t_e    8314      128  #t_e and dt_e on this update
+Summary  t_r   10976       -5  #t_r and dt_r on this update
+!!Check_converging:   20 (0.741) converged and   16 (0.593) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   20 t_e(maxed)    0 hc(real)   23
+Summary  convergence   20 0.741    16  0.593  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.8e+03  9.6e+03  9.7e+03  9.5e+03  9.5e+03    9e+03    9e+03    9e+03  8.9e+03  8.9e+03  9.1e+03  9.1e+03  8.9e+03  8.7e+03  8.8e+03  8.6e+03  7.8e+03  8.2e+03  8.5e+03    7e+03  8.2e+03  7.8e+03  7.3e+03  4.8e+03  6.8e+03  1.8e+03        0        0 
+Completed ionization cycle 15 :  The elapsed TIME was 97.862190
+xxx Wed Aug  5 15:32:12 2015     97.9 OK                   Finished 15 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:32:12 2015     97.9 NOK                  Starting 16 of 20 ionization cycle 
+!!Python: Begining cycle 16 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    119 nstar  63842 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.80e+35 nphotons 8033 ndisk      0 nwind   4308 nstar   3725 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.80e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.784123e+50
+!!python: Total photon luminosity before transphot 1.347979731102e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344054518623e+43 (diff -3.925212478992e+40). Radiated luminosity 1.023360059951e+43
+NSH Geo.n_ioniz=1.180270e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35735 18886  9698  5454  3230  1764  1161   650   390   282
+   219   152   134   108    99   111    94    88    81    90
+    64    88    50    57    63    40    44    52    34    49
+    34    38    32    33    26    27    31    37    30    23
+    19    20    28    23    28    16    24    28    24    23
+   489
+Number of photons resonantly scattering n times
+ 53569 10838  6479  3099  1561   801   516   299   202   155
+   138   117    95    98    98   104    99    93    86    61
+    56    75    63    52    47    50    53    39    37    41
+    33    34    34    29    21    31    29    36    25    13
+    29    25    34    26    30    49    55    99   142   115
+    90
+No of photons and their fates
+     0     0 49066 18655   489     0 11790     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 49066     0     0     0     0     0     0     0
+     0     0 49066     0     0     0     0     0     0     0
+     0     0 48909     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   157     0     0     0     0     0     0     0
+     0     0     0 18655     0     0     0     0     0     0
+     0     0 12903 11232   489     0  1807     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.18027e+49 lum of ionizing photons 2.79922e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.01e+40  (photo 1.07e+39 ff 3.59e+34 compton 6.49e+37 induced_compton 8.36e+35 lines 2.90e+40)
+!!wind_update: Wind heating     3.01e+40  (photo 1.07e+39 ff 3.59e+34 compton 6.49e+37 induced_compton 8.36e+35 lines 2.90e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.94e+40 (recomb 5.22e+39 ff 2.68e+35 lines 2.42e+40) after update
+!!wind_update: Wind cooling     2.95e+40 (recomb 5.22e+39 ff 2.68e+35 compton 5.93e+37 DR 0.00e+00 DI 0.00e+00 lines 2.42e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r     72 at cell   19 (19,0)
+!!wind_update: Ave change in t_r     34 from  10976 to  11010
+!!wind_update: Max change in t_e  -1460 at cell   19 (19,0)
+!!wind_update: Ave change in t_e    -73 from   8314 to   8241
+Summary  t_e    8241      -73  #t_e and dt_e on this update
+Summary  t_r   11010       34  #t_r and dt_r on this update
+!!Check_converging:   23 (0.852) converged and   23 (0.852) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   23 t_e(maxed)    0 hc(real)   23
+Summary  convergence   23 0.852    23  0.852  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.9e+03  9.7e+03  9.4e+03  9.5e+03  9.5e+03  9.1e+03    9e+03  9.1e+03  8.9e+03  8.9e+03  9.1e+03  9.1e+03    9e+03  8.9e+03  8.9e+03  8.5e+03  8.1e+03  8.7e+03    7e+03  7.7e+03  8.1e+03  7.7e+03  5.9e+03  5.1e+03  5.6e+03  2.1e+03        0        0 
+Completed ionization cycle 16 :  The elapsed TIME was 104.167015
+xxx Wed Aug  5 15:32:18 2015    104.2 OK                   Finished 16 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:32:18 2015    104.2 NOK                  Starting 17 of 20 ionization cycle 
+!!Python: Begining cycle 17 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    116 nstar  63845 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.75e+35 nphotons 8033 ndisk      0 nwind   4288 nstar   3745 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.80e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.864363e+50
+!!python: Total photon luminosity before transphot 1.347911311658e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.343753124521e+43 (diff -4.158187137280e+40). Radiated luminosity 1.015462940274e+43
+NSH Geo.n_ioniz=1.159781e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35461 18898  9867  5524  3191  1826  1079   628   439   278
+   215   183   130   130   115    96    82    93    89    75
+    77    66    59    62    59    46    46    31    53    39
+    38    29    32    31    41    31    25    33    28    24
+    23    34    28    24    20    32    20    25    22    21
+   502
+Number of photons resonantly scattering n times
+ 53231 10945  6700  3143  1505   776   491   286   250   161
+   136   133    99   101   104    93    94    81    85    72
+    67    67    66    56    46    44    36    58    31    32
+    34    35    28    41    32    26    30    30    28    30
+    21    25    33    31    30    47    66    90   136   143
+    75
+No of photons and their fates
+     0     0 48674 18958   502     0 11866     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48674     0     0     0     0     0     0     0
+     0     0 48674     0     0     0     0     0     0     0
+     0     0 48536     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   138     0     0     0     0     0     0     0
+     0     0     0 18958     0     0     0     0     0     0
+     0     0 13044 11355   502     0  1868     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.15978e+49 lum of ionizing photons 2.73626e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    3.29e+40  (photo 1.04e+39 ff 4.03e+34 compton 6.54e+37 induced_compton 8.35e+35 lines 3.18e+40)
+!!wind_update: Wind heating     3.29e+40  (photo 1.04e+39 ff 4.03e+34 compton 6.54e+37 induced_compton 8.35e+35 lines 3.18e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.99e+40 (recomb 5.24e+39 ff 3.02e+35 lines 2.46e+40) after update
+!!wind_update: Wind cooling     2.99e+40 (recomb 5.24e+39 ff 3.02e+35 compton 5.98e+37 DR 0.00e+00 DI 0.00e+00 lines 2.46e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r     96 at cell   10 (10,0)
+!!wind_update: Ave change in t_r     19 from  11010 to  11029
+!!wind_update: Max change in t_e  -1587 at cell   21 (21,0)
+!!wind_update: Ave change in t_e     21 from   8241 to   8263
+Summary  t_e    8263       21  #t_e and dt_e on this update
+Summary  t_r   11029       19  #t_r and dt_r on this update
+!!Check_converging:   21 (0.778) converged and   22 (0.815) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   21 t_e(maxed)    0 hc(real)   22
+Summary  convergence   21 0.778    22  0.815  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.7e+03  9.8e+03  9.5e+03  9.5e+03  9.4e+03  9.3e+03  9.2e+03  9.1e+03    9e+03  8.9e+03  9.2e+03  9.1e+03  9.1e+03  8.9e+03  8.2e+03  8.6e+03  8.2e+03  8.8e+03  6.4e+03  6.7e+03  6.5e+03  8.2e+03  7.2e+03  5.8e+03  6.3e+03  2.6e+03        0        0 
+Completed ionization cycle 17 :  The elapsed TIME was 110.271247
+xxx Wed Aug  5 15:32:24 2015    110.3 OK                   Finished 17 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:32:24 2015    110.3 NOK                  Starting 18 of 20 ionization cycle 
+!!Python: Begining cycle 18 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    118 nstar  63843 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.77e+35 nphotons 8033 ndisk      0 nwind   4294 nstar   3739 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.83e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.868161e+50
+!!python: Total photon luminosity before transphot 1.347959078764e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344265282357e+43 (diff -3.693796406781e+40). Radiated luminosity 1.015067719129e+43
+NSH Geo.n_ioniz=1.133954e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35764 18814  9861  5413  3079  1822  1078   666   432   262
+   202   179   146   105   114    86    92    98    84    75
+    59    47    60    61    64    42    38    50    39    54
+    37    35    28    37    33    32    28    36    25    24
+    22    29    21    30    22    24    25    32    26    19
+   549
+Number of photons resonantly scattering n times
+ 53281 11012  6556  3155  1452   812   513   309   211   152
+   153   120   107    92   111    87    82    91    85    62
+    60    64    58    43    53    39    46    53    47    44
+    35    23    35    33    40    22    28    30    22    24
+    22    28    33    25    39    53    84   102   144   149
+    79
+No of photons and their fates
+     0     0 48683 18957   548     0 11812     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48683     0     0     0     0     0     0     0
+     0     0 48683     0     0     0     0     0     0     0
+     0     0 48515     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   168     0     0     0     0     0     0     0
+     0     0     0 18957     0     0     0     0     0     0
+     0     0 12941 11336   548     0  1894     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.13395e+49 lum of ionizing photons 2.71371e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.85e+40  (photo 1.04e+39 ff 4.48e+34 compton 6.52e+37 induced_compton 8.30e+35 lines 2.74e+40)
+!!wind_update: Wind heating     2.85e+40  (photo 1.04e+39 ff 4.48e+34 compton 6.52e+37 induced_compton 8.30e+35 lines 2.74e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.83e+40 (recomb 5.23e+39 ff 3.05e+35 lines 2.30e+40) after update
+!!wind_update: Wind cooling     2.83e+40 (recomb 5.23e+39 ff 3.05e+35 compton 5.87e+37 DR 0.00e+00 DI 0.00e+00 lines 2.30e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r    -46 at cell    4 (4,0)
+!!wind_update: Ave change in t_r      4 from  11029 to  11033
+!!wind_update: Max change in t_e  -1047 at cell   23 (23,0)
+!!wind_update: Ave change in t_e    -10 from   8263 to   8252
+Summary  t_e    8252      -10  #t_e and dt_e on this update
+Summary  t_r   11033        4  #t_r and dt_r on this update
+!!Check_converging:   20 (0.741) converged and   21 (0.778) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   20 t_e(maxed)    0 hc(real)   21
+Summary  convergence   20 0.741    21  0.778  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.7e+03  9.7e+03  9.5e+03  9.5e+03  9.2e+03  9.2e+03    9e+03  9.1e+03  9.1e+03    9e+03  9.2e+03  9.2e+03    9e+03    8e+03  8.2e+03  8.4e+03  8.2e+03  8.3e+03  7.2e+03  7.6e+03  6.6e+03  8.5e+03  6.1e+03  6.8e+03  5.5e+03  3.1e+03        0        0 
+Completed ionization cycle 18 :  The elapsed TIME was 116.224596
+xxx Wed Aug  5 15:32:30 2015    116.3 OK                   Finished 18 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+xxx Wed Aug  5 15:32:30 2015    116.3 NOK                  Starting 19 of 20 ionization cycle 
+!!Python: Begining cycle 19 of 20 for defining wind
+photon_gen: band 2.50e+14 to 3.29e+15 weight 2.11e+38 nphotons 63961 ndisk      0 nwind    110 nstar  63851 npow 0 
+photon_gen: band 3.29e+15 to 5.94e+15 weight 8.72e+35 nphotons 8033 ndisk      0 nwind   4271 nstar   3762 npow 0 
+photon_gen: band 5.94e+15 to 1.32e+16 weight 1.82e+35 nphotons 8006 ndisk      0 nwind   8005 nstar      1 npow 0 
+NSH Geo.n_ioniz=2.760572e+50
+!!python: Total photon luminosity before transphot 1.347793724162e+43
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+!!python: Total photon luminosity after transphot 1.344092676522e+43 (diff -3.701047640434e+40). Radiated luminosity 1.021916592202e+43
+NSH Geo.n_ioniz=1.154947e+49
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 35556 19001  9924  5452  3129  1751  1045   654   420   262
+   221   166   105   118   113   126   113    91    79    86
+    67    62    65    61    38    53    45    48    40    31
+    32    34    36    30    25    29    34    27    27    33
+    22    34    28    22    22    29    19    26    28    20
+   521
+Number of photons resonantly scattering n times
+ 53392 10968  6673  3051  1495   744   480   281   210   159
+   148   125   107    99   104   115    92    84    97    76
+    58    58    68    55    38    48    39    33    46    36
+    27    38    27    32    27    23    38    31    23    30
+    34    28    20    19    30    49    65   100   134   166
+    80
+No of photons and their fates
+     0     0 48987 18711   521     0 11781     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 48987     0     0     0     0     0     0     0
+     0     0 48987     0     0     0     0     0     0     0
+     0     0 48831     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0   156     0     0     0     0     0     0     0
+     0     0     0 18711     0     0     0     0     0     0
+     0     0 13042 11235   521     0  1810     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+Para: Zeroth thread successfully received the normalised estimators. About to broadcast.
+Para: Thread 0 happy after broadcast.
+Para: Zeroth thread successfully received the integer sum. About to broadcast.
+No need to communicate matom estimators as no macro-atoms!
+!!python: Number of ionizing photons 1.15495e+49 lum of ionizing photons 2.72342e+38
+MPI task 0 is working on cells 0 to max 27 (total size 27).
+MPI task 0 broadcasting plasma update information.
+MPI task 0 survived broadcasting plasma update information.
+wind_update: note, errors from mean intensity can be high in a working model
+wind_update: can be a problem with photon numbers if there are also errors from spectral_estimators and low photon number warnings
+wind_update: mean_intensity: 0.0000e+00 occurrences, this cycle, this thread of 'no model exists in a band'
+wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 'photon freq is outside frequency range of spectral model'
+!!wind_update: Absorbed flux    2.83e+40  (photo 1.02e+39 ff 4.54e+34 compton 6.58e+37 induced_compton 8.21e+35 lines 2.72e+40)
+!!wind_update: Wind heating     2.83e+40  (photo 1.02e+39 ff 4.54e+34 compton 6.58e+37 induced_compton 8.21e+35 lines 2.72e+40 adiabatic 0.00e+00)
+!!wind_update: Wind luminosity  2.82e+40 (recomb 5.25e+39 ff 3.54e+35 lines 2.30e+40) after update
+!!wind_update: Wind cooling     2.83e+40 (recomb 5.25e+39 ff 3.54e+35 compton 5.89e+37 DR 0.00e+00 DI 0.00e+00 lines 2.30e+40 adiabatic 0.00e+00) after update
+!!wind_update: Max change in t_r     83 at cell    4 (4,0)
+!!wind_update: Ave change in t_r     34 from  11033 to  11068
+!!wind_update: Max change in t_e  -1194 at cell   24 (24,0)
+!!wind_update: Ave change in t_e    -52 from   8252 to   8201
+Summary  t_e    8201      -52  #t_e and dt_e on this update
+Summary  t_r   11068       34  #t_r and dt_r on this update
+!!Check_converging:   22 (0.815) converged and   21 (0.778) converging of 27 cells
+!!Check_convergence_breakdown: t_r   27 t_e(real)   22 t_e(maxed)    0 hc(real)   23
+Summary  convergence   22 0.815    21  0.778  27  #  n_converged fraction_converged  converging fraction_converging total cells
+Warning: Since coord type is not cylindrical, next print out may look odd
+
+ T rad
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04  1.1e+04        0        0 
+
+ T e
+   z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
+8.55e+14        0    1e+04  9.6e+03  9.8e+03  9.4e+03  9.2e+03  9.1e+03  9.3e+03    9e+03  9.2e+03  9.1e+03  8.9e+03  9.2e+03  9.2e+03  8.7e+03  8.4e+03  8.3e+03  8.5e+03  8.5e+03  8.6e+03  7.7e+03  7.8e+03  5.7e+03  8.6e+03  7.1e+03  5.6e+03  4.7e+03  2.4e+03        0        0 
+Completed ionization cycle 19 :  The elapsed TIME was 122.239251
+xxx Wed Aug  5 15:32:36 2015    122.3 OK                   Finished 19 of 20 ionization cycle 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+ Completed wind creation.  The elapsed TIME was 122.309843
+xxx Wed Aug  5 15:32:36 2015    122.3 NOK                  Starting 0 of 1 spectral cycle 
+!!Cycle 0 of 1 to calculate a detailed spectrum
+init_freebound: Creating recombination emissivites between 1.498962e+14 and 1.498962e+16
+photon_gen: band 1.50e+14 to 1.50e+16 weight 1.75e+38 nphotons 80000 ndisk      0 nwind    162 nstar  79838 npow 0 
+
+Photon       0 of   80000 or  0.000 per cent 
+Photon   50000 of   80000 or 62.500 per cent 
+
+
+spectrum_create: Fraction of photons lost:  0.00 wi/ freq. low, 0.00 w/freq hi
+
+No. of photons which have scattered n times
+ 32343 22359 11079  6030  3507  1852   999   608   346   231
+   134    68    59    49    43    23    20    18    16    11
+     5    14    10    13     8     5     5    10     4     6
+     8     9     6     6     7     7     2     4     6     4
+     2     6     3     3     4     3     5     2     0     3
+    35
+Number of photons resonantly scattering n times
+ 54743 11909  7124  3118  1445   604   284   195    88    77
+    48    34    33    25    20    20    14    12     8     8
+    10     7    11     6     9    10     6     7     7     9
+     6     4     9     3     6     5     4     3     3     6
+     5     4     3     2     6     4    11     6     6     9
+     4
+No of photons and their fates
+     0     0 60738 19195    35     0    32     0     0     0
+
+Photons contributing to the various spectra
+Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
+     0     0 60738     0     0     0     0     0     0     0
+     0     0 60738     0     0     0     0     0     0     0
+     0     0 60677     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0    61     0     0     0     0     0     0     0
+     0     0     0 19195     0     0     0     0     0     0
+     0     0 15156 10064    35     0     2     0     0     0
+     0 19488 103996 70006     0     0    30     0     0     0
+Completed spectrum cycle   0 :  The elapsed TIME was 133.319284
+xxx Wed Aug  5 15:32:47 2015    133.3 OK                   Finished   0 of   1 spectrum cycles 
+wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
+
+Error summary: End of program, Thread 0 only
+Recurrences --  Description
+        1 -- wind2d.c: Don't know how to check wind mdot for this coordtype %d
+      582 -- lucy_mazzali1: elem %i has all ions < %8.4e density
+    12234 -- Compute zeta: total RR rate missing for element %i state %i
+        2 -- error_count: This error will no longer be logged: %s
+Run py_error.py for full error report.
+Para: Thread 0 Finalized. All done
+xxx Wed Aug  5 15:32:47 2015    133.3 COMPLETE             1d_sn
+Completed entire program.  The elapsed TIME was 133.323837
