@@ -65,6 +65,10 @@ for i in range(len(names)):
 
 if all(success == 1):
 	print "Every run completed"
+	#commit to git and push
+	os.system("cd %s;\
+          git commit -am 'Regression test for %s';\
+          git push origin gh-pages" % (PYTEST, DATE) )
 else:
 	em = open("%s/email.txt" % PYTEST, "w")
 
@@ -73,17 +77,16 @@ else:
 
 	em.write("List of failures:")
 	for model in failed:
-		em.write("\tmodel")
+		em.write("\t%s" % model)
 
 	em.close()
 
-	os.system("%s/scripts/email" % (PYTEST))
+	#os.system("%s/scripts/email" % (PYTEST))
 
-
-
-#commit to git and push
-os.system("cd %s;\
-          git commit -am 'Regression test for %s';\
+	#commit to git and push
+	os.system("cd %s;\
+          git commit -am 'FAIL - Regression test for %s';\
           git push origin gh-pages" % (PYTEST, DATE) )
+
 
 

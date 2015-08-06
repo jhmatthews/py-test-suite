@@ -6,11 +6,12 @@ SUBJECT="Failed run"
 # Email To ?
 EMAIL="jm8g08@soton.ac.uk"
 # Email text/message
-EMAILMESSAGE="/tmp/emailmessage.txt"
+EMAILMESSAGE=$PYTEST"/email.txt"
 
 DATE=`date +%Y-%m-%d`
 
-echo "Run failed on $DATE"> $EMAILMESSAGE
+echo "Run failed on $DATE">> $EMAILMESSAGE
 echo "Check Latest commit immediately">> $EMAILMESSAGE
 # send an email using /bin/mail
 /usr/bin/mail -s "$SUBJECT" "$EMAIL" < $EMAILMESSAGE
+
