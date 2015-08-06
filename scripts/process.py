@@ -58,6 +58,7 @@ for i in range(len(names)):
 		failed.append(name)
 
 
+print success
 # check successes
 # if there's a failure, email me
 if success.all() == 1:
