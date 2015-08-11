@@ -1,0 +1,56 @@
+
+OUTPUT for processing script
+
+DATE 2015-08-11
+/home/jm8g08/py-test-suite/
+VERSION test
+Model /home/jm8g08/py-test-suite//outputs/1d_sn
+81.50pc Converged
+Run 1d_sn: Column Created Normalised Standard deviation in flux = 3.9854e-16 Mean 7.8954e-16
+Run 1d_sn: Column Emitted Normalised Standard deviation in flux = 3.4927e-16 Mean 5.9900e-16
+Run 1d_sn: Column CenSrc Normalised Standard deviation in flux = 3.4907e-16 Mean 5.9864e-16
+Run 1d_sn: Column Disk Normalised Standard deviation in flux = 0.0000e+00 Mean 0.0000e+00
+Run 1d_sn: Column Wind Normalised Standard deviation in flux = 8.4760e-18 Mean 3.6140e-19
+Run 1d_sn: Column HitSurf Normalised Standard deviation in flux = 1.8884e-16 Mean 1.8775e-16
+Run 1d_sn: Column Scattered Normalised Standard deviation in flux = 2.1604e-16 Mean 2.4626e-16
+Run 1d_sn: Column A45P0.50 Normalised Standard deviation in flux = 3.9044e-16 Mean 5.9820e-16
+10 10
+/home/jm8g08/py-test-suite//outputs/py_heat_test.dat
+/home/jm8g08/py-test-suite//outputs_release/py_heat_release.dat
+Model /home/jm8g08/py-test-suite//outputs/cv_standard
+89.50pc Converged
+Run cv_standard: Column Created Normalised Standard deviation in flux = 1.9368e-12 Mean 1.7477e-11
+Run cv_standard: Column Emitted Normalised Standard deviation in flux = 1.6027e-12 Mean 1.3274e-11
+Run cv_standard: Column CenSrc Normalised Standard deviation in flux = 2.4358e-13 Mean 3.0216e-13
+Run cv_standard: Column Disk Normalised Standard deviation in flux = 1.5763e-12 Mean 1.2840e-11
+Run cv_standard: Column Wind Normalised Standard deviation in flux = 1.5298e-13 Mean 1.3213e-13
+Run cv_standard: Column HitSurf Normalised Standard deviation in flux = 5.0755e-13 Mean 1.3179e-12
+Run cv_standard: Column Scattered Normalised Standard deviation in flux = 5.6091e-13 Mean 1.5293e-12
+Run cv_standard: Column A10P0.50 Normalised Standard deviation in flux = 5.7426e-12 Mean 3.6352e-11
+Run cv_standard: Column A28P0.50 Normalised Standard deviation in flux = 4.5813e-12 Mean 2.8258e-11
+Run cv_standard: Column A45P0.50 Normalised Standard deviation in flux = 3.0599e-12 Mean 1.8654e-11
+Run cv_standard: Column A62P0.50 Normalised Standard deviation in flux = 1.5163e-12 Mean 9.1085e-12
+Run cv_standard: Column A80P0.50 Normalised Standard deviation in flux = 7.2837e-13 Mean 2.9103e-12
+14 14
+/home/jm8g08/py-test-suite//outputs/py_heat_test.dat
+/home/jm8g08/py-test-suite//outputs_release/py_heat_release.dat
+Model /home/jm8g08/py-test-suite//outputs/fiducial_agn
+78.80pc Converged
+Run fiducial_agn: Column Created Normalised Standard deviation in flux = 5.4294e-01 Mean 4.6479e+00
+Run fiducial_agn: Column Emitted Normalised Standard deviation in flux = 5.2069e-01 Mean 4.3900e+00
+Run fiducial_agn: Column CenSrc Normalised Standard deviation in flux = 3.1046e-02 Mean 5.0986e-03
+Run fiducial_agn: Column Disk Normalised Standard deviation in flux = 5.1999e-01 Mean 4.3835e+00
+Run fiducial_agn: Column Wind Normalised Standard deviation in flux = 6.7160e-03 Mean 1.2986e-03
+Run fiducial_agn: Column HitSurf Normalised Standard deviation in flux = 1.1415e-01 Mean 1.6761e-01
+Run fiducial_agn: Column Scattered Normalised Standard deviation in flux = 9.0207e-02 Mean 1.1307e-01
+Run fiducial_agn: Column A20P0.50 Normalised Standard deviation in flux = 1.6377e+00 Mean 1.0318e+01
+Run fiducial_agn: Column A40P0.50 Normalised Standard deviation in flux = 1.2514e+00 Mean 7.6870e+00
+Run fiducial_agn: Column A60P0.50 Normalised Standard deviation in flux = 6.9006e-01 Mean 4.0790e+00
+Run fiducial_agn: Column A70P0.50 Normalised Standard deviation in flux = 4.1410e-01 Mean 2.3890e+00
+Run fiducial_agn: Column A75P0.50 Normalised Standard deviation in flux = 2.2383e-01 Mean 2.3536e-01
+Run fiducial_agn: Column A80P0.50 Normalised Standard deviation in flux = 9.0454e-02 Mean 8.8490e-02
+Run fiducial_agn: Column A85P0.50 Normalised Standard deviation in flux = 6.3255e-02 Mean 9.5544e-02
+Run fiducial_agn: Column A89P0.50 Normalised Standard deviation in flux = 6.7714e-02 Mean 1.0606e-01
+17 17
+/home/jm8g08/py-test-suite//outputs/py_heat_test.dat
+/home/jm8g08/py-test-suite//outputs_release/py_heat_release.d

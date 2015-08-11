@@ -1,0 +1,414 @@
+/home/jm8g08/py-test-suite/
+Your branch is up-to-date with 'origin/dev'.
+Already up-to-date.
+rm -f *.o  *~ 
+Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
+YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
+MPI_FLAG= -DMPI_ON
+echo "#define VERSION " \"test\" > version.h
+echo "#define CHOICE"   1             // Compress plasma as much as possible >> version.h
+echo "#define GIT_COMMIT_HASH" \"ca3808d2f3b141ee54125e070efaf691d3921bac\" >> version.h
+echo "#define GIT_DIFF_STATUS" 1\ >> version.h
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o python.o python.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o bb.o bb.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o get_atomicdata.o get_atomicdata.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o photon2d.o photon2d.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o photon_gen.o photon_gen.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o saha.o saha.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o spectra.o spectra.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o wind2d.o wind2d.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o wind.o wind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o vector.o vector.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o debug.o debug.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o recipes.o recipes.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o trans_phot.o trans_phot.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o phot_util.o phot_util.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o resonate.o resonate.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o radiation.o radiation.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o wind_updates2d.o wind_updates2d.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o windsave.o windsave.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o extract.o extract.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o pdf.o pdf.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o roche.o roche.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o random.o random.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o stellar_wind.o stellar_wind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o homologous.o homologous.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o hydro_import.o hydro_import.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o corona.o corona.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o knigge.o knigge.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o disk.o disk.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o lines.o lines.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o continuum.o continuum.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o get_models.o get_models.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o emission.o emission.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o recomb.o recomb.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o diag.o diag.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o sv.o sv.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o ionization.o ionization.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o ispy.o ispy.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o levels.o levels.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o gradv.o gradv.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o reposition.o reposition.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o anisowind.o anisowind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o util.o util.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o density.o density.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o detail.o detail.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o bands.o bands.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o time.o time.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o matom.o matom.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o estimators.o estimators.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o wind_sum.o wind_sum.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o yso.o yso.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o elvis.o elvis.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o cylindrical.o cylindrical.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o rtheta.o rtheta.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o spherical.o spherical.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o cylind_var.o cylind_var.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o bilinear.o bilinear.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o gridwind.o gridwind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o partition.o partition.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o signal.o signal.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o auger_ionization.o auger_ionization.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o agn.o agn.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o shell_wind.o shell_wind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o compton.o compton.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o torus.o torus.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o zeta.o zeta.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o dielectronic.o dielectronic.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o spectral_estimators.o spectral_estimators.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o variable_temperature.o variable_temperature.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o matom_diag.o matom_diag.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o log.o log.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o lineio.o lineio.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o rdpar.o rdpar.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o direct_ion.o direct_ion.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o pi_rates.o pi_rates.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o matrix_ion.o matrix_ion.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o para_update.o para_update.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o setup.o setup.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o photo_gen_matom.o photo_gen_matom.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o macro_gov.o macro_gov.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o reverb.o reverb.c
+mpicc  -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON python.o bb.o get_atomicdata.o photon2d.o photon_gen.o saha.o spectra.o wind2d.o wind.o  vector.o debug.o recipes.o trans_phot.o phot_util.o resonate.o radiation.o wind_updates2d.o windsave.o extract.o pdf.o roche.o random.o stellar_wind.o homologous.o hydro_import.o corona.o knigge.o  disk.o lines.o  continuum.o get_models.o emission.o recomb.o diag.o sv.o ionization.o  ispy.o   levels.o gradv.o reposition.o anisowind.o util.o density.o  detail.o bands.o time.o matom.o estimators.o wind_sum.o yso.o elvis.o cylindrical.o rtheta.o spherical.o cylind_var.o bilinear.o gridwind.o partition.o signal.o auger_ionization.o agn.o shell_wind.o compton.o torus.o zeta.o dielectronic.o spectral_estimators.o variable_temperature.o matom_diag.o log.o lineio.o rdpar.o direct_ion.o pi_rates.o matrix_ion.o para_update.o setup.o photo_gen_matom.o macro_gov.o reverb.o  -L../lib -lm -lcfitsio -lgsl -lgslcblas  -o python
+cp python ../bin/py
+mv python ../bin/pytest
+rm -f *.o  *~ 
+Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
+YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
+MPI_FLAG= -DMPI_ON
+echo "#define VERSION " \"test\" > version.h
+echo "#define CHOICE"   1             // Compress plasma as much as possible >> version.h
+echo "#define GIT_COMMIT_HASH" \"ca3808d2f3b141ee54125e070efaf691d3921bac\" >> version.h
+echo "#define GIT_DIFF_STATUS" 1\ >> version.h
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o py_wind.o py_wind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o get_atomicdata.o get_atomicdata.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o py_wind_sub.o py_wind_sub.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o windsave.o windsave.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o py_wind_ion.o py_wind_ion.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o emission.o emission.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o recomb.o recomb.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o util.o util.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o detail.o detail.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o pdf.o pdf.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o random.o random.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o recipes.o recipes.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o saha.o saha.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o stellar_wind.o stellar_wind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o homologous.o homologous.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o sv.o sv.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o hydro_import.o hydro_import.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o corona.o corona.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o knigge.o knigge.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o disk.o disk.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o lines.o lines.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o vector.o vector.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o wind2d.o wind2d.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o wind.o wind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o ionization.o ionization.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o py_wind_write.o py_wind_write.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o levels.o levels.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o radiation.o radiation.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o gradv.o gradv.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o phot_util.o phot_util.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o anisowind.o anisowind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o resonate.o resonate.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o density.o density.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o matom.o matom.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o estimators.o estimators.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o yso.o yso.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o elvis.o elvis.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o photon2d.o photon2d.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o cylindrical.o cylindrical.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o rtheta.o rtheta.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o spherical.o spherical.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o cylind_var.o cylind_var.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o bilinear.o bilinear.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o gridwind.o gridwind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o py_wind_macro.o py_wind_macro.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o partition.o partition.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o auger_ionization.o auger_ionization.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o spectral_estimators.o spectral_estimators.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o shell_wind.o shell_wind.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o compton.o compton.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o torus.o torus.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o zeta.o zeta.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o dielectronic.o dielectronic.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o variable_temperature.o variable_temperature.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o bb.o bb.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o rdpar.o rdpar.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o log.o log.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o direct_ion.o direct_ion.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o diag.o diag.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o matrix_ion.o matrix_ion.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o pi_rates.o pi_rates.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o photo_gen_matom.o photo_gen_matom.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o macro_gov.o macro_gov.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o time.o time.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o reverb.o reverb.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON py_wind.o get_atomicdata.o py_wind_sub.o windsave.o py_wind_ion.o emission.o recomb.o util.o detail.o pdf.o random.o recipes.o saha.o stellar_wind.o homologous.o sv.o hydro_import.o corona.o knigge.o  disk.o lines.o vector.o wind2d.o wind.o  ionization.o  py_wind_write.o levels.o radiation.o gradv.o phot_util.o anisowind.o resonate.o density.o matom.o estimators.o yso.o elvis.o photon2d.o cylindrical.o rtheta.o spherical.o cylind_var.o bilinear.o gridwind.o py_wind_macro.o partition.o auger_ionization.o spectral_estimators.o shell_wind.o compton.o torus.o zeta.o dielectronic.o variable_temperature.o bb.o rdpar.o log.o direct_ion.o diag.o matrix_ion.o pi_rates.o photo_gen_matom.o macro_gov.o time.o reverb.o -L../lib -lm -lcfitsio -lgsl -lgslcblas  -o py_wind
+cp py_wind ../bin
+mv py_wind ../bin/py_windtest
+rm -f *.o  *~ 
+Starting cycle 1 of 81
+Lum= 1e+21
+Finished cycle 1 of 81
+Starting cycle 2 of 81
+Lum= 1.58489319246e+21
+Finished cycle 2 of 81
+Starting cycle 3 of 81
+Lum= 2.51188643151e+21
+Finished cycle 3 of 81
+Starting cycle 4 of 81
+Lum= 3.98107170553e+21
+Finished cycle 4 of 81
+Starting cycle 5 of 81
+Lum= 6.3095734448e+21
+Finished cycle 5 of 81
+Starting cycle 6 of 81
+Lum= 1e+22
+Finished cycle 6 of 81
+Starting cycle 7 of 81
+Lum= 1.58489319246e+22
+Finished cycle 7 of 81
+Starting cycle 8 of 81
+Lum= 2.51188643151e+22
+Finished cycle 8 of 81
+Starting cycle 9 of 81
+Lum= 3.98107170553e+22
+Finished cycle 9 of 81
+Starting cycle 10 of 81
+Lum= 6.3095734448e+22
+Finished cycle 10 of 81
+Starting cycle 11 of 81
+Lum= 1e+23
+Finished cycle 11 of 81
+Starting cycle 12 of 81
+Lum= 1.58489319246e+23
+Finished cycle 12 of 81
+Starting cycle 13 of 81
+Lum= 2.51188643151e+23
+Finished cycle 13 of 81
+Starting cycle 14 of 81
+Lum= 3.98107170553e+23
+Finished cycle 14 of 81
+Starting cycle 15 of 81
+Lum= 6.3095734448e+23
+Finished cycle 15 of 81
+Starting cycle 16 of 81
+Lum= 1e+24
+Finished cycle 16 of 81
+Starting cycle 17 of 81
+Lum= 1.58489319246e+24
+Finished cycle 17 of 81
+Starting cycle 18 of 81
+Lum= 2.51188643151e+24
+Finished cycle 18 of 81
+Starting cycle 19 of 81
+Lum= 3.98107170553e+24
+Finished cycle 19 of 81
+Starting cycle 20 of 81
+Lum= 6.3095734448e+24
+Finished cycle 20 of 81
+Starting cycle 21 of 81
+Lum= 1e+25
+Finished cycle 21 of 81
+Starting cycle 22 of 81
+Lum= 1.58489319246e+25
+Finished cycle 22 of 81
+Starting cycle 23 of 81
+Lum= 2.51188643151e+25
+Finished cycle 23 of 81
+Starting cycle 24 of 81
+Lum= 3.98107170553e+25
+Finished cycle 24 of 81
+Starting cycle 25 of 81
+Lum= 6.3095734448e+25
+Finished cycle 25 of 81
+Starting cycle 26 of 81
+Lum= 1e+26
+Finished cycle 26 of 81
+Starting cycle 27 of 81
+Lum= 1.58489319246e+26
+Finished cycle 27 of 81
+Starting cycle 28 of 81
+Lum= 2.51188643151e+26
+Finished cycle 28 of 81
+Starting cycle 29 of 81
+Lum= 3.98107170553e+26
+Finished cycle 29 of 81
+Starting cycle 30 of 81
+Lum= 6.3095734448e+26
+Finished cycle 30 of 81
+Starting cycle 31 of 81
+Lum= 1e+27
+Finished cycle 31 of 81
+Starting cycle 32 of 81
+Lum= 1.58489319246e+27
+Finished cycle 32 of 81
+Starting cycle 33 of 81
+Lum= 2.51188643151e+27
+Finished cycle 33 of 81
+Starting cycle 34 of 81
+Lum= 3.98107170553e+27
+Finished cycle 34 of 81
+Starting cycle 35 of 81
+Lum= 6.3095734448e+27
+Finished cycle 35 of 81
+Starting cycle 36 of 81
+Lum= 1e+28
+Finished cycle 36 of 81
+Starting cycle 37 of 81
+Lum= 1.58489319246e+28
+Finished cycle 37 of 81
+Starting cycle 38 of 81
+Lum= 2.51188643151e+28
+Finished cycle 38 of 81
+Starting cycle 39 of 81
+Lum= 3.98107170553e+28
+Finished cycle 39 of 81
+Starting cycle 40 of 81
+Lum= 6.3095734448e+28
+Finished cycle 40 of 81
+Starting cycle 41 of 81
+Lum= 1e+29
+Finished cycle 41 of 81
+Starting cycle 42 of 81
+Lum= 1.58489319246e+29
+Finished cycle 42 of 81
+Starting cycle 43 of 81
+Lum= 2.51188643151e+29
+Finished cycle 43 of 81
+Starting cycle 44 of 81
+Lum= 3.98107170553e+29
+Finished cycle 44 of 81
+Starting cycle 45 of 81
+Lum= 6.3095734448e+29
+Finished cycle 45 of 81
+Starting cycle 46 of 81
+Lum= 1e+30
+Finished cycle 46 of 81
+Starting cycle 47 of 81
+Lum= 1.58489319246e+30
+Finished cycle 47 of 81
+Starting cycle 48 of 81
+Lum= 2.51188643151e+30
+Finished cycle 48 of 81
+Starting cycle 49 of 81
+Lum= 3.98107170553e+30
+Finished cycle 49 of 81
+Starting cycle 50 of 81
+Lum= 6.3095734448e+30
+Finished cycle 50 of 81
+Starting cycle 51 of 81
+Lum= 1e+31
+Finished cycle 51 of 81
+Starting cycle 52 of 81
+Lum= 1.58489319246e+31
+Finished cycle 52 of 81
+Starting cycle 53 of 81
+Lum= 2.51188643151e+31
+Finished cycle 53 of 81
+Starting cycle 54 of 81
+Lum= 3.98107170553e+31
+Finished cycle 54 of 81
+Starting cycle 55 of 81
+Lum= 6.3095734448e+31
+Finished cycle 55 of 81
+Starting cycle 56 of 81
+Lum= 1e+32
+Finished cycle 56 of 81
+Starting cycle 57 of 81
+Lum= 1.58489319246e+32
+Finished cycle 57 of 81
+Starting cycle 58 of 81
+Lum= 2.51188643151e+32
+Finished cycle 58 of 81
+Starting cycle 59 of 81
+Lum= 3.98107170553e+32
+Finished cycle 59 of 81
+Starting cycle 60 of 81
+Lum= 6.3095734448e+32
+Finished cycle 60 of 81
+Starting cycle 61 of 81
+Lum= 1e+33
+Finished cycle 61 of 81
+Starting cycle 62 of 81
+Lum= 1.58489319246e+33
+Finished cycle 62 of 81
+Starting cycle 63 of 81
+Lum= 2.51188643151e+33
+Finished cycle 63 of 81
+Starting cycle 64 of 81
+Lum= 3.98107170553e+33
+Finished cycle 64 of 81
+Starting cycle 65 of 81
+Lum= 6.3095734448e+33
+Finished cycle 65 of 81
+Starting cycle 66 of 81
+Lum= 1e+34
+Finished cycle 66 of 81
+Starting cycle 67 of 81
+Lum= 1.58489319246e+34
+Finished cycle 67 of 81
+Starting cycle 68 of 81
+Lum= 2.51188643151e+34
+Finished cycle 68 of 81
+Starting cycle 69 of 81
+Lum= 3.98107170553e+34
+Finished cycle 69 of 81
+Starting cycle 70 of 81
+Lum= 6.3095734448e+34
+Finished cycle 70 of 81
+Starting cycle 71 of 81
+Lum= 1e+35
+Finished cycle 71 of 81
+Starting cycle 72 of 81
+Lum= 1.58489319246e+35
+Finished cycle 72 of 81
+Starting cycle 73 of 81
+Lum= 2.51188643151e+35
+Finished cycle 73 of 81
+Starting cycle 74 of 81
+Lum= 3.98107170553e+35
+Finished cycle 74 of 81
+Starting cycle 75 of 81
+Lum= 6.3095734448e+35
+Finished cycle 75 of 81
+Starting cycle 76 of 81
+Lum= 1e+36
+Finished cycle 76 of 81
+Starting cycle 77 of 81
+Lum= 1.58489319246e+36
+Finished cycle 77 of 81
+Starting cycle 78 of 81
+Lum= 2.51188643151e+36
+Finished cycle 78 of 81
+Starting cycle 79 of 81
+Lum= 3.98107170553e+36
+Finished cycle 79 of 81
+Starting cycle 80 of 81
+Lum= 6.3095734448e+36
+Finished cycle 80 of 81
+Starting cycle 81 of 81
+Lum= 1e+37
+Finished cycle 81 of 81
