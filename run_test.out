@@ -1,6 +1,11 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Already up-to-date.
+Updating 010228e..e710fe8
+Fast-forward
+ source/pi_rates.c | 4 ++--
+ source/python.c   | 4 ++--
+ source/spectra.c  | 3 ++-
+ 3 files changed, 6 insertions(+), 5 deletions(-)
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
