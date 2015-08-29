@@ -1,9 +1,6 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Updating 131e689..38c4d12
-Fast-forward
- source/trans_phot.c | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+Already up-to-date.
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
