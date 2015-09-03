@@ -1,9 +1,6 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Updating 38c4d12..ef52ea4
-Fast-forward
- source/knigge.c | 23 ++++++++++++++++-------
- 1 file changed, 16 insertions(+), 7 deletions(-)
+Already up-to-date.
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
