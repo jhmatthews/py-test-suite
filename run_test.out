@@ -1,6 +1,11 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Already up-to-date.
+Updating ef52ea4..b14373f
+Fast-forward
+ .travis.yml              | 2 +-
+ examples/travis/test1.pf | 5 -----
+ 2 files changed, 1 insertion(+), 6 deletions(-)
+ delete mode 100644 examples/travis/test1.pf
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
