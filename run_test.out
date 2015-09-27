@@ -1,6 +1,9 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Already up-to-date.
+Updating eb02cbe..2c68636
+Fast-forward
+ source/cylind_var.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
