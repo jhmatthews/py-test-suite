@@ -1,6 +1,6 @@
-Tue Sep 29 20:05:23 2015      0.0 START                input 
-Tue Sep 29 20:05:23 2015      0.0 NOK                  Initializing variables for input
-Tue Sep 29 20:05:23 2015      0.3 NOK                  Finished initialization for input
-Tue Sep 29 20:05:23 2015      0.3 NOK                  Starting 0 of 1 ionization cycle 
-Tue Sep 29 20:05:26 2015      3.5 OK                   Finished 0 of 1 ionization cycle 
-Tue Sep 29 20:05:26 2015      3.5 COMPLETE             input
+Wed Sep 30 20:06:30 2015      0.0 START                input 
+Wed Sep 30 20:06:30 2015      0.0 NOK                  Initializing variables for input
+Wed Sep 30 20:06:30 2015      0.4 NOK                  Finished initialization for input
+Wed Sep 30 20:06:30 2015      0.4 NOK                  Starting 0 of 1 ionization cycle 
+Wed Sep 30 20:06:34 2015      4.0 OK                   Finished 0 of 1 ionization cycle 
+Wed Sep 30 20:06:34 2015      4.0 COMPLETE             input
