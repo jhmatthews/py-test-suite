@@ -1,17 +1,6 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Updating 2c329ce..0473adc
-Fast-forward
- py_progs/hydro_2_python.py |   2 +-
- source/foo.h               |   4 +-
- source/hydro_import.c      | 422 ++++++++++++++++++---------------------------
- source/ionization.c        |  43 ++---
- source/python.c            |   8 +-
- source/python.h            |   2 +
- source/setup.c             |  25 ++-
- source/templates.h         |   4 +-
- source/wind_updates2d.c    |  24 +++
- 9 files changed, 245 insertions(+), 289 deletions(-)
+Already up-to-date.
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
