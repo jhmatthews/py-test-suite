@@ -1,4 +1,4 @@
-OUTPUT Lum_agn= 1.000000e+37 T_e= 1.035000e+04 N_h= 9.985303e+06 N_e= 1.206937e+07 alpha= -0.900000 IP(sim_2010)= 3.662110e+08 Meaured_IP(cloudy)= 4.768347e+06 distance= 1.000000e+11 volume= 1.256638e+23 mean_ds=1.002253e+00
+OUTPUT Lum_agn= 1.000000e+37 T_e= 1.035000e+04 N_h= 9.985303e+06 N_e= 1.206937e+07 alpha= -0.900000 IP(sim_2010)= 3.662110e+08 Meaured_IP(cloudy)= 4.768347e+06 Measured_Xi=3.464383e+08 distance= 1.000000e+11 volume= 1.256638e+23 mean_ds=1.002253e+00
 OUTPUT Absorbed_flux(ergs-1cm-3)    6.01e+00  (photo 6.01e+00 ff 5.45e-08 compton 6.52e-05 induced_compton 0.00e+00 lines 0.00e+00 auger 0.00e+00 )
 OUTPUT Wind_cooling(ergs-1cm-3)     2.68e-08 (recomb 6.17e-11 ff 3.27e-11 compton 2.67e-08 DR 1.68e-13 DI 6.71e-19 adiabatic 3.55e-16 lines 0.00e+00 ) after update
 OUTPUT Wind_line_cooling(ergs-1cm-3)  HHe 0.00e+00 Metals 0.00e+00
