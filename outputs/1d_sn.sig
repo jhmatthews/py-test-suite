@@ -1,46 +1,46 @@
-Fri Oct 23 20:00:19 2015      0.0 START                1d_sn 
-Fri Oct 23 20:00:19 2015      0.0 NOK                  Initializing variables for 1d_sn
-Fri Oct 23 20:00:20 2015      0.8 NOK                  Finished initialization for 1d_sn
-Fri Oct 23 20:00:20 2015      0.8 NOK                  Starting 0 of 20 ionization cycle 
-Fri Oct 23 20:00:27 2015      7.4 OK                   Finished 0 of 20 ionization cycle 
-Fri Oct 23 20:00:27 2015      7.4 NOK                  Starting 1 of 20 ionization cycle 
-Fri Oct 23 20:00:32 2015     12.8 OK                   Finished 1 of 20 ionization cycle 
-Fri Oct 23 20:00:32 2015     12.8 NOK                  Starting 2 of 20 ionization cycle 
-Fri Oct 23 20:00:38 2015     18.5 OK                   Finished 2 of 20 ionization cycle 
-Fri Oct 23 20:00:38 2015     18.5 NOK                  Starting 3 of 20 ionization cycle 
-Fri Oct 23 20:00:43 2015     24.1 OK                   Finished 3 of 20 ionization cycle 
-Fri Oct 23 20:00:43 2015     24.1 NOK                  Starting 4 of 20 ionization cycle 
-Fri Oct 23 20:00:49 2015     29.8 OK                   Finished 4 of 20 ionization cycle 
-Fri Oct 23 20:00:49 2015     29.8 NOK                  Starting 5 of 20 ionization cycle 
-Fri Oct 23 20:00:55 2015     35.6 OK                   Finished 5 of 20 ionization cycle 
-Fri Oct 23 20:00:55 2015     35.6 NOK                  Starting 6 of 20 ionization cycle 
-Fri Oct 23 20:01:01 2015     41.3 OK                   Finished 6 of 20 ionization cycle 
-Fri Oct 23 20:01:01 2015     41.3 NOK                  Starting 7 of 20 ionization cycle 
-Fri Oct 23 20:01:06 2015     47.0 OK                   Finished 7 of 20 ionization cycle 
-Fri Oct 23 20:01:06 2015     47.0 NOK                  Starting 8 of 20 ionization cycle 
-Fri Oct 23 20:01:12 2015     52.7 OK                   Finished 8 of 20 ionization cycle 
-Fri Oct 23 20:01:12 2015     52.8 NOK                  Starting 9 of 20 ionization cycle 
-Fri Oct 23 20:01:18 2015     58.5 OK                   Finished 9 of 20 ionization cycle 
-Fri Oct 23 20:01:18 2015     58.6 NOK                  Starting 10 of 20 ionization cycle 
-Fri Oct 23 20:01:24 2015     64.3 OK                   Finished 10 of 20 ionization cycle 
-Fri Oct 23 20:01:24 2015     64.3 NOK                  Starting 11 of 20 ionization cycle 
-Fri Oct 23 20:01:30 2015     70.4 OK                   Finished 11 of 20 ionization cycle 
-Fri Oct 23 20:01:30 2015     70.4 NOK                  Starting 12 of 20 ionization cycle 
-Fri Oct 23 20:01:35 2015     76.1 OK                   Finished 12 of 20 ionization cycle 
-Fri Oct 23 20:01:35 2015     76.1 NOK                  Starting 13 of 20 ionization cycle 
-Fri Oct 23 20:01:41 2015     81.8 OK                   Finished 13 of 20 ionization cycle 
-Fri Oct 23 20:01:41 2015     81.8 NOK                  Starting 14 of 20 ionization cycle 
-Fri Oct 23 20:01:47 2015     87.5 OK                   Finished 14 of 20 ionization cycle 
-Fri Oct 23 20:01:47 2015     87.5 NOK                  Starting 15 of 20 ionization cycle 
-Fri Oct 23 20:01:53 2015     93.2 OK                   Finished 15 of 20 ionization cycle 
-Fri Oct 23 20:01:53 2015     93.2 NOK                  Starting 16 of 20 ionization cycle 
-Fri Oct 23 20:01:58 2015     99.0 OK                   Finished 16 of 20 ionization cycle 
-Fri Oct 23 20:01:58 2015     99.0 NOK                  Starting 17 of 20 ionization cycle 
-Fri Oct 23 20:02:04 2015    104.7 OK                   Finished 17 of 20 ionization cycle 
-Fri Oct 23 20:02:04 2015    104.7 NOK                  Starting 18 of 20 ionization cycle 
-Fri Oct 23 20:02:10 2015    110.4 OK                   Finished 18 of 20 ionization cycle 
-Fri Oct 23 20:02:10 2015    110.4 NOK                  Starting 19 of 20 ionization cycle 
-Fri Oct 23 20:02:15 2015    116.0 OK                   Finished 19 of 20 ionization cycle 
-Fri Oct 23 20:02:15 2015    116.0 NOK                  Starting 0 of 1 spectral cycle 
-Fri Oct 23 20:02:25 2015    126.0 OK                   Finished   0 of   1 spectrum cycles 
-Fri Oct 23 20:02:25 2015    126.1 COMPLETE             1d_sn
+Sat Oct 24 20:00:19 2015      0.0 START                1d_sn 
+Sat Oct 24 20:00:19 2015      0.0 NOK                  Initializing variables for 1d_sn
+Sat Oct 24 20:00:21 2015      1.4 NOK                  Finished initialization for 1d_sn
+Sat Oct 24 20:00:21 2015      1.4 NOK                  Starting 0 of 20 ionization cycle 
+Sat Oct 24 20:00:27 2015      7.4 OK                   Finished 0 of 20 ionization cycle 
+Sat Oct 24 20:00:27 2015      7.4 NOK                  Starting 1 of 20 ionization cycle 
+Sat Oct 24 20:00:32 2015     12.6 OK                   Finished 1 of 20 ionization cycle 
+Sat Oct 24 20:00:32 2015     12.6 NOK                  Starting 2 of 20 ionization cycle 
+Sat Oct 24 20:00:37 2015     17.7 OK                   Finished 2 of 20 ionization cycle 
+Sat Oct 24 20:00:37 2015     17.7 NOK                  Starting 3 of 20 ionization cycle 
+Sat Oct 24 20:00:42 2015     22.9 OK                   Finished 3 of 20 ionization cycle 
+Sat Oct 24 20:00:42 2015     22.9 NOK                  Starting 4 of 20 ionization cycle 
+Sat Oct 24 20:00:48 2015     28.4 OK                   Finished 4 of 20 ionization cycle 
+Sat Oct 24 20:00:48 2015     28.4 NOK                  Starting 5 of 20 ionization cycle 
+Sat Oct 24 20:00:53 2015     34.0 OK                   Finished 5 of 20 ionization cycle 
+Sat Oct 24 20:00:53 2015     34.0 NOK                  Starting 6 of 20 ionization cycle 
+Sat Oct 24 20:00:59 2015     39.6 OK                   Finished 6 of 20 ionization cycle 
+Sat Oct 24 20:00:59 2015     39.6 NOK                  Starting 7 of 20 ionization cycle 
+Sat Oct 24 20:01:04 2015     45.0 OK                   Finished 7 of 20 ionization cycle 
+Sat Oct 24 20:01:04 2015     45.0 NOK                  Starting 8 of 20 ionization cycle 
+Sat Oct 24 20:01:10 2015     50.7 OK                   Finished 8 of 20 ionization cycle 
+Sat Oct 24 20:01:10 2015     50.7 NOK                  Starting 9 of 20 ionization cycle 
+Sat Oct 24 20:01:16 2015     56.4 OK                   Finished 9 of 20 ionization cycle 
+Sat Oct 24 20:01:16 2015     56.4 NOK                  Starting 10 of 20 ionization cycle 
+Sat Oct 24 20:01:21 2015     62.0 OK                   Finished 10 of 20 ionization cycle 
+Sat Oct 24 20:01:21 2015     62.0 NOK                  Starting 11 of 20 ionization cycle 
+Sat Oct 24 20:01:27 2015     67.6 OK                   Finished 11 of 20 ionization cycle 
+Sat Oct 24 20:01:27 2015     67.6 NOK                  Starting 12 of 20 ionization cycle 
+Sat Oct 24 20:01:32 2015     73.2 OK                   Finished 12 of 20 ionization cycle 
+Sat Oct 24 20:01:32 2015     73.2 NOK                  Starting 13 of 20 ionization cycle 
+Sat Oct 24 20:01:38 2015     78.9 OK                   Finished 13 of 20 ionization cycle 
+Sat Oct 24 20:01:38 2015     78.9 NOK                  Starting 14 of 20 ionization cycle 
+Sat Oct 24 20:01:44 2015     84.7 OK                   Finished 14 of 20 ionization cycle 
+Sat Oct 24 20:01:44 2015     84.7 NOK                  Starting 15 of 20 ionization cycle 
+Sat Oct 24 20:01:50 2015     90.4 OK                   Finished 15 of 20 ionization cycle 
+Sat Oct 24 20:01:50 2015     90.4 NOK                  Starting 16 of 20 ionization cycle 
+Sat Oct 24 20:01:55 2015     96.2 OK                   Finished 16 of 20 ionization cycle 
+Sat Oct 24 20:01:55 2015     96.2 NOK                  Starting 17 of 20 ionization cycle 
+Sat Oct 24 20:02:01 2015    101.8 OK                   Finished 17 of 20 ionization cycle 
+Sat Oct 24 20:02:01 2015    101.8 NOK                  Starting 18 of 20 ionization cycle 
+Sat Oct 24 20:02:07 2015    107.6 OK                   Finished 18 of 20 ionization cycle 
+Sat Oct 24 20:02:07 2015    107.6 NOK                  Starting 19 of 20 ionization cycle 
+Sat Oct 24 20:02:12 2015    113.2 OK                   Finished 19 of 20 ionization cycle 
+Sat Oct 24 20:02:12 2015    113.2 NOK                  Starting 0 of 1 spectral cycle 
+Sat Oct 24 20:02:22 2015    123.2 OK                   Finished   0 of   1 spectrum cycles 
+Sat Oct 24 20:02:22 2015    123.2 COMPLETE             1d_sn
