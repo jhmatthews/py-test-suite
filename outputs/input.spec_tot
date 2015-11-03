@@ -1,6 +1,6 @@
 # Python Version test
 # Git commit hash 2486e9934842ee3d7cc23d33de48a6b026cb5fab
-# Date	Sun Nov  1 20:05:27 2015
+# Date	Mon Nov  2 20:12:13 2015
 #  
 # Var	 Wind_type(0=SV,1=Sphere,2=Previous,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell)	9
 # Var	 Atomic_data                             	data/standard78
@@ -17,7 +17,7 @@
 # Var	 Disk_radiation(y=1)                     	0
 # Var	 Wind_radiation(y=1)                     	0
 # Var	 QSO_BH_radiation(y=1)                   	1
-# Var	 Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table)_to_make_wind	4
+# Var	 Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table,5=bremsstrahlung)_to_make_wind	4
 # Var	 mstar(msol)                             	0.8
 # Var	 rstar(cm)                               	1e10
 # Var	 lum_agn(ergs/s)                         	1e+37

@@ -1,11 +1,11 @@
 input
-xxx Sun Nov  1 20:05:23 2015      0.0 START                input 
+xxx Mon Nov  2 20:12:08 2015      0.0 START                input 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 2486e9934842ee3d7cc23d33de48a6b026cb5fab
 !!Python is running with 1 processors
 This is MPI task number 0 (a total of 1 tasks are running).
-xxx Sun Nov  1 20:05:23 2015      0.0 NOK                  Initializing variables for input
+xxx Mon Nov  2 20:12:08 2015      0.0 NOK                  Initializing variables for input
 Reading data from file input.pf
 Wind_type(0=SV,1=Sphere,2=Previous,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell)	  9
 Atomic_data   data/standard78
@@ -45,8 +45,9 @@ Warning:  Question (Disk_radiation(y=1)) does not match word (Star_radiation(y=1
 Disk_radiation(y=1)	  0
 Wind_radiation(y=1)	  0
 QSO_BH_radiation(y=1)	  1
-Warning:  Question (Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table)_to_make_wind) does not match word (Rad_type_for_star(0=bb,1=models)_to_make_wind) in file. Continuing!
-Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table)_to_make_wind	  4
+Warning:  Question (Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table,5=bremsstrahlung)_to_make_wind) does not match word (Rad_type_for_star(0=bb,1=models)_to_make_wind) in file. Continuing!
+Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table,5=bremsstrahlung)_to_make_wind	  4
+NSH -5
 Not Trying to make a start with a power law boundary layer -3
 mstar(msol)	  8.000000e-01
 rstar(cm)	  1.000000e+10
@@ -256,8 +257,8 @@ Got to wind_check
 Wind_check: Punchthrough distance DFUDGE 1.000000e-03 www[1].x[2] 7.071068e+10
 Finished wind check
 wind2d.c: Don't know how to check wind mdot for this coordtype 0
-xxx Sun Nov  1 20:05:24 2015      0.3 NOK                  Finished initialization for input
-xxx Sun Nov  1 20:05:24 2015      0.3 NOK                  Starting 0 of 1 ionization cycle 
+xxx Mon Nov  2 20:12:09 2015      0.8 NOK                  Finished initialization for input
+xxx Mon Nov  2 20:12:09 2015      0.8 NOK                  Starting 0 of 1 ionization cycle 
 !!Python: Begining cycle 0 of 1 for defining wind
 Broken power law: Emittance below low frequency break is 6.264875e+28
 Broken power law: No luminosity in central range
@@ -401,7 +402,7 @@ wind_update: mean intensity: 0.0000e+00 occurrences, this cycle, this thread of 
 !!wind_update: Absorbed flux    7.55e+23  (photo 7.55e+23 ff 6.85e+15 compton 8.19e+18 auger 0.00e+00 induced_compton 0.00e+00 lines 0.00e+00)
 !!wind_update: Wind heating     7.55e+23  (photo 7.55e+23 ff 6.85e+15 compton 8.19e+18 auger 0.00e+00 induced_compton 0.00e+00 lines 0.00e+00 adiabatic 0.00e+00)
 !!wind_update: Wind luminosity  1.19e+13 (recomb 7.76e+12 ff 4.11e+12 lines 5.40e-308) after update
-!!wind_update: Wind cooling     3.36e+15 (recomb 7.76e+12 ff 4.11e+12 compton 3.35e+15 DR 2.11e+10 DI 8.43e+04 lines 5.40e-308 adiabatic 4.47e+07) after update
+!!wind_update: Wind cooling     3.36e+15 (recomb 7.76e+12 ff 4.11e+12 compton 3.35e+15 DR 0.00e+00 DI 8.43e+04 lines 5.40e-308 adiabatic 4.47e+07) after update
 !!wind_update: Max change in t_r 71313558 at cell    0 (0,0)
 !!wind_update: Ave change in t_r 71313558 from  10000 to 71323558
 !!wind_update: Max change in t_e   1350 at cell    0 (0,0)
@@ -420,12 +421,16 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  T e
    z\x   7.07e+10 7.07e+10 7.07e+10 7.07e+10 
 7.07e+10        0    1e+04        0        0 
+
+ ntot 
+   z\x   7.07e+10 7.07e+10 7.07e+10 7.07e+10 
+7.07e+10        0   100000        0        0 
 Band 0 f1 3.288042e+10 f2 3.288042e+13 model 1 pl_alpha 2.516310 pl_log_w -3.538408e+01 exp_t -3.726987e+02 exp_w 7.531669e-04
 Band 1 f1 3.288042e+13 f2 4.835356e+18 model 1 pl_alpha -0.897684 pl_log_w 1.075354e+01 exp_t 3.071674e+07 exp_w 4.976864e-05
 Band 2 f1 4.835356e+18 f2 2.417678e+22 model 1 pl_alpha -1.998551 pl_log_w 3.131710e+01 exp_t 5.861282e+19 exp_w 1.892240e-10
-OUTPUT Lum_agn= 1.000000e+37 T_e= 1.035000e+04 N_h= 9.985303e+06 N_e= 1.206937e+07 alpha= -0.900000 IP(sim_2010)= 3.662110e+08 Meaured_IP(cloudy)= 4.768347e+06 Measured_Xi=3.464383e+08 distance= 1.000000e+11 volume= 1.256638e+23 mean_ds=1.002253e+00
+OUTPUT Lum_agn= 1.000000e+37 T_e= 1.035000e+04 N_h= 9.985303e+06 N_e= 1.206937e+07 alpha= -0.900000 IP(sim_2010)= 3.662110e+08 Meaured_IP(cloudy)= 4.768347e+06 Measured_Xi= 4.471223e+08 distance= 1.000000e+11 volume= 1.256638e+23 mean_ds=1.002253e+00
 OUTPUT Absorbed_flux(ergs-1cm-3)    6.01e+00  (photo 6.01e+00 ff 5.45e-08 compton 6.52e-05 induced_compton 0.00e+00 lines 0.00e+00 auger 0.00e+00 )
-OUTPUT Wind_cooling(ergs-1cm-3)     2.68e-08 (recomb 6.17e-11 ff 3.27e-11 compton 2.67e-08 DR 1.68e-13 DI 6.71e-19 adiabatic 3.55e-16 lines 0.00e+00 ) after update
+OUTPUT Wind_cooling(ergs-1cm-3)     2.68e-08 (recomb 6.17e-11 ff 3.27e-11 compton 2.67e-08 DR 0.00e+00 DI 6.71e-19 adiabatic 3.55e-16 lines 0.00e+00 ) after update
 OUTPUT Wind_line_cooling(ergs-1cm-3)  HHe 0.00e+00 Metals 0.00e+00
 OUTPUT Balance      Cooling=3.36e+15 Heating=7.55e+23 Lum=1.19e+13 T_e=1.035000e+04 after update
 OUTPUT H      2.20e-12 1.00e+00
@@ -442,10 +447,10 @@ OUTPUT S      5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.3
 OUTPUT Ar     2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 5.95e-20 1.48e-14 3.15e-09 9.57e-05 1.00e+00
 OUTPUT Ca     4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 1.13e-18 1.10e-13 1.16e-08 1.80e-04 1.00e+00
 OUTPUT Fe     3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 2.80e-20 3.78e-16 1.59e-11 3.00e-07 8.88e-04 9.99e-01
-Completed ionization cycle 0 :  The elapsed TIME was 3.322091
-xxx Sun Nov  1 20:05:27 2015      3.4 OK                   Finished 0 of 1 ionization cycle 
+Completed ionization cycle 0 :  The elapsed TIME was 4.303161
+xxx Mon Nov  2 20:12:13 2015      4.4 OK                   Finished 0 of 1 ionization cycle 
 wind_write sizes: NPLASMA 1 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
- Completed wind creation.  The elapsed TIME was 3.378438
+ Completed wind creation.  The elapsed TIME was 4.372411
 
 Error summary: End of program, Thread 0 only
 Recurrences --  Description
@@ -453,5 +458,5 @@ Recurrences --  Description
         1 -- wind2d.c: Don't know how to check wind mdot for this coordtype %d
 Run py_error.py for full error report.
 Thread 0 Finalized. All done
-xxx Sun Nov  1 20:05:27 2015      3.4 COMPLETE             input
-Completed entire program.  The elapsed TIME was 3.383623
+xxx Mon Nov  2 20:12:13 2015      4.4 COMPLETE             input
+Completed entire program.  The elapsed TIME was 4.378846

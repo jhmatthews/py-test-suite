@@ -1,6 +1,23 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Already up-to-date.
+Updating 84ca4e5..d7fecba
+Fast-forward
+ source/Makefile         |   4 +-
+ source/agn.c            |  15 +++-
+ source/brem.c           | 213 ++++++++++++++++++++++++++++++++++++++++++++++++
+ source/dielectronic.c   |   7 +-
+ source/foo.h            |   5 ++
+ source/hydro_import.c   |  43 ++++++----
+ source/matrix_ion.c     |  75 +++++++++--------
+ source/python.c         |   4 +-
+ source/python.h         |   3 +-
+ source/radiation.c      |   6 +-
+ source/setup.c          |  31 +++++--
+ source/templates.h      |   5 ++
+ source/wind_sum.c       |  30 ++++++-
+ source/wind_updates2d.c |  32 +++++---
+ 14 files changed, 394 insertions(+), 79 deletions(-)
+ create mode 100644 source/brem.c
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
@@ -88,8 +105,9 @@ mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o setup.o setup.c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o photo_gen_matom.o photo_gen_matom.c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o macro_gov.o macro_gov.c
+mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o brem.o brem.c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o reverb.o reverb.c
-mpicc  -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON python.o bb.o get_atomicdata.o photon2d.o photon_gen.o saha.o spectra.o wind2d.o wind.o  vvector.o debug.o recipes.o trans_phot.o phot_util.o resonate.o radiation.o wind_updates2d.o windsave.o extract.o pdf.o roche.o random.o stellar_wind.o homologous.o hydro_import.o corona.o knigge.o  disk.o lines.o  continuum.o get_models.o emission.o recomb.o diag.o sv.o ionization.o  ispy.o   levels.o gradv.o reposition.o anisowind.o util.o density.o  detail.o bands.o time.o matom.o estimators.o wind_sum.o yso.o elvis.o cylindrical.o rtheta.o spherical.o cylind_var.o bilinear.o gridwind.o partition.o signal.o auger_ionization.o agn.o shell_wind.o compton.o torus.o zeta.o dielectronic.o spectral_estimators.o variable_temperature.o matom_diag.o log.o lineio.o rdpar.o direct_ion.o pi_rates.o matrix_ion.o para_update.o setup.o photo_gen_matom.o macro_gov.o reverb.o  -L../lib -lm -lcfitsio -lgsl -lgslcblas  -o python
+mpicc  -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON python.o bb.o get_atomicdata.o photon2d.o photon_gen.o saha.o spectra.o wind2d.o wind.o  vvector.o debug.o recipes.o trans_phot.o phot_util.o resonate.o radiation.o wind_updates2d.o windsave.o extract.o pdf.o roche.o random.o stellar_wind.o homologous.o hydro_import.o corona.o knigge.o  disk.o lines.o  continuum.o get_models.o emission.o recomb.o diag.o sv.o ionization.o  ispy.o   levels.o gradv.o reposition.o anisowind.o util.o density.o  detail.o bands.o time.o matom.o estimators.o wind_sum.o yso.o elvis.o cylindrical.o rtheta.o spherical.o cylind_var.o bilinear.o gridwind.o partition.o signal.o auger_ionization.o agn.o shell_wind.o compton.o torus.o zeta.o dielectronic.o spectral_estimators.o variable_temperature.o matom_diag.o log.o lineio.o rdpar.o direct_ion.o pi_rates.o matrix_ion.o para_update.o setup.o photo_gen_matom.o macro_gov.o brem.o reverb.o  -L../lib -lm -lcfitsio -lgsl -lgslcblas  -o python
 cp python ../bin/py
 mv python ../bin/pytest
 rm -f *.o  *~ 

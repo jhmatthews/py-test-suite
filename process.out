@@ -1,7 +1,7 @@
 
 OUTPUT for processing script
 
-DATE 2015-11-02
+DATE 2015-11-03
 /home/jm8g08/py-test-suite/
 VERSION test
 Model /home/jm8g08/py-test-suite//outputs/1d_sn
@@ -18,39 +18,39 @@ Run 1d_sn: Column A45P0.50 Normalised Standard deviation in flux = 3.9991e-16 Me
 /home/jm8g08/py-test-suite//outputs/py_heat_test.dat
 /home/jm8g08/py-test-suite//outputs_release/py_heat_release.dat
 Model /home/jm8g08/py-test-suite//outputs/cv_standard
-94.60pc Converged
-Run cv_standard: Column Created Normalised Standard deviation in flux = 1.9257e-12 Mean 1.7479e-11
-Run cv_standard: Column Emitted Normalised Standard deviation in flux = 1.5974e-12 Mean 1.3279e-11
-Run cv_standard: Column CenSrc Normalised Standard deviation in flux = 2.4320e-13 Mean 2.9866e-13
-Run cv_standard: Column Disk Normalised Standard deviation in flux = 1.5744e-12 Mean 1.2848e-11
-Run cv_standard: Column Wind Normalised Standard deviation in flux = 1.4931e-13 Mean 1.3215e-13
-Run cv_standard: Column HitSurf Normalised Standard deviation in flux = 5.1113e-13 Mean 1.3144e-12
-Run cv_standard: Column Scattered Normalised Standard deviation in flux = 9.1828e-13 Mean 2.1885e-12
-Run cv_standard: Column A10P0.50 Normalised Standard deviation in flux = 5.7319e-12 Mean 3.6345e-11
-Run cv_standard: Column A28P0.50 Normalised Standard deviation in flux = 4.5950e-12 Mean 2.8250e-11
-Run cv_standard: Column A45P0.50 Normalised Standard deviation in flux = 3.0591e-12 Mean 1.8650e-11
-Run cv_standard: Column A62P0.50 Normalised Standard deviation in flux = 1.5208e-12 Mean 9.1113e-12
-Run cv_standard: Column A80P0.50 Normalised Standard deviation in flux = 7.3247e-13 Mean 2.9122e-12
+91.20pc Converged
+Run cv_standard: Column Created Normalised Standard deviation in flux = 1.9334e-12 Mean 1.7502e-11
+Run cv_standard: Column Emitted Normalised Standard deviation in flux = 1.6143e-12 Mean 1.3278e-11
+Run cv_standard: Column CenSrc Normalised Standard deviation in flux = 2.4560e-13 Mean 3.0112e-13
+Run cv_standard: Column Disk Normalised Standard deviation in flux = 1.5870e-12 Mean 1.2842e-11
+Run cv_standard: Column Wind Normalised Standard deviation in flux = 1.5348e-13 Mean 1.3340e-13
+Run cv_standard: Column HitSurf Normalised Standard deviation in flux = 5.1702e-13 Mean 1.3288e-12
+Run cv_standard: Column Scattered Normalised Standard deviation in flux = 9.3822e-13 Mean 2.2001e-12
+Run cv_standard: Column A10P0.50 Normalised Standard deviation in flux = 5.7307e-12 Mean 3.6351e-11
+Run cv_standard: Column A28P0.50 Normalised Standard deviation in flux = 4.6012e-12 Mean 2.8259e-11
+Run cv_standard: Column A45P0.50 Normalised Standard deviation in flux = 3.0553e-12 Mean 1.8660e-11
+Run cv_standard: Column A62P0.50 Normalised Standard deviation in flux = 1.5243e-12 Mean 9.1232e-12
+Run cv_standard: Column A80P0.50 Normalised Standard deviation in flux = 7.3669e-13 Mean 2.9214e-12
 14 14
 /home/jm8g08/py-test-suite//outputs/py_heat_test.dat
 /home/jm8g08/py-test-suite//outputs_release/py_heat_release.dat
 Model /home/jm8g08/py-test-suite//outputs/fiducial_agn
-77.90pc Converged
-Run fiducial_agn: Column Created Normalised Standard deviation in flux = 5.4185e-01 Mean 4.6493e+00
-Run fiducial_agn: Column Emitted Normalised Standard deviation in flux = 5.1934e-01 Mean 4.3904e+00
-Run fiducial_agn: Column CenSrc Normalised Standard deviation in flux = 3.0559e-02 Mean 5.3270e-03
-Run fiducial_agn: Column Disk Normalised Standard deviation in flux = 5.1853e-01 Mean 4.3839e+00
-Run fiducial_agn: Column Wind Normalised Standard deviation in flux = 6.7768e-03 Mean 1.2114e-03
-Run fiducial_agn: Column HitSurf Normalised Standard deviation in flux = 1.1415e-01 Mean 1.6701e-01
-Run fiducial_agn: Column Scattered Normalised Standard deviation in flux = 1.2672e-01 Mean 1.7003e-01
-Run fiducial_agn: Column A20P0.50 Normalised Standard deviation in flux = 1.6308e+00 Mean 1.0329e+01
-Run fiducial_agn: Column A40P0.50 Normalised Standard deviation in flux = 1.2439e+00 Mean 7.6935e+00
-Run fiducial_agn: Column A60P0.50 Normalised Standard deviation in flux = 6.8817e-01 Mean 4.0795e+00
-Run fiducial_agn: Column A70P0.50 Normalised Standard deviation in flux = 4.1576e-01 Mean 2.3878e+00
-Run fiducial_agn: Column A75P0.50 Normalised Standard deviation in flux = 1.9664e-01 Mean 2.3973e-01
-Run fiducial_agn: Column A80P0.50 Normalised Standard deviation in flux = 7.4913e-02 Mean 7.6464e-02
-Run fiducial_agn: Column A85P0.50 Normalised Standard deviation in flux = 6.1406e-02 Mean 8.9809e-02
-Run fiducial_agn: Column A89P0.50 Normalised Standard deviation in flux = 6.7243e-02 Mean 1.0247e-01
+76.60pc Converged
+Run fiducial_agn: Column Created Normalised Standard deviation in flux = 5.4354e-01 Mean 4.6576e+00
+Run fiducial_agn: Column Emitted Normalised Standard deviation in flux = 5.2255e-01 Mean 4.3940e+00
+Run fiducial_agn: Column CenSrc Normalised Standard deviation in flux = 3.1031e-02 Mean 5.0791e-03
+Run fiducial_agn: Column Disk Normalised Standard deviation in flux = 5.2174e-01 Mean 4.3875e+00
+Run fiducial_agn: Column Wind Normalised Standard deviation in flux = 8.1385e-03 Mean 1.4322e-03
+Run fiducial_agn: Column HitSurf Normalised Standard deviation in flux = 1.1272e-01 Mean 1.6647e-01
+Run fiducial_agn: Column Scattered Normalised Standard deviation in flux = 1.2653e-01 Mean 1.6935e-01
+Run fiducial_agn: Column A20P0.50 Normalised Standard deviation in flux = 1.6238e+00 Mean 1.0327e+01
+Run fiducial_agn: Column A40P0.50 Normalised Standard deviation in flux = 1.2354e+00 Mean 7.6924e+00
+Run fiducial_agn: Column A60P0.50 Normalised Standard deviation in flux = 6.8995e-01 Mean 4.0789e+00
+Run fiducial_agn: Column A70P0.50 Normalised Standard deviation in flux = 4.1211e-01 Mean 2.3867e+00
+Run fiducial_agn: Column A75P0.50 Normalised Standard deviation in flux = 2.0184e-01 Mean 2.4297e-01
+Run fiducial_agn: Column A80P0.50 Normalised Standard deviation in flux = 7.7267e-02 Mean 7.9385e-02
+Run fiducial_agn: Column A85P0.50 Normalised Standard deviation in flux = 6.2160e-02 Mean 9.3977e-02
+Run fiducial_agn: Column A89P0.50 Normalised Standard deviation in flux = 6.6794e-02 Mean 1.0283e-01
 17 17
 /home/jm8g08/py-test-suite//outputs/py_heat_test.dat
 /home/jm8g08/py-test-suite//outputs_release/py_heat_release.d
