@@ -1,23 +1,6 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Updating 84ca4e5..d7fecba
-Fast-forward
- source/Makefile         |   4 +-
- source/agn.c            |  15 +++-
- source/brem.c           | 213 ++++++++++++++++++++++++++++++++++++++++++++++++
- source/dielectronic.c   |   7 +-
- source/foo.h            |   5 ++
- source/hydro_import.c   |  43 ++++++----
- source/matrix_ion.c     |  75 +++++++++--------
- source/python.c         |   4 +-
- source/python.h         |   3 +-
- source/radiation.c      |   6 +-
- source/setup.c          |  31 +++++--
- source/templates.h      |   5 ++
- source/wind_sum.c       |  30 ++++++-
- source/wind_updates2d.c |  32 +++++---
- 14 files changed, 394 insertions(+), 79 deletions(-)
- create mode 100644 source/brem.c
+Already up-to-date.
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
