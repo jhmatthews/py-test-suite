@@ -1,6 +1,6 @@
 # Python Version test
 # Git commit hash 2486e9934842ee3d7cc23d33de48a6b026cb5fab
-# Date	Tue Nov  3 20:03:54 2015
+# Date	Wed Nov  4 20:03:32 2015
 #  
 # Var	 Wind_type(0=SV,1=Sphere,2=Previous,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell)	6
 # Var	 Atomic_data                             	data/standard_sn_kurucz
