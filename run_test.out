@@ -1,34 +1,6 @@
 /home/jm8g08/py-test-suite/
 Your branch is up-to-date with 'origin/dev'.
-Updating d7fecba..f2fd61d
-Fast-forward
- source/Makefile         |   59 ---
- source/atomic.h         |    3 +-
- source/bal_photon2d.c   |  300 -------------
- source/bal_trans_phot.c |  201 ---------
- source/balance.c        | 1105 -----------------------------------------------
- source/balance_abso.c   |  471 --------------------
- source/balance_bb.c     |  219 ----------
- source/balance_gen.c    |  232 ----------
- source/balance_sub.c    |  675 -----------------------------
- source/direct_ion.c     |  410 ++++++++++++++----
- source/foo.h            |    8 +-
- source/ionization.c     |   32 +-
- source/matom.c          |   57 ---
- source/matrix_ion.c     |    7 +-
- source/proga.c          |  936 ---------------------------------------
- source/py_ray.c         |  476 --------------------
- source/templates.h      |    8 +-
- 17 files changed, 368 insertions(+), 4831 deletions(-)
- delete mode 100755 source/bal_photon2d.c
- delete mode 100755 source/bal_trans_phot.c
- delete mode 100755 source/balance.c
- delete mode 100755 source/balance_abso.c
- delete mode 100755 source/balance_bb.c
- delete mode 100755 source/balance_gen.c
- delete mode 100755 source/balance_sub.c
- delete mode 100755 source/proga.c
- delete mode 100755 source/py_ray.c
+Already up-to-date.
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
