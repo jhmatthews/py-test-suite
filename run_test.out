@@ -1,9 +1,7 @@
 /home/jm8g08/py-test-suite/
-Your branch is ahead of 'origin/dev' by 4 commits.
+Your branch is ahead of 'origin/dev' by 5 commits.
   (use "git push" to publish your local commits)
-Merge made by the 'recursive' strategy.
- source/direct_ion.c | 50 +++++++++++++++++++++++++++++++++++++++-----------
- 1 file changed, 39 insertions(+), 11 deletions(-)
+Already up-to-date.
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
