@@ -1,7 +1,9 @@
 /home/jm8g08/py-test-suite/
 Your branch is ahead of 'origin/dev' by 5 commits.
   (use "git push" to publish your local commits)
-Already up-to-date.
+Merge made by the 'recursive' strategy.
+ source/para_update.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
