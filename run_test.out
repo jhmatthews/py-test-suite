@@ -1,9 +1,11 @@
 /home/jm8g08/py-test-suite/
-Your branch is ahead of 'origin/dev' by 6 commits.
-  (use "git push" to publish your local commits)
-Auto-merging source/para_update.c
-CONFLICT (content): Merge conflict in source/para_update.c
-Automatic merge failed; fix conflicts and then commit the result.
+source/para_update.c: needs merge
+M	source/matom.c
+U	source/para_update.c
+M	source/py_wind_sub.c
+M	source/radiation.c
+M	source/wind2d.c
+M	source/wind_updates2d.c
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
