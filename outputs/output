@@ -1,11 +1,11 @@
 input
-xxx Tue Dec 22 20:08:17 2015      0.0 START                input 
+xxx Wed Dec 23 20:09:51 2015      0.0 START                input 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 2486e9934842ee3d7cc23d33de48a6b026cb5fab
 !!Python is running with 1 processors
 This is MPI task number 0 (a total of 1 tasks are running).
-xxx Tue Dec 22 20:08:17 2015      0.0 NOK                  Initializing variables for input
+xxx Wed Dec 23 20:09:51 2015      0.0 NOK                  Initializing variables for input
 Reading data from file input.pf
 Wind_type(0=SV,1=Sphere,2=Previous,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell)	  9
 Atomic_data   data/standard78
@@ -257,8 +257,8 @@ Got to wind_check
 Wind_check: Punchthrough distance DFUDGE 1.000000e-03 www[1].x[2] 7.071068e+10
 Finished wind check
 wind2d.c: Don't know how to check wind mdot for this coordtype 0
-xxx Tue Dec 22 20:08:18 2015      0.9 NOK                  Finished initialization for input
-xxx Tue Dec 22 20:08:18 2015      0.9 NOK                  Starting 0 of 1 ionization cycle 
+xxx Wed Dec 23 20:09:54 2015      2.4 NOK                  Finished initialization for input
+xxx Wed Dec 23 20:09:54 2015      2.4 NOK                  Starting 0 of 1 ionization cycle 
 !!Python: Begining cycle 0 of 1 for defining wind
 Broken power law: Emittance below low frequency break is 6.264875e+28
 Broken power law: No luminosity in central range
@@ -447,10 +447,10 @@ OUTPUT S      5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.3
 OUTPUT Ar     2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 5.95e-20 1.48e-14 3.15e-09 9.57e-05 1.00e+00
 OUTPUT Ca     4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 1.13e-18 1.10e-13 1.16e-08 1.80e-04 1.00e+00
 OUTPUT Fe     3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 2.80e-20 3.78e-16 1.59e-11 3.00e-07 8.88e-04 9.99e-01
-Completed ionization cycle 0 :  The elapsed TIME was 4.798845
-xxx Tue Dec 22 20:08:22 2015      4.9 OK                   Finished 0 of 1 ionization cycle 
+Completed ionization cycle 0 :  The elapsed TIME was 7.283861
+xxx Wed Dec 23 20:09:59 2015      7.4 OK                   Finished 0 of 1 ionization cycle 
 wind_write sizes: NPLASMA 1 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
- Completed wind creation.  The elapsed TIME was 4.866076
+ Completed wind creation.  The elapsed TIME was 7.401829
 
 Error summary: End of program, Thread 0 only
 Recurrences --  Description
@@ -458,5 +458,5 @@ Recurrences --  Description
         1 -- wind2d.c: Don't know how to check wind mdot for this coordtype %d
 Run py_error.py for full error report.
 Thread 0 Finalized. All done
-xxx Tue Dec 22 20:08:22 2015      4.9 COMPLETE             input
-Completed entire program.  The elapsed TIME was 4.873510
+xxx Wed Dec 23 20:09:59 2015      7.4 COMPLETE             input
+Completed entire program.  The elapsed TIME was 7.420532
