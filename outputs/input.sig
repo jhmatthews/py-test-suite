@@ -1,6 +1,6 @@
-Sun Dec 27 20:09:32 2015      0.0 START                input 
-Sun Dec 27 20:09:32 2015      0.0 NOK                  Initializing variables for input
-Sun Dec 27 20:09:34 2015      2.3 NOK                  Finished initialization for input
-Sun Dec 27 20:09:34 2015      2.3 NOK                  Starting 0 of 1 ionization cycle 
-Sun Dec 27 20:09:38 2015      6.0 OK                   Finished 0 of 1 ionization cycle 
-Sun Dec 27 20:09:38 2015      6.0 COMPLETE             input
+Mon Dec 28 20:07:51 2015      0.0 START                input 
+Mon Dec 28 20:07:51 2015      0.0 NOK                  Initializing variables for input
+Mon Dec 28 20:07:52 2015      1.1 NOK                  Finished initialization for input
+Mon Dec 28 20:07:52 2015      1.1 NOK                  Starting 0 of 1 ionization cycle 
+Mon Dec 28 20:07:56 2015      4.8 OK                   Finished 0 of 1 ionization cycle 
+Mon Dec 28 20:07:56 2015      4.8 COMPLETE             input
