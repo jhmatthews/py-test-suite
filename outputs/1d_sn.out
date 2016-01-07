@@ -1,11 +1,11 @@
 1d_sn
-xxx Tue Jan  5 20:00:18 2016      0.0 START                1d_sn 
+xxx Wed Jan  6 20:00:27 2016      0.0 START                1d_sn 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 2486e9934842ee3d7cc23d33de48a6b026cb5fab
 !!Python is running with 1 processors
 This is MPI task number 0 (a total of 1 tasks are running).
-xxx Tue Jan  5 20:00:18 2016      0.0 NOK                  Initializing variables for 1d_sn
+xxx Wed Jan  6 20:00:27 2016      0.0 NOK                  Initializing variables for 1d_sn
 Reading data from file 1d_sn.pf
 Wind_type(0=SV,1=Sphere,2=Previous,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell)	  6
 Atomic_data   data/standard_sn_kurucz
@@ -99,7 +99,6 @@ freqs_init:     1.03 (2.50e+14)        4.14 (1.00e+15)
 freqs_init:     4.14 (1.00e+15)       13.08 (3.16e+15)  
 freqs_init:    13.08 (3.16e+15)       41.36 (1.00e+16)  
 freqs_init:    41.36 (1.00e+16)      108.84 (2.63e+16)  
-Could not rename python.pf to python.pf.old
 Could not rename tmp.rdpar
  to python.pfOLD W.r = 1.208464e+15, w.rcen = 1.221992e+15
 New W.r = 1.208464e+15, w.rcen = 1.221992e+15
@@ -167,8 +166,8 @@ Got to wind_check
 Wind_check: Punchthrough distance DFUDGE 2.246400e+05 www[1].x[2] 8.736446e+14
 Finished wind check
 wind2d.c: Don't know how to check wind mdot for this coordtype 0
-xxx Tue Jan  5 20:00:18 2016      0.6 NOK                  Finished initialization for 1d_sn
-xxx Tue Jan  5 20:00:18 2016      0.6 NOK                  Starting 0 of 20 ionization cycle 
+xxx Wed Jan  6 20:00:35 2016      7.8 NOK                  Finished initialization for 1d_sn
+xxx Wed Jan  6 20:00:35 2016      7.8 NOK                  Starting 0 of 20 ionization cycle 
 !!Python: Begining cycle 0 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63985 ndisk      0 nwind      0 nstar  63985 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 4.09e+35 nphotons 8015 ndisk      0 nwind      0 nstar   8015 npow 0 
@@ -380,10 +379,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   122508   105159    97892    91036    85713    81068    77209    73965    70893    68701    66759    65204    63766    62378    61137    60068    59283    58479    57744    57169    56588    56116    55463    54962    54385    53941    53454        0        0 
-Completed ionization cycle 0 :  The elapsed TIME was 6.831889
-xxx Tue Jan  5 20:00:25 2016      6.9 OK                   Finished 0 of 20 ionization cycle 
+Completed ionization cycle 0 :  The elapsed TIME was 14.043936
+xxx Wed Jan  6 20:00:41 2016     14.1 OK                   Finished 0 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:00:25 2016      6.9 NOK                  Starting 1 of 20 ionization cycle 
+xxx Wed Jan  6 20:00:41 2016     14.1 NOK                  Starting 1 of 20 ionization cycle 
 !!Python: Begining cycle 1 of 20 for defining wind
 init_freebound: Creating recombination emissivites between 2.498271e+14 and 3.287800e+15
 init_freebound: Creating recombination emissivites between 3.287800e+15 and 5.944587e+15
@@ -496,10 +495,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111660   102803    95241    88831    83673    79015    75363    71701    68803    66374    64023    61889    60429    58822    57490    56293    55370    54492    53972    53366    52874    52335    51767    51124    50527    50026    49454        0        0 
-Completed ionization cycle 1 :  The elapsed TIME was 12.424725
-xxx Tue Jan  5 20:00:30 2016     12.5 OK                   Finished 1 of 20 ionization cycle 
+Completed ionization cycle 1 :  The elapsed TIME was 19.974503
+xxx Wed Jan  6 20:00:47 2016     20.0 OK                   Finished 1 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:00:30 2016     12.5 NOK                  Starting 2 of 20 ionization cycle 
+xxx Wed Jan  6 20:00:47 2016     20.0 NOK                  Starting 2 of 20 ionization cycle 
 !!Python: Begining cycle 2 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     41 nstar  63923 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.03e+35 nphotons 8030 ndisk      0 nwind   3946 nstar   4084 npow 0 
@@ -608,10 +607,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   110854   102430    95055    89278    83720    79408    75225    71940    68792    66549    64449    62536    61007    59818    58284    56944    55974    55141    54529    53779    53168    52615    52007    51334    50788    50210    49590        0        0 
-Completed ionization cycle 2 :  The elapsed TIME was 17.722043
-xxx Tue Jan  5 20:00:36 2016     17.8 OK                   Finished 2 of 20 ionization cycle 
+Completed ionization cycle 2 :  The elapsed TIME was 25.638673
+xxx Wed Jan  6 20:00:53 2016     25.8 OK                   Finished 2 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:00:36 2016     17.8 NOK                  Starting 3 of 20 ionization cycle 
+xxx Wed Jan  6 20:00:53 2016     25.8 NOK                  Starting 3 of 20 ionization cycle 
 !!Python: Begining cycle 3 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63963 ndisk      0 nwind     54 nstar  63909 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.12e+35 nphotons 8031 ndisk      0 nwind   3995 nstar   4036 npow 0 
@@ -711,10 +710,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111614   102822    95204    89010    84038    79233    75560    72192    69077    66355    64216    62420    60528    59161    57847    56890    55853    55164    54414    53641    52935    52429    51880    51419    50945    50444    49912        0        0 
-Completed ionization cycle 3 :  The elapsed TIME was 23.167604
-xxx Tue Jan  5 20:00:41 2016     23.2 OK                   Finished 3 of 20 ionization cycle 
+Completed ionization cycle 3 :  The elapsed TIME was 32.048676
+xxx Wed Jan  6 20:00:59 2016     32.2 OK                   Finished 3 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:00:41 2016     23.2 NOK                  Starting 4 of 20 ionization cycle 
+xxx Wed Jan  6 20:00:59 2016     32.2 NOK                  Starting 4 of 20 ionization cycle 
 !!Python: Begining cycle 4 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63963 ndisk      0 nwind     53 nstar  63910 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.14e+35 nphotons 8031 ndisk      0 nwind   4004 nstar   4027 npow 0 
@@ -795,10 +794,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111304   102957    95058    88973    83294    78704    74651    70993    68134    65912    64184    62289    60493    59119    57842    56777    55818    55031    54375    53668    53029    52412    51879    51481    50901    50357    49796        0        0 
-Completed ionization cycle 4 :  The elapsed TIME was 28.576897
-xxx Tue Jan  5 20:00:46 2016     28.7 OK                   Finished 4 of 20 ionization cycle 
+Completed ionization cycle 4 :  The elapsed TIME was 37.845206
+xxx Wed Jan  6 20:01:07 2016     39.6 OK                   Finished 4 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:00:46 2016     28.7 NOK                  Starting 5 of 20 ionization cycle 
+xxx Wed Jan  6 20:01:07 2016     39.6 NOK                  Starting 5 of 20 ionization cycle 
 !!Python: Begining cycle 5 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     50 nstar  63914 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.10e+35 nphotons 8030 ndisk      0 nwind   3983 nstar   4047 npow 0 
@@ -879,10 +878,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111392   103728    96389    90517    84789    79632    75557    71999    69262    66697    64294    62327    60805    59298    58270    57085    56132    55303    54495    53812    53099    52564    51992    51535    51012    50425    49849        0        0 
-Completed ionization cycle 5 :  The elapsed TIME was 34.001097
-xxx Tue Jan  5 20:00:52 2016     34.1 OK                   Finished 5 of 20 ionization cycle 
+Completed ionization cycle 5 :  The elapsed TIME was 45.226471
+xxx Wed Jan  6 20:01:12 2016     45.3 OK                   Finished 5 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:00:52 2016     34.1 NOK                  Starting 6 of 20 ionization cycle 
+xxx Wed Jan  6 20:01:12 2016     45.3 NOK                  Starting 6 of 20 ionization cycle 
 !!Python: Begining cycle 6 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     44 nstar  63920 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.06e+35 nphotons 8030 ndisk      0 nwind   3961 nstar   4069 npow 0 
@@ -963,10 +962,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111119   102622    95674    89636    84322    79574    75643    72390    69174    66647    64357    62361    60731    59430    58105    57025    55904    55117    54315    53651    52943    52275    51700    51239    51001    50430    49742        0        0 
-Completed ionization cycle 6 :  The elapsed TIME was 39.735366
-xxx Tue Jan  5 20:00:58 2016     39.8 OK                   Finished 6 of 20 ionization cycle 
+Completed ionization cycle 6 :  The elapsed TIME was 51.405851
+xxx Wed Jan  6 20:01:19 2016     51.5 OK                   Finished 6 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:00:58 2016     39.8 NOK                  Starting 7 of 20 ionization cycle 
+xxx Wed Jan  6 20:01:19 2016     51.5 NOK                  Starting 7 of 20 ionization cycle 
 !!Python: Begining cycle 7 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     44 nstar  63920 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.06e+35 nphotons 8030 ndisk      0 nwind   3963 nstar   4067 npow 0 
@@ -1047,10 +1046,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   110935   102401    95034    89437    84280    79446    75161    71884    68857    66323    64296    62397    60697    59362    58154    57245    56483    55525    54561    54031    53453    52801    52182    51625    51245    50633    49998        0        0 
-Completed ionization cycle 7 :  The elapsed TIME was 45.249899
-xxx Tue Jan  5 20:01:03 2016     45.4 OK                   Finished 7 of 20 ionization cycle 
+Completed ionization cycle 7 :  The elapsed TIME was 57.535913
+xxx Wed Jan  6 20:01:25 2016     57.7 OK                   Finished 7 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:03 2016     45.4 NOK                  Starting 8 of 20 ionization cycle 
+xxx Wed Jan  6 20:01:25 2016     57.7 NOK                  Starting 8 of 20 ionization cycle 
 !!Python: Begining cycle 8 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     36 nstar  63928 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.00e+35 nphotons 8030 ndisk      0 nwind   3932 nstar   4098 npow 0 
@@ -1131,10 +1130,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111650   102791    94965    88370    82825    78376    74682    71564    68345    65733    63526    61604    59922    58738    57579    56518    55458    54633    54063    53505    52762    52203    51556    51076    50611    49984    49404        0        0 
-Completed ionization cycle 8 :  The elapsed TIME was 51.505532
-xxx Tue Jan  5 20:01:09 2016     51.6 OK                   Finished 8 of 20 ionization cycle 
+Completed ionization cycle 8 :  The elapsed TIME was 64.527758
+xxx Wed Jan  6 20:01:32 2016     64.6 OK                   Finished 8 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:09 2016     51.6 NOK                  Starting 9 of 20 ionization cycle 
+xxx Wed Jan  6 20:01:32 2016     64.6 NOK                  Starting 9 of 20 ionization cycle 
 !!Python: Begining cycle 9 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     35 nstar  63929 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 7.98e+35 nphotons 8030 ndisk      0 nwind   3923 nstar   4107 npow 0 
@@ -1215,10 +1214,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111963   103169    95869    89386    83732    78799    74613    71041    68356    65822    63655    61566    60099    58950    57400    56251    55388    54723    53960    53383    52840    52257    51775    51333    50794    50282    49652        0        0 
-Completed ionization cycle 9 :  The elapsed TIME was 57.614612
-xxx Tue Jan  5 20:01:15 2016     57.7 OK                   Finished 9 of 20 ionization cycle 
+Completed ionization cycle 9 :  The elapsed TIME was 71.047084
+xxx Wed Jan  6 20:01:38 2016     71.1 OK                   Finished 9 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:15 2016     57.7 NOK                  Starting 10 of 20 ionization cycle 
+xxx Wed Jan  6 20:01:38 2016     71.1 NOK                  Starting 10 of 20 ionization cycle 
 !!Python: Begining cycle 10 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     35 nstar  63929 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.00e+35 nphotons 8030 ndisk      0 nwind   3932 nstar   4098 npow 0 
@@ -1299,10 +1298,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111689   102588    95350    89622    84242    79805    75500    71692    68699    66290    64125    62284    60766    59239    58043    57094    55994    55155    54472    53958    53400    52628    52157    51644    51053    50617    50108        0        0 
-Completed ionization cycle 10 :  The elapsed TIME was 63.281190
-xxx Tue Jan  5 20:01:21 2016     63.3 OK                   Finished 10 of 20 ionization cycle 
+Completed ionization cycle 10 :  The elapsed TIME was 79.434319
+xxx Wed Jan  6 20:01:47 2016     79.6 OK                   Finished 10 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:21 2016     63.3 NOK                  Starting 11 of 20 ionization cycle 
+xxx Wed Jan  6 20:01:47 2016     79.6 NOK                  Starting 11 of 20 ionization cycle 
 !!Python: Begining cycle 11 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     37 nstar  63927 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.01e+35 nphotons 8030 ndisk      0 nwind   3940 nstar   4090 npow 0 
@@ -1383,10 +1382,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111462   102589    95571    89352    83770    79278    75368    71434    68671    66342    64191    61983    60258    58811    57767    56823    55652    54827    54057    53363    52753    52280    51830    51260    50707    50347    49732        0        0 
-Completed ionization cycle 11 :  The elapsed TIME was 68.993246
-xxx Tue Jan  5 20:01:27 2016     69.1 OK                   Finished 11 of 20 ionization cycle 
+Completed ionization cycle 11 :  The elapsed TIME was 87.797994
+xxx Wed Jan  6 20:01:55 2016     87.9 OK                   Finished 11 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:27 2016     69.1 NOK                  Starting 12 of 20 ionization cycle 
+xxx Wed Jan  6 20:01:55 2016     87.9 NOK                  Starting 12 of 20 ionization cycle 
 !!Python: Begining cycle 12 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     41 nstar  63923 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.05e+35 nphotons 8030 ndisk      0 nwind   3959 nstar   4071 npow 0 
@@ -1467,10 +1466,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111394   103084    95716    89430    84069    79744    75108    71350    68518    66339    64095    62116    60302    59015    57758    56724    55966    55289    54421    53730    53085    52446    51851    51285    50911    50292    49752        0        0 
-Completed ionization cycle 12 :  The elapsed TIME was 74.595442
-xxx Tue Jan  5 20:01:32 2016     74.7 OK                   Finished 12 of 20 ionization cycle 
+Completed ionization cycle 12 :  The elapsed TIME was 94.550371
+xxx Wed Jan  6 20:02:02 2016     94.6 OK                   Finished 12 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:32 2016     74.7 NOK                  Starting 13 of 20 ionization cycle 
+xxx Wed Jan  6 20:02:02 2016     94.6 NOK                  Starting 13 of 20 ionization cycle 
 !!Python: Begining cycle 13 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     39 nstar  63925 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.04e+35 nphotons 8030 ndisk      0 nwind   3954 nstar   4076 npow 0 
@@ -1551,10 +1550,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111249   102952    95917    89744    83816    78769    74634    71442    68747    66442    63869    61734    60329    59056    57927    56841    55980    55143    54270    53493    52831    52369    51756    51275    50868    50324    49855        0        0 
-Completed ionization cycle 13 :  The elapsed TIME was 80.562494
-xxx Tue Jan  5 20:01:38 2016     80.6 OK                   Finished 13 of 20 ionization cycle 
+Completed ionization cycle 13 :  The elapsed TIME was 101.123387
+xxx Wed Jan  6 20:02:08 2016    101.3 OK                   Finished 13 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:38 2016     80.6 NOK                  Starting 14 of 20 ionization cycle 
+xxx Wed Jan  6 20:02:08 2016    101.3 NOK                  Starting 14 of 20 ionization cycle 
 !!Python: Begining cycle 14 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     42 nstar  63922 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.08e+35 nphotons 8030 ndisk      0 nwind   3973 nstar   4057 npow 0 
@@ -1635,10 +1634,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111392   103322    95853    89509    83893    79356    75144    72244    69036    66302    64419    62503    60658    59011    57964    56932    55876    54913    54057    53357    52874    52290    51822    51141    50746    50403    49797        0        0 
-Completed ionization cycle 14 :  The elapsed TIME was 86.312710
-xxx Tue Jan  5 20:01:44 2016     86.4 OK                   Finished 14 of 20 ionization cycle 
+Completed ionization cycle 14 :  The elapsed TIME was 107.731108
+xxx Wed Jan  6 20:02:15 2016    107.8 OK                   Finished 14 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:44 2016     86.4 NOK                  Starting 15 of 20 ionization cycle 
+xxx Wed Jan  6 20:02:15 2016    107.8 NOK                  Starting 15 of 20 ionization cycle 
 !!Python: Begining cycle 15 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     38 nstar  63926 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.06e+35 nphotons 8030 ndisk      0 nwind   3964 nstar   4066 npow 0 
@@ -1719,10 +1718,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111815   103556    95658    89564    83998    79432    75411    71649    68440    66042    63888    61937    60362    58967    57793    56718    55991    55055    54269    53620    53048    52629    52016    51561    51067    50449    49773        0        0 
-Completed ionization cycle 15 :  The elapsed TIME was 92.243867
-xxx Tue Jan  5 20:01:50 2016     92.3 OK                   Finished 15 of 20 ionization cycle 
+Completed ionization cycle 15 :  The elapsed TIME was 114.423411
+xxx Wed Jan  6 20:02:22 2016    114.5 OK                   Finished 15 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:50 2016     92.3 NOK                  Starting 16 of 20 ionization cycle 
+xxx Wed Jan  6 20:02:22 2016    114.5 NOK                  Starting 16 of 20 ionization cycle 
 !!Python: Begining cycle 16 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     39 nstar  63925 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.06e+35 nphotons 8030 ndisk      0 nwind   3963 nstar   4067 npow 0 
@@ -1803,10 +1802,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   112130   102829    95179    88715    83059    78338    74377    71160    68337    66044    63789    62017    60548    58954    57853    56887    55755    54943    54102    53388    52937    52372    51814    51417    50834    50312    49643        0        0 
-Completed ionization cycle 16 :  The elapsed TIME was 98.195789
-xxx Tue Jan  5 20:01:56 2016     98.3 OK                   Finished 16 of 20 ionization cycle 
+Completed ionization cycle 16 :  The elapsed TIME was 120.741107
+xxx Wed Jan  6 20:02:28 2016    120.8 OK                   Finished 16 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:01:56 2016     98.3 NOK                  Starting 17 of 20 ionization cycle 
+xxx Wed Jan  6 20:02:28 2016    120.8 NOK                  Starting 17 of 20 ionization cycle 
 !!Python: Begining cycle 17 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     41 nstar  63923 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.10e+35 nphotons 8030 ndisk      0 nwind   3982 nstar   4048 npow 0 
@@ -1887,10 +1886,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111647   103022    95817    89845    84018    79402    75219    71547    68779    66130    64143    62185    60601    59452    57902    56785    55976    55027    54221    53466    52946    52404    51888    51298    50752    50190    49571        0        0 
-Completed ionization cycle 17 :  The elapsed TIME was 104.380107
-xxx Tue Jan  5 20:02:02 2016    104.4 OK                   Finished 17 of 20 ionization cycle 
+Completed ionization cycle 17 :  The elapsed TIME was 127.273100
+xxx Wed Jan  6 20:02:34 2016    127.4 OK                   Finished 17 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:02:02 2016    104.4 NOK                  Starting 18 of 20 ionization cycle 
+xxx Wed Jan  6 20:02:34 2016    127.4 NOK                  Starting 18 of 20 ionization cycle 
 !!Python: Begining cycle 18 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     44 nstar  63920 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.10e+35 nphotons 8030 ndisk      0 nwind   3985 nstar   4045 npow 0 
@@ -1971,10 +1970,10 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111805   103279    96339    90166    84112    79293    75062    71809    68798    66104    63589    61945    60484    59043    57794    56585    55917    54974    54069    53530    52872    52391    51875    51329    50982    50460    49829        0        0 
-Completed ionization cycle 18 :  The elapsed TIME was 110.063917
-xxx Tue Jan  5 20:02:08 2016    110.1 OK                   Finished 18 of 20 ionization cycle 
+Completed ionization cycle 18 :  The elapsed TIME was 133.536129
+xxx Wed Jan  6 20:02:41 2016    133.6 OK                   Finished 18 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
-xxx Tue Jan  5 20:02:08 2016    110.1 NOK                  Starting 19 of 20 ionization cycle 
+xxx Wed Jan  6 20:02:41 2016    133.6 NOK                  Starting 19 of 20 ionization cycle 
 !!Python: Begining cycle 19 of 20 for defining wind
 photon_gen: band 2.50e+14 to 3.29e+15 weight 2.10e+38 nphotons 63964 ndisk      0 nwind     38 nstar  63926 npow 0 
 photon_gen: band 3.29e+15 to 5.94e+15 weight 8.06e+35 nphotons 8030 ndisk      0 nwind   3964 nstar   4066 npow 0 
@@ -2055,11 +2054,11 @@ Warning: Since coord type is not cylindrical, next print out may look odd
  ntot 
    z\x   8.55e+14 8.74e+14 8.93e+14 9.13e+14 9.34e+14 9.55e+14 9.76e+14 9.98e+14 1.02e+15 1.04e+15 1.07e+15 1.09e+15 1.11e+15 1.14e+15 1.17e+15 1.19e+15 1.22e+15 1.25e+15 1.27e+15 1.30e+15 1.33e+15 1.36e+15 1.39e+15 1.42e+15 1.45e+15 1.49e+15 1.52e+15 1.55e+15 1.59e+15 1.62e+15 
 8.55e+14        0   111748   103134    95859    89149    83408    78416    74888    71957    68539    65954    64035    62382    60855    59274    58101    56987    56122    55129    54319    53588    52903    52407    52009    51479    51037    50491    49821        0        0 
-Completed ionization cycle 19 :  The elapsed TIME was 115.911455
-xxx Tue Jan  5 20:02:14 2016    116.0 OK                   Finished 19 of 20 ionization cycle 
+Completed ionization cycle 19 :  The elapsed TIME was 140.727614
+xxx Wed Jan  6 20:02:48 2016    140.8 OK                   Finished 19 of 20 ionization cycle 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
- Completed wind creation.  The elapsed TIME was 116.015155
-xxx Tue Jan  5 20:02:14 2016    116.0 NOK                  Starting 0 of 1 spectral cycle 
+ Completed wind creation.  The elapsed TIME was 140.846055
+xxx Wed Jan  6 20:02:48 2016    140.8 NOK                  Starting 0 of 1 spectral cycle 
 !!Cycle 0 of 1 to calculate a detailed spectrum
 init_freebound: Creating recombination emissivites between 1.498962e+14 and 1.498962e+16
 photon_gen: band 1.50e+14 to 1.50e+16 weight 1.74e+38 nphotons 80000 ndisk      0 nwind     74 nstar  79926 npow 0 
@@ -2097,8 +2096,8 @@ Inwin  Scat  Esc   Star  >nscat  err  Absor  Disk  sec  Adiab(matom)
      0     0     0 19081     0     0     0     0     0     0
      0     0 28519 19076    32     0     2     0     0     0
      0 19418 104077 69916     0     0    34     0     0     0
-Completed spectrum cycle   0 :  The elapsed TIME was 126.242458
-xxx Tue Jan  5 20:02:24 2016    126.2 OK                   Finished   0 of   1 spectrum cycles 
+Completed spectrum cycle   0 :  The elapsed TIME was 151.777595
+xxx Wed Jan  6 20:02:59 2016    151.8 OK                   Finished   0 of   1 spectrum cycles 
 wind_write sizes: NPLASMA 27 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
 
 Error summary: End of program, Thread 0 only
@@ -2109,5 +2108,5 @@ Recurrences --  Description
         2 -- error_count: This error will no longer be logged: %s
 Run py_error.py for full error report.
 Thread 0 Finalized. All done
-xxx Tue Jan  5 20:02:24 2016    126.3 COMPLETE             1d_sn
-Completed entire program.  The elapsed TIME was 126.268624
+xxx Wed Jan  6 20:02:59 2016    151.8 COMPLETE             1d_sn
+Completed entire program.  The elapsed TIME was 151.799575
