@@ -3,7 +3,7 @@ Para: Thread 0 starting.
 !!Git commit hash 2486e9934842ee3d7cc23d33de48a6b026cb5fab
 !!Python is running with 1 processors
 Para: This is MPI task number 0 (a total of 1 tasks are running).
-xxx Wed Jan  6 20:11:52 2016      0.0 NOK                  Initializing variables for input
+xxx Thu Jan  7 20:08:41 2016      0.0 NOK                  Initializing variables for input
 Reading data from file input.pf
 Get_atomicdata: Reading from masterfile data/standard78
 Data of  14 elements, 178 ions,  3761 levels,  5458 lines, and   108 topbase records
@@ -213,8 +213,8 @@ Got to wind_check
 Wind_check: Punchthrough distance DFUDGE 1.000000e-03 www[1].x[2] 7.071068e+10
 Finished wind check
 Error: wind2d.c: Don't know how to check wind mdot for this coordtype 0
-xxx Wed Jan  6 20:12:01 2016      8.2 NOK                  Finished initialization for input
-xxx Wed Jan  6 20:12:01 2016      8.2 NOK                  Starting 0 of 1 ionization cycle 
+xxx Thu Jan  7 20:08:43 2016      1.7 NOK                  Finished initialization for input
+xxx Thu Jan  7 20:08:43 2016      1.7 NOK                  Starting 0 of 1 ionization cycle 
 !!Python: Begining cycle 0 of 1 for defining wind
 Broken power law: Emittance below low frequency break is 6.264875e+28
 Broken power law: No luminosity in central range
@@ -403,10 +403,10 @@ OUTPUT S      5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.38e-23 5.3
 OUTPUT Ar     2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 2.76e-22 5.95e-20 1.48e-14 3.15e-09 9.57e-05 1.00e+00
 OUTPUT Ca     4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 4.58e-22 1.13e-18 1.10e-13 1.16e-08 1.80e-04 1.00e+00
 OUTPUT Fe     3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 3.09e-23 2.80e-20 3.78e-16 1.59e-11 3.00e-07 8.88e-04 9.99e-01
-Completed ionization cycle 0 :  The elapsed TIME was 11.800904
-xxx Wed Jan  6 20:12:04 2016     11.9 OK                   Finished 0 of 1 ionization cycle 
+Completed ionization cycle 0 :  The elapsed TIME was 5.290940
+xxx Thu Jan  7 20:08:47 2016      5.4 OK                   Finished 0 of 1 ionization cycle 
 wind_write sizes: NPLASMA 1 size_Jbar_est 0 size_gamma_est 0 size_alpha_est 0 nlevels_macro 0
- Completed wind creation.  The elapsed TIME was 11.866976
+ Completed wind creation.  The elapsed TIME was 5.356052
 
 Error summary: End of program, Thread 0 only
 Recurrences --  Description
@@ -414,5 +414,5 @@ Recurrences --  Description
         1 -- wind2d.c: Don't know how to check wind mdot for this coordtype %d
 Run py_error.py for full error report.
 Para: Thread 0 Finalized. All done
-xxx Wed Jan  6 20:12:04 2016     11.9 COMPLETE             input
-Completed entire program.  The elapsed TIME was 11.876869
+xxx Thu Jan  7 20:08:47 2016      5.4 COMPLETE             input
+Completed entire program.  The elapsed TIME was 5.366443
