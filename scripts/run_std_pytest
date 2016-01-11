@@ -12,8 +12,3 @@ $PYTHON/bin/py$VERSION  fiducial_agn > fiducial_agn.out &
 $PYTHON/bin/py$VERSION  1d_sn > 1d_sn.out &
 $PYTHON/bin/py$VERSION  sv_detailed_mode > sv_detailed_mode.out &
 $PYTHON/bin/py$VERSION  cv_macro_benchmark > cv_macro_benchmark.out &
-
-
-
-
-

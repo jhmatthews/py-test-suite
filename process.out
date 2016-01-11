@@ -53,4 +53,12 @@ Run fiducial_agn: Column A85P0.50 Normalised Standard deviation in flux = 6.0976
 Run fiducial_agn: Column A89P0.50 Normalised Standard deviation in flux = 6.6146e-02 Mean 9.7486e-02
 17 17
 /home/jm8g08/py-test-suite//outputs/py_heat_test.dat
-/home/jm8g08/py-test-suite//outputs_release/py_heat_release.d
+/home/jm8g08/py-test-suite//outputs_release/py_heat_release.d[gh-pages fdbd515] Regression test for 2016-01-11
+ 28 files changed, 1037 insertions(+), 1037 deletions(-)
+ rewrite outputs/1d_sn.sig (71%)
+ rewrite outputs/cv_standard.sig (70%)
+ rewrite outputs/fiducial_agn.sig (70%)
+ rewrite outputs/input.sig (79%)
+at
+all done
+Every run completed

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ##########################################
 #
 #		University of Southampton, 5/8/15
@@ -10,11 +10,58 @@
 # run_test is a shell script which compiles python then runs a load 
 # standard parameter files.
 #
+# Usage: ./run_test [options]"
+#
+#  -v [version]: avoids using git to download and runs with the PYTHON version string supplied
+#  -r : also pulls the latest release and runs with that
+#  -h : print this message
+#  default is to download the latest version and test against whatever release is in outputs_release
+#  
+# Environment variables needed are
+# PYTHON_TEST_VERSION : mirror git repo
+# PYTHON : normal git repo
+# PYTEST: directory where tests are run
 ##########################################
 
-source /home/jm8g08/.bashrc
+if [ $USER == "jm8g08" ]; then  
+    source /home/jm8g08/.bashrc
+fi
+
+display_help() { 
+	echo "run_test is a shell script which compiles PYTHON then runs a load of standard parameter files."
+	echo ""
+	echo "Usage: ./run_test [options]"
+	echo ""
+	echo "-v [version]: avoids using git to download and runs with the PYTHON version string supplied"
+	echo "-r : also pulls the latest release and runs with that"
+	echo "-h : print this message"
+	echo "default is to download the latest version and test against whatever release is in outputs_release"
+	echo "" 
+	exit 
+	} 
 
 
+# set default command line args and read from command line
+GIT=1
+RELEASE=0
+VERSION="test"
+BRANCHNAME="dev"
+
+if [  $# -ge 1 ]; then 
+    if [ $1 == "-r" ]; then
+    	RELEASE=1
+    elif [ $1 == "-v" ]; then
+    	GIT=0
+    	VERSION=$2
+    elif [ $1 == "-h" ]; then
+    	display_help
+    else 
+    	echo "Did not understand command line option"
+    	display_help
+    fi
+fi
+
+# echo the directory
 echo $PYTEST 
 
 # First make sure the error and output files are empty.
@@ -27,49 +74,59 @@ date > $PYTEST/run_test_err.txt
 
 
 # cd into $PYTHON_TEST_VERSION/source, cp to a directory in $PYTHON and make python 
-cd $PYTHON_TEST_VERSION/source
-git checkout dev
-git pull origin dev
-cp *.c $PYTHON/source_for_tests/
-cp *.h $PYTHON/source_for_tests/
-cp Makefile $PYTHON/source_for_tests/
-cp $PYTHON/examples/*.pf $PYTEST/outputs/
-cd $PYTHON/source_for_tests/
-make clean
-make VERSION=test python
-make clean
-make VERSION=test py_wind 
-make clean
+# this is a bit of a kluge. I don't want to overwrite any local code in $PYTHOn, but I don't want to
+# have a whole separate structure. so I have a mirror git repo in $PYTHON_TEST_VERSION, which
+# then gets copied to $PYTHON/source_for_tests/ so I can use all the libraries and data like normal
+if [ $GIT == 1 ]; then 
+	cd $PYTHON_TEST_VERSION/source
+	git checkout $BRANCHNAME
+	git pull origin $BRANCHNAME
+	cp *.c $PYTHON/source_for_tests/
+	cp *.h $PYTHON/source_for_tests/
+	cp Makefile $PYTHON/source_for_tests/
+	cp $PYTHON/examples/*.pf $PYTEST/outputs/
+	cd $PYTHON/source_for_tests/
+	make clean
+	make VERSION=test python
+	make clean
+	make VERSION=test py_wind 
+	make clean
+fi
 
 # next commented out section could be uncommented if you wanted to test against the release branch
-# cd $PYTHON_TEST_VERSION/source
-# git checkout release
-# git pull origin release
-# cp *.c *.h Makefile $PYTHON/source_for_tests/
-# cp ../examples/*.pf $PYTEST/compare/
-# cd $PYTHON/source_for_tests/
-# make clean
-# make VERSION=release python
-# make clean
-# make VERSION=release py_wind 
-# make clean
-
+if [ $RELEASE == 1 ]; then
+	cd $PYTHON_TEST_VERSION/source
+	git checkout release
+	git pull origin release
+	cp *.c *.h Makefile $PYTHON/source_for_tests/
+	cp ../examples/*.pf $PYTEST/compare/
+	cd $PYTHON/source_for_tests/
+	make clean
+	make VERSION=release python
+	make clean
+	make VERSION=release py_wind 
+	make clean
+fi
 
 # cd into the outputs directory and run the models
-cd $PYTEST/outputs/
+echo $PYTEST/outputs_$BRANCHNAME
+mkdir $PYTEST/outputs_$BRANCHNAME
+git add $PYTEST/outputs_$BRANCHNAME
+cd $PYTEST/outputs_$BRANCHNAME
 Setup_Py_Dir
 
-nice $PYTHON/bin/pytest cv_standard > cv_standard.out &
-nice mpirun -n 10 $PYTHON/bin/pytest fiducial_agn > fiducial_agn.out &
-nice $PYTHON/bin/pytest 1d_sn > 1d_sn.out &
+exit
+
+nice $PYTHON/bin/py$VERSION cv_standard > cv_standard.out &
+nice mpirun -n 10 $PYTHON/bin/py$VERSION fiducial_agn > fiducial_agn.out &
+nice $PYTHON/bin/py$VERSION 1d_sn > 1d_sn.out &
 #$PYTHON/bin/pytest sv_detailedmode > sv_detailedmode.out &
 #$PYTHON/bin/pytest cv_macro_benchmark > cv_macro_benchmark.out &
 
 
 # run the ion loop
-python $PYTEST/scripts/ion_loop_jm.py test test standard78
-#scripts/ion_loop_jm.py release release
+python $PYTEST/scripts/ion_loop_jm.py $VERSION $VERSION standard78
 
-
-
-
+if [ $RELEASE == 1 ]; then
+    scripts/ion_loop_jm.py release release
+fi
