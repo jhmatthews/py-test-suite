@@ -37,6 +37,7 @@ History:
 
 
 import sys, subprocess
+import py_read_output as r
 
 #Use an optional suffix so file will be py_hydrogen_*suffix*.dat, 
 
@@ -82,55 +83,13 @@ for i in range(npoints):
 	lum=10**((dn*float(i)+210.0)/10.0)   #The 210 means the first luminosity is 21.0
 	print 'Starting cycle '+str(i+1)+' of '+str(npoints)
 	print 'Lum= '+str(lum)
-	inp =open('input.pf','w')
-	inp.write("Wind_type() 9\n")
-	inp.write("Atomic_data                       data/%s\n" % datafile)
-	inp.write("photons_per_cycle                           100000\n")
-	inp.write("Ionization_cycles                               1\n")
-	inp.write("spectrum_cycles                                   0\n")
-	inp.write("Coord.system()                   0\n")
-	inp.write("Wind.dim.in.x_or_r.direction                     4\n")
-	inp.write("Wind_ionization()                   7\n")
-	inp.write("Line_transfer()                    %s\n" % ltransfer)
-	inp.write("Thermal_balance_options 		0\n")
-	inp.write("System_type()                   2\n")
-	inp.write("disk.type()                   0\n")
-	inp.write("Star_radiation(y=1)                              0\n")
-	inp.write("Disk_radiation(y=1)                              0\n")
-	inp.write("Wind_radiation(y=1)                              0\n")
-	inp.write("QSO_BH_radiation(y=1)                            1\n")
-	inp.write("Rad_type_for_star(0=bb,1=models)_to_make_wind                   0\n")
-	inp.write("Rad_type_for_agn()_to_make_wind                   4\n")
-	inp.write("mstar(msol)                                     0.8\n")
-	inp.write("rstar(cm)                                     1e10\n")
-	inp.write("tstar                                      1000000\n")
-	inp.write("lum_agn(ergs/s) "+str(lum)+"\n")
-	inp.write("agn_power_law_index                           -0.9\n")
-	inp.write("low_energy_break(ev)				0.136\n")
-	inp.write("high_energy_break(ev)			20000\n")
-	inp.write("Torus(0=no,1=yes) 				 0\n")
-	inp.write("wind.radmax(cm)                   1.00000000001e11\n")
-	inp.write("wind.t.init                                10000\n")
-	inp.write("shell_wind_mdot(msol/yr)                     0.00472e-17\n")
-	inp.write("shell.wind.radmin(cm)                       1e11\n")
-	inp.write("shell.wind_v_at_rmin(cm)                    1.00000\n")
-	inp.write("shell.wind.v_at_rmax(cm)                    1.000010\n")
-	inp.write("shell.wind.acceleration_exponent                   1\n")
-	inp.write("wind.filling_factor(1=smooth,<1=clumped) (1)       1\n")
-	inp.write("spec.type(flambda(1),fnu(2),basic(other)                    2\n")
-	inp.write("reverb.type                                 0") 
-	inp.write("Extra.diagnostics(0=no)                           0\n")
-	inp.write("Use.standard.care.factors(1=yes)                    1\n")
-	inp.write("Photon.sampling.approach()                   5\n")
-	inp.write("Num.of.frequency.bands                           3\n")
-	inp.write("Lowest_energy_to_be_considered(eV)                   0.0001\n")
-	inp.write("Highest_energy_to_be_considered(eV)           100000000   \n")
-	inp.write("Band.boundary(eV)                             2000\n")
-	inp.write("Band.boundary(eV)                            10000\n")
-	inp.write("Band.minimum_fraction)                         0.3\n")
-	inp.write("Band.minimum_fraction)                         0.4\n")
-	inp.write("Band.minimum_fraction)                         0.3\n")
-	inp.close()
+	pf_template = r.read_pf("ion_loop_template.pf")
+	pf_template ["Atomic_data"] = "data/%s" % datafile
+	pf_template ["Line_transfer()"] = "%s" % ltransfer)]
+	pf_template ["lum_agn(ergs/s)"] = str(lum)
+	
+	r.write_pf("input.pf", pf_template)
+
 	subprocess.check_call("time "+python_ver+" input > output",shell=True)	   #This is where we define the version of python to use
 	subprocess.check_call("tail -n 60 output  | grep OUTPUT > temp",shell=True)#Strip the last 60 lines from the output
 	inp=open('temp','r')

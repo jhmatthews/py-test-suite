@@ -1,0 +1,58 @@
+input
+xxx Mon Jan 18 16:58:43 2016      0.0 START                input 
+Thread 0 starting.
+!!Python Version test 
+!!Git commit hash 74dbb173df92646c37bf1ad76a1cc3759d1e27ab
+!!Python is running with 1 processors
+This is MPI task number 0 (a total of 1 tasks are running).
+xxx Mon Jan 18 16:58:43 2016      0.0 NOK                  Initializing variables for input
+Reading data from file input.pf
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind_type()) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Atomic_data) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (photons_per_cycle) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Ionization_cycles) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (spectrum_cycles) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Coord.system()) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind.dim.in.x_or_r.direction) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind_ionization()) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Line_transfer()) in file. Continuing!
+Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Thermal_balance_options) in file. Continuing!
+System_type(0=star,1=binary,2=agn,3=previous)	  2
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (disk.type()) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Star_radiation(y=1)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Disk_radiation(y=1)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Wind_radiation(y=1)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (QSO_BH_radiation(y=1)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Rad_type_for_star(0=bb,1=models)_to_make_wind) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Rad_type_for_agn()_to_make_wind) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (mstar(msol)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (rstar(cm)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (tstar) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (lum_agn(ergs/s)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (agn_power_law_index) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (low_energy_break(ev)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (high_energy_break(ev)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Torus(0=no,1=yes)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (wind.radmax(cm)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (wind.t.init) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (shell_wind_mdot(msol/yr)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (shell.wind.radmin(cm)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (shell.wind_v_at_rmin(cm)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (shell.wind.v_at_rmax(cm)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (shell.wind.acceleration_exponent) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (wind.filling_factor(1=smooth,<1=clumped)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (spec.type(flambda(1),fnu(2),basic(other)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (reverb.type) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Use.standard.care.factors(1=yes)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Photon.sampling.approach()) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Num.of.frequency.bands) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Lowest_energy_to_be_considered(eV)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Highest_energy_to_be_considered(eV)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Band.boundary(eV)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Band.boundary(eV)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Band.minimum_fraction)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Band.minimum_fraction)) in file. Continuing!
+Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Band.minimum_fraction)) in file. Continuing!
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+Wind_type(0=SV,1=Sphere,3=Hydro,

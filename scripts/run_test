@@ -15,6 +15,7 @@
 #  -v [version]: avoids using git to download and runs with the PYTHON version string supplied
 #  -r : also pulls the latest release and runs with that
 #  -h : print this message
+#  -b [branchname]
 #  default is to download the latest version and test against whatever release is in outputs_release
 #  
 # Environment variables needed are
@@ -53,8 +54,10 @@ if [  $# -ge 1 ]; then
     elif [ $1 == "-v" ]; then
     	GIT=0
     	VERSION=$2
+    elif [ $1 == "-b" ]; then
+    	BRANCHNAME=$2
     elif [ $1 == "-h" ]; then
-    	display_help
+    	display_helpss
     else 
     	echo "Did not understand command line option"
     	display_help
@@ -84,7 +87,7 @@ if [ $GIT == 1 ]; then
 	cp *.c $PYTHON/source_for_tests/
 	cp *.h $PYTHON/source_for_tests/
 	cp Makefile $PYTHON/source_for_tests/
-	cp $PYTHON/examples/*.pf $PYTEST/outputs/
+	cp $PYTHON_TEST_VERSION/examples/*.pf $PYTEST/outputs_$BRANCHNAME/
 	cd $PYTHON/source_for_tests/
 	make clean
 	make VERSION=test python
@@ -111,11 +114,10 @@ fi
 # cd into the outputs directory and run the models
 echo $PYTEST/outputs_$BRANCHNAME
 mkdir $PYTEST/outputs_$BRANCHNAME
+cd $PYTEST
 git add $PYTEST/outputs_$BRANCHNAME
 cd $PYTEST/outputs_$BRANCHNAME
 Setup_Py_Dir
-
-exit
 
 nice $PYTHON/bin/py$VERSION cv_standard > cv_standard.out &
 nice mpirun -n 10 $PYTHON/bin/py$VERSION fiducial_agn > fiducial_agn.out &
