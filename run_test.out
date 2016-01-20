@@ -1,11 +1,20 @@
 /home/jm8g08/py-test-suite/
-Your branch and 'origin/dev' have diverged,
-and have 13 and 16 different commits each, respectively.
-  (use "git pull" to merge the remote branch into yours)
-Auto-merging source/para_update.c
-CONFLICT (content): Merge conflict in source/para_update.c
-Auto-merging source/Makefile
-Automatic merge failed; fix conflicts and then commit the result.
+source/para_update.c: needs merge
+A	examples/template_ionloop.pf
+M	source/Makefile
+M	source/estimators.c
+M	source/foo.h
+M	source/macro_gov.c
+M	source/matom.c
+M	source/matrix_ion.c
+U	source/para_update.c
+M	source/py_wind_sub.c
+M	source/py_wind_write.c
+M	source/radiation.c
+M	source/setup.c
+M	source/templates.h
+M	source/wind2d.c
+M	source/wind_updates2d.c
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
