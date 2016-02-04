@@ -21,7 +21,7 @@ YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
 MPI_FLAG= -DMPI_ON
 echo "#define VERSION " \"test\" > version.h
 echo "#define CHOICE"   1             // Compress plasma as much as possible >> version.h
-echo "#define GIT_COMMIT_HASH" \"74dbb173df92646c37bf1ad76a1cc3759d1e27ab\" >> version.h
+echo "#define GIT_COMMIT_HASH" \"ef25265533121caa312d376121851c0a0047131b\" >> version.h
 echo "#define GIT_DIFF_STATUS" 0\ >> version.h
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o python.o python.c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o bb.o bb.c
@@ -105,7 +105,7 @@ YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
 MPI_FLAG= -DMPI_ON
 echo "#define VERSION " \"test\" > version.h
 echo "#define CHOICE"   1             // Compress plasma as much as possible >> version.h
-echo "#define GIT_COMMIT_HASH" \"74dbb173df92646c37bf1ad76a1cc3759d1e27ab\" >> version.h
+echo "#define GIT_COMMIT_HASH" \"ef25265533121caa312d376121851c0a0047131b\" >> version.h
 echo "#define GIT_DIFF_STATUS" 0\ >> version.h
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o py_wind.o py_wind.c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o get_atomicdata.o get_atomicdata.c
