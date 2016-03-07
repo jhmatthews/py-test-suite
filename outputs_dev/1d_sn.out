@@ -1,11 +1,11 @@
 1d_sn
-xxx Sat Mar  5 20:00:18 2016      0.0 START                1d_sn 
+xxx Sun Mar  6 20:00:18 2016      0.0 START                1d_sn 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 74dbb173df92646c37bf1ad76a1cc3759d1e27ab
 !!Python is running with 1 processors
 This is MPI task number 0 (a total of 1 tasks are running).
-xxx Sat Mar  5 20:00:18 2016      0.0 NOK                  Initializing variables for 1d_sn
+xxx Sun Mar  6 20:00:18 2016      0.0 NOK                  Initializing variables for 1d_sn
 Reading data from file 1d_sn.pf
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind_type(0=SV,1=Sphere,2=Previous,3=Proga,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell)) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Atomic_data) in file. Continuing!
