@@ -1,2 +1,2 @@
-Tue Mar 22 20:00:21 2016      0.0 START                fiducial_agn 
-Tue Mar 22 20:00:21 2016      0.0 NOK                  Initializing variables for fiducial_agn
+Wed Mar 23 20:00:25 2016      0.0 START                fiducial_agn 
+Wed Mar 23 20:00:25 2016      0.0 NOK                  Initializing variables for fiducial_agn
