@@ -2,6 +2,7 @@ fiducial_agn
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
 Exiting since rdpar got EOF in interactive mode
+xxx Sun Apr 17 20:00:26 2016      0.0 START                fiducial_agn 
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
 Exiting since rdpar got EOF in interactive mode
@@ -10,23 +11,30 @@ Error: string_proces: Unexpectedly reached EOF
 Exiting since rdpar got EOF in interactive mode
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
-Error: string_proces: Unexpectedly reached EOF
-Exiting since rdpar got EOF in interactive mode
-xxx Sat Apr 16 20:00:26 2016      0.0 START                fiducial_agn 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 74dbb173df92646c37bf1ad76a1cc3759d1e27ab
 !!Python is running with 10 processors
 This is MPI task number 0 (a total of 10 tasks are running).
-xxx Sat Apr 16 20:00:26 2016      0.0 NOK                  Initializing variables for fiducial_agn
+Exiting since rdpar got EOF in interactive mode
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+xxx Sun Apr 17 20:00:26 2016      0.0 NOK                  Initializing variables for fiducial_agn
+Exiting since rdpar got EOF in interactive mode
 Reading data from file fiducial_agn.pf
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind_type(0=SV,1=Sphere,2=Previous,3=Proga,4=Corona,5=knigge,6=thierry,7=yso,8=elvis,9=shell)) in file. Continuing!
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Atomic_data) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (photons_per_cycle) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Ionization_cycles) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (spectrum_cycles) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Coord.system(0=spherical,1=cylindrical,2=spherical_polar,3=cyl_var)) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind.dim.in.x_or_r.direction) in file. Continuing!
+Exiting since rdpar got EOF in interactive mode
+Exiting since rdpar got EOF in interactive mode
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind.dim.in.z_or_theta.direction) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind_ionization(0=on.the.spot,1=LTE,2=fixed,3=recalc_bb,5=recalc_pow,6=pairwise_bb,7=pairwise_pow,8=matrix_bb,9=matrix_pow)) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Line_transfer(0=pure.abs,1=pure.scat,2=sing.scat,3=escape.prob,6=macro_atoms,7=macro_atoms+aniso.scattering)) in file. Continuing!
@@ -34,21 +42,15 @@ Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not matc
 System_type(0=star,1=binary,2=agn,3=previous)	  2
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
 Exiting since rdpar got EOF in interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
 Exiting since rdpar got EOF in interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (disk.type(0=no.disk,1=standard.flat.disk,2=vertically.extended.disk)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Disk_radiation(y=1)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Wind_radiation(y=1)) in file. Continuing!
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (QSO_BH_radiation(y=1)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Rad_type_for_disk(0=bb,1=models)_to_make_wind) in file. Continuing!
-Exiting since rdpar got EOF in interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table)_to_make_wind) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (mstar(msol)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (rstar(cm)) in file. Continuing!
@@ -67,10 +69,8 @@ Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologo
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (sv.thetamax(deg)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (sv.mdot_r_exponent) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (sv.v_infinity(in_units_of_vescape) in file. Continuing!
-                      Switching to interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (sv.acceleration_length(cm)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (sv.acceleration_exponent) in file. Continuing!
-Exiting since rdpar got EOF in interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (wind.filling_factor(1=smooth,<1=clumpted)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Rad_type_for_disk(0=bb,1=models,2=uniform)_in_final_spectrum) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Rad_type_for_agn(0=bb,1=models,3=power_law,4=cloudy_table)_in_final_spectrum) in file. Continuing!
