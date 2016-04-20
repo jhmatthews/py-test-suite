@@ -1,11 +1,11 @@
 cv_standard
-xxx Mon Apr 18 20:00:25 2016      0.0 START                cv_standard 
+xxx Tue Apr 19 20:00:30 2016      0.0 START                cv_standard 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 74dbb173df92646c37bf1ad76a1cc3759d1e27ab
 !!Python is running with 1 processors
 This is MPI task number 0 (a total of 1 tasks are running).
-xxx Mon Apr 18 20:00:25 2016      0.0 NOK                  Initializing variables for cv_standard
+xxx Tue Apr 19 20:00:30 2016      0.0 NOK                  Initializing variables for cv_standard
 Reading data from file cv_standard.pf
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind_type(0=SV,1=Sphere,2=Previous,3=Proga,4=Corona,5=knigge,6=thierry,7=yso,8=elvis,9=shell)) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Atomic_data) in file. Continuing!
