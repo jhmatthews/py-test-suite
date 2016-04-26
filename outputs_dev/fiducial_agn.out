@@ -16,17 +16,23 @@ Error: string_proces: Unexpectedly reached EOF
 Exiting since rdpar got EOF in interactive mode
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
+Exiting since rdpar got EOF in interactive mode
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
 Exiting since rdpar got EOF in interactive mode
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
 Exiting since rdpar got EOF in interactive mode
-xxx Sun Apr 24 20:00:19 2016      0.0 START                fiducial_agn 
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+Exiting since rdpar got EOF in interactive mode
+xxx Mon Apr 25 20:00:19 2016      0.0 START                fiducial_agn 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 74dbb173df92646c37bf1ad76a1cc3759d1e27ab
 !!Python is running with 10 processors
 This is MPI task number 0 (a total of 10 tasks are running).
-xxx Sun Apr 24 20:00:19 2016      0.0 NOK                  Initializing variables for fiducial_agn
+xxx Mon Apr 25 20:00:19 2016      0.0 NOK                  Initializing variables for fiducial_agn
 Reading data from file fiducial_agn.pf
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind_type(0=SV,1=Sphere,2=Previous,3=Proga,4=Corona,5=knigge,6=thierry,7=yso,8=elvis,9=shell)) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Atomic_data) in file. Continuing!
@@ -49,9 +55,6 @@ Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologo
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (mstar(msol)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (rstar(cm)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (disk.mdot(msol/yr)) in file. Continuing!
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Disk.illumination.treatment(0=no.rerad,1=high.albedo,2=thermalized.rerad,3=analytic)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Disk.temperature.profile(0=standard;1=readin)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (disk.radmax(cm)) in file. Continuing!
@@ -78,9 +81,6 @@ Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologo
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (angle(0=pole)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (angle(0=pole)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (angle(0=pole)) in file. Continuing!
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (angle(0=pole)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (angle(0=pole)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (angle(0=pole)) in file. Continuing!

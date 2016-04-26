@@ -99,6 +99,7 @@ mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o pi_rates.o pi_rates.c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o matrix_ion.o matrix_ion.c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o para_update.o para_update.c
+<builtin>: recipe for target 'para_update.o' failed
 rm -f *.o  *~ 
 Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
