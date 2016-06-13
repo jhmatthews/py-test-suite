@@ -10,6 +10,15 @@ Error: string_proces: Unexpectedly reached EOF
 Exiting since rdpar got EOF in interactive mode
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
+Error: string_proces: Unexpectedly reached EOF
+Exiting since rdpar got EOF in interactive mode
+                      Switching to interactive mode
+Exiting since rdpar got EOF in interactive mode
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+Exiting since rdpar got EOF in interactive mode
 Exiting since rdpar got EOF in interactive mode
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
@@ -17,20 +26,10 @@ Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
 Exiting since rdpar got EOF in interactive mode
 Exiting since rdpar got EOF in interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
-xxx Sat Jun 11 20:00:19 2016      0.0 START                fiducial_agn 
+xxx Sun Jun 12 20:00:18 2016      0.0 START                fiducial_agn 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 74dbb173df92646c37bf1ad76a1cc3759d1e27ab
 !!Python is running with 10 processors
 This is MPI task number 0 (a total of 10 tasks are running).
-xxx Sat Jun 11 20:00:19 2016      0.0 NOK                  Initializing variables for fiducial_agn
-Reading data from file fiducial_agn.pf
+xxx Sun Jun 12 20:00:18 2016      0.0 NOK                  Initializing variables for fiducial_agn
