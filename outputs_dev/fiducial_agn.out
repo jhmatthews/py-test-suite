@@ -1,11 +1,11 @@
 fiducial_agn
-xxx Sun Jul  3 20:00:19 2016      0.0 START                fiducial_agn 
+xxx Mon Jul  4 20:00:19 2016      0.0 START                fiducial_agn 
 Thread 0 starting.
 !!Python Version test 
 !!Git commit hash 74dbb173df92646c37bf1ad76a1cc3759d1e27ab
 !!Python is running with 10 processors
 This is MPI task number 0 (a total of 10 tasks are running).
-xxx Sun Jul  3 20:00:19 2016      0.0 NOK                  Initializing variables for fiducial_agn
+xxx Mon Jul  4 20:00:19 2016      0.0 NOK                  Initializing variables for fiducial_agn
 Reading data from file fiducial_agn.pf
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Wind_type(0=SV,1=Sphere,2=Previous,3=Proga,4=Corona,5=knigge,6=thierry,7=yso,8=elvis,9=shell)) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Atomic_data) in file. Continuing!
@@ -19,21 +19,6 @@ Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not matc
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Line_transfer(0=pure.abs,1=pure.scat,2=sing.scat,3=escape.prob,6=macro_atoms,7=macro_atoms+aniso.scattering)) in file. Continuing!
 Warning:  Question (System_type(0=star,1=binary,2=agn,3=previous)) does not match word (Thermal_balance_options(0=everything.on,1=no.adiabatic)) in file. Continuing!
 System_type(0=star,1=binary,2=agn,3=previous)	  2
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
-Exiting since rdpar got EOF in interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (disk.type(0=no.disk,1=standard.flat.disk,2=vertically.extended.disk)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Disk_radiation(y=1)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Wind_radiation(y=1)) in file. Continuing!
@@ -50,12 +35,6 @@ Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologo
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (agn_power_law_index) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (wind.radmax(cm)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (wind.t.init) in file. Continuing!
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
-Error: string_proces: Unexpectedly reached EOF
-                      Switching to interactive mode
-Exiting since rdpar got EOF in interactive mode
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (wind.mdot(msol/yr)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (sv.diskmin(wd_rad)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (sv.diskmax(wd_rad)) in file. Continuing!
@@ -87,6 +66,15 @@ Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologo
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Use.standard.care.factors(1=yes)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (reverb.type(0=None,1=Photon,2=Wind)) in file. Continuing!
 Warning:  Question (Wind_type(0=SV,1=Sphere,3=Hydro,4=Corona,5=knigge,6=homologous,7=yso,8=elvis,9=shell,10=None)) does not match word (Photon.sampling.approach(0=T,1=(f1,f2),2=cv,3=yso,4=user_defined,5=cloudy_test,6=wide,7=AGN,8=logarithmic)) in file. Continuing!
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+Exiting since rdpar got EOF in interactive mode
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+Exiting since rdpar got EOF in interactive mode
+Error: string_proces: Unexpectedly reached EOF
+                      Switching to interactive mode
+Exiting since rdpar got EOF in interactive mode
 Error: string_proces: Unexpectedly reached EOF
                       Switching to interactive mode
 Exiting since rdpar got EOF in interactive mode
