@@ -1,2 +1,2 @@
-Fri Jul 15 20:00:20 2016      0.0 START                cv_standard 
-Fri Jul 15 20:00:20 2016      0.0 NOK                  Initializing variables for cv_standard
+Sat Jul 16 20:00:18 2016      0.0 START                cv_standard 
+Sat Jul 16 20:00:18 2016      0.0 NOK                  Initializing variables for cv_standard
