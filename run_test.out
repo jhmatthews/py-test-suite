@@ -1,22 +1,7 @@
 /home/jm8g08/py-test-suite/
 source/para_update.c: needs merge
-A	examples/template_ionloop.pf
-M	source/Makefile
-M	source/estimators.c
-M	source/foo.h
-M	source/macro_gov.c
-M	source/matom.c
-M	source/matrix_ion.c
-U	source/para_update.c
-M	source/py_wind_sub.c
-M	source/py_wind_write.c
-M	source/radiation.c
-M	source/setup.c
-M	source/templates.h
-M	source/wind2d.c
-M	source/wind_updates2d.c
 rm -f *.o  *~ 
-Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
+Compiling with mpicc wrapper, for compiler gcc 5.4.0 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
 MPI_FLAG= -DMPI_ON
 echo "#define VERSION " \"test\" > version.h
@@ -101,7 +86,7 @@ mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c
 mpicc -O3 -Wall  -fno-aggressive-loop-optimizations 	 -I../include -DMPI_ON   -c -o para_update.o para_update.c
 <builtin>: recipe for target 'para_update.o' failed
 rm -f *.o  *~ 
-Compiling with mpicc wrapper, for compiler gcc 4.8 with -fno-aggressive-loop-optimizations
+Compiling with mpicc wrapper, for compiler gcc 5.4.0 with -fno-aggressive-loop-optimizations
 YOU ARE COMPILING FOR LARGE RUNS, -03 -Wall flags
 MPI_FLAG= -DMPI_ON
 echo "#define VERSION " \"test\" > version.h
